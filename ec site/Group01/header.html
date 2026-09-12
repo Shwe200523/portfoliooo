@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+<link rel="stylesheet" href="./css/header.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<title>Document</title>
+</head>
+<body>
+<section class="hero">
+  <header class="header">
+  
+    <div class="header__inner">
+
+      <div class="header_logo">
+        <a href="./index.html">
+            <img src="img/logo-white.svg" alt="">
+        </a>
+      </div>
+
+      <!-- PC ナビ -->
+      <nav class="header__nav">
+        <a href="index.html">TOP</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./set.html">SET</a>
+        <a href="./item.html">ITEM</a>
+        <a href="./news.html">NEWS</a>
+        <a href="./contact.html">CONTACT</a>
+      </nav>
+
+      <div class="header__icons">
+        <a href="login.html" aria-label="マイページ">
+          <img src="img/account.svg" alt="マイページアイコン" width="22" height="22">
+        </a>
+        <a href="cart.html" aria-label="カート">
+          <img src="img/cart.svg" alt="カートアイコン" width="22" height="22">
+        </a>
+
+        <!-- ハンバーガーボタン（スマホのみ） -->
+        <button class="hamburger-morph" aria-label="メニュー" aria-controls="morph-menu" aria-expanded="false">
+          <svg class="hamburger-morph__icon" width="48" height="48" viewBox="0 0 100 100">
+            <path class="hamburger-morph__line" d="M 20,29 H 80 C 80,29 94.5,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="hamburger-morph__line" d="M 20,50 H 80" />
+            <path class="hamburger-morph__line" d="M 20,71 H 80 C 80,71 94.5,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- モバイルメニュー -->
+  <nav id="morph-menu" class="nav-morph" aria-hidden="true">
+    <!-- クローズボタン -->
+
+    
+    <div class="nav-morph__wrapper">
+      <ul class="nav-morph__list">
+        <li class="nav-morph__item">
+          <a href="./index.html" class="nav-morph__link">
+            <span class="nav-morph__text">TOP</span>
+            <span class="nav-morph__hover">トップ</span>
+          </a>
+        </li>
+        <li class="nav-morph__item">
+          <a href="./about.html" class="nav-morph__link">
+            <span class="nav-morph__text">ABOUT</span>
+            <span class="nav-morph__hover">私たちについて</span>
+          </a>
+        </li>
+        <li class="nav-morph__item">
+          <a href="./set.html" class="nav-morph__link">
+            <span class="nav-morph__text">SET</span>
+            <span class="nav-morph__hover">セットアップ</span>
+          </a>
+        </li>
+        <li class="nav-morph__item">
+          <a href="./item.html" class="nav-morph__link">
+            <span class="nav-morph__text">ITEM</span>
+            <span class="nav-morph__hover">アイテム</span>
+          </a>
+        </li>
+        <li class="nav-morph__item">
+          <a href="./news.html" class="nav-morph__link">
+            <span class="nav-morph__text">NEWS</span>
+            <span class="nav-morph__hover">ニュース</span>
+          </a>
+        </li>
+        <li class="nav-morph__item">
+          <a href="./contact.html" class="nav-morph__link">
+            <span class="nav-morph__text">CONTACT</span>
+            <span class="nav-morph__hover">お問い合わせ</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- メニュー内のアイコン -->
+      <div class="nav-morph__icons">
+        <a href="login.html" aria-label="マイページ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="24" height="24">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+        </a>
+        <a href="cart.html" aria-label="カート">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="24" height="24">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+        </a>
+      </div>
+      <div class="image">
+        <a href="index.html"><img src="img/logo-white.svg" alt="menu-bg"></a>
+      </div>
+    </div>
+  </nav>
+
+
+
+</section>
+<script>
+    const hamburger = document.querySelector('.hamburger-morph');
+const nav = document.querySelector('.nav-morph');
+
+// ハンバーガーボタンのクリック
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  nav.classList.toggle('active');
+
+  const isOpen = hamburger.classList.contains('active');
+  hamburger.setAttribute('aria-expanded', isOpen);
+  nav.setAttribute('aria-hidden', !isOpen);
+  
+  // bodyにクラスを追加してスクロール制御
+  if (isOpen) {
+    document.body.classList.add('menu-open');
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.classList.remove('menu-open');
+    document.body.style.overflow = '';
+  }
+});
+
+
+
+// メニューリンクをクリックしたら自動的にメニューを閉じる
+const menuLinks = document.querySelectorAll('.nav-morph__link');
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    nav.classList.remove('active');
+    document.body.classList.remove('menu-open');
+    document.body.style.overflow = '';
+    hamburger.setAttribute('aria-expanded', false);
+    nav.setAttribute('aria-hidden', true);
+  });
+
+  // ホバーエフェクト
+  link.addEventListener('mouseenter', () => {
+    link.querySelector('.nav-morph__text').style.transform = 'translateY(-100%)';
+    link.querySelector('.nav-morph__hover').style.transform = 'translateY(-100%)';
+  });
+  link.addEventListener('mouseleave', () => {
+    link.querySelector('.nav-morph__text').style.transform = 'translateY(0)';
+    link.querySelector('.nav-morph__hover').style.transform = 'translateY(0)';
+  });
+});
+</script>
+
+</body>
+</html>

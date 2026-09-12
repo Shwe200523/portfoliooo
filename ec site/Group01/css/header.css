@@ -1,0 +1,342 @@
+.hero {
+  position: relative;
+  width: 100%;
+
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+.hero__text img {
+  width: clamp(12rem, 50vw, 31.25rem);
+}
+
+/* ===== HEADER ===== */
+.header {
+  position: fixed;
+  top: 0;
+  background-position: center;
+
+  width: 100%;
+  z-index: 1001;
+  background-image: url(../img/hero-bg.png);
+}
+
+
+.header__inner {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo {
+  display: block;
+  align-items: center;
+  flex: 1;
+  min-width: 0; 
+}
+
+.header__logo img {
+  height: 2rem;
+  width: auto;
+  min-width: 200px !important; 
+  display: block;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.5em, 4vw, 5em);
+  flex: 6;
+}
+
+.header__nav a {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(1em,2vw,1.5em);
+  font-weight: 700;
+  white-space: nowrap;
+  transition: color 0.4s ease, transform 0.3s ease;
+}
+
+.header__nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__nav a:hover {
+  transform: translateY(-2px);
+}
+
+.header__nav a:hover::after,
+.header__nav a.active::after {
+  width: 100%;
+}
+
+.header__nav a.active {
+  opacity: 0.5;
+}
+
+.header__icons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.header__icons a {
+  display: flex;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  min-width: 20px;
+  
+  
+}
+
+.header__icons a:hover {
+  opacity: 0.5;
+}
+/* ===== HAMBURGER MORPH BUTTON ===== */
+.hamburger-morph {
+  display: none;
+  position: fixed;
+  z-index: 1002;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  top: calc((4.375rem - 2.5rem) / 2);
+  right: 1rem;
+  margin-top: 0;
+}
+
+.hamburger-morph__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-morph__line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger-morph__line:nth-child(1) {
+  stroke-dasharray: 60 207;
+}
+
+.hamburger-morph__line:nth-child(2) {
+  stroke-dasharray: 60 60;
+}
+
+.hamburger-morph__line:nth-child(3) {
+  stroke-dasharray: 60 207;
+}
+
+.hamburger-morph.active .hamburger-morph__line:nth-child(1) {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+}
+
+.hamburger-morph.active .hamburger-morph__line:nth-child(2) {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+}
+
+.hamburger-morph.active .hamburger-morph__line:nth-child(3) {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+}
+
+/* ===== NAV MORPH (モバイルメニュー) ===== */
+.nav-morph {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/nav-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.3);
+  clip-path: circle(0% at calc(100% - 44px) 44px);
+  transition: clip-path 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+}
+
+.nav-morph.active {
+  clip-path: circle(150% at calc(100% - 44px) 44px);
+}
+
+.nav-morph__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-morph__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-morph__item {
+  opacity: 0;
+  transform: translateY(1.875rem);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.nav-morph.active .nav-morph__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-morph.active .nav-morph__item:nth-child(1) { transition-delay: 0.25s; }
+.nav-morph.active .nav-morph__item:nth-child(2) { transition-delay: 0.35s; }
+.nav-morph.active .nav-morph__item:nth-child(3) { transition-delay: 0.45s; }
+.nav-morph.active .nav-morph__item:nth-child(4) { transition-delay: 0.55s; }
+.nav-morph.active .nav-morph__item:nth-child(5) { transition-delay: 0.65s; }
+
+.nav-morph__link {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: clamp(1.1rem, 5vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+
+.nav-morph__text,
+.nav-morph__hover {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.nav-morph__hover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(0%);
+}
+
+.nav-morph__link:hover .nav-morph__text {
+  transform: translateY(-100%);
+}
+
+.nav-morph__link:hover .nav-morph__hover {
+  transform: translateY(-100%);
+}
+
+/* ===== NAV クローズボタン ===== */
+
+/* ===== メニュー内のアイコン ===== */
+.nav-morph__icons {
+  
+  display: flex;
+  gap: 2rem;
+  padding: 1.5em;
+  justify-content: center;
+  align-items: center;
+  
+  opacity: 0;
+  transform: translateY(1.875rem);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  svg{
+    width: 2em;
+    height:fit-content;
+    margin: 0.5em;
+
+  }
+}
+
+.nav-morph.active .nav-morph__icons {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+
+.nav-morph__icons a {
+  display: flex;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.nav-morph__icons a:hover {
+  opacity: 0.5;
+}
+
+/* ===== メニュー内ロゴ（底部固定） ===== */
+.nav-morph .image {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease 0.9s;
+}
+
+.nav-morph .image img {
+  width: clamp(300px, 1vw, 5em);
+  height: auto;
+  display: inline-block;
+  
+}
+
+.nav-morph.active .image {
+  opacity: 1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+ 
+
+  .header__nav {
+    display: none;
+  }
+
+  .hamburger-morph {
+    display: block;
+  }
+
+  /* スマホ版：ハンバーガーメニューのみ表示 */
+ 
+
+  /* スマホ版：ヘッダーのアイコン（マイページ・カート）を非表示 */
+  .header__icons a:not(.hamburger-morph) {
+    display: none;
+  }
+
+  /* メニューが閉じている時はメインコンテンツを見せる */
+  body.menu-open {
+    overflow: hidden;
+  }
+}

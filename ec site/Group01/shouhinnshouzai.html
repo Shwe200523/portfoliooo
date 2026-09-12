@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="img/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+<link rel="stylesheet" href="css/shouhinshouzai.css">
+<link rel="stylesheet" href="css/footer.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<title>.SELECT - ITEM</title>
+</head>
+<body>
+    <div id="header_placeholder"></div>
+    <section class="shouhinshouzai">
+        <div class="shouhinshouzai_left">
+            <div class="shouhinshouzai_left_imageContainer">
+                <div class="main-image-wrapper">
+                    <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+                    
+                    <img id="display-img" src="img/item-detail01.avif" alt="Main">
+                    
+                    <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+                </div>
+            
+                <div class="thumbnails-container">
+                    <img src="img/news-photo01.webp" class="thumb active">
+                    <img src="img/news-photo01.webp" class="thumb">
+                    <img src="img/news-photo01.webp" class="thumb">
+                    <img src="img/news-photo01.webp" class="thumb">
+                </div>
+            </div>
+
+        </div>
+        <div class="shouhinshouzai_right">
+            <div class="productNameAndHeart">
+                <ul>
+                    <li><h1 id="detail-name">ナンジャらジーンズ</h1></li>
+                    <li><svg class="item_heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                </li>
+                </ul>
+            </div>
+            <p class="price" id="detail-price">¥9,990</p>
+            <p class="shouzai" id="detail-desc">説明文が入ります。</p>
+            <div class="colorandname">
+                <p class="color">カラー</p>
+                <p class="colorname" id="detail-color">-</p>
+            </div>
+            <div class="size">
+                <p>サイズ：</p>
+                <ul class="select_size">
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                </ul>
+            </div>
+            <p class="souryou">送料：330円　購入金額5,000円以上で送料無料</p>
+            <a href="" class="tsuika"><p>カートに追加</p></a>
+            <div class=""></div>
+            <p class="shouzaiwomiru">詳細を見る</p>
+       <div class="shouzaiwomiru_nakami">
+    <div class="item-row">
+        <div class="item-label">ニット帽</div>
+        <div class="item-details">
+            <dl>
+                <div class="detail-line"><dt>素材</dt><dd>アクリル100%</dd></div>
+                <div class="detail-line"><dt>生地感</dt><dd>柔らかめ</dd></div>
+                <div class="detail-line"><dt>伸縮性</dt><dd>あり</dd></div>
+                <div class="detail-line"><dt>厚み</dt><dd>普通</dd></div>
+                <div class="detail-line"><dt>サイズ感</dt><dd>フィット感のあるベーシックシルエット</dd></div>
+            </dl>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-label">トップス（ロンT）</div>
+        <div class="item-details">
+            <dl>
+                <div class="detail-line"><dt>素材</dt><dd>綿100%（一部ポリエステル混を含む場合あり）</dd></div>
+                <div class="detail-line"><dt>生地感</dt><dd>薄手〜中厚手</dd></div>
+                <div class="detail-line"><dt>透け感</dt><dd>なし</dd></div>
+                <div class="detail-line"><dt>伸縮性</dt><dd>あり</dd></div>
+                <div class="detail-line"><dt>サイズ感</dt><dd>オーバーサイズ</dd></div>
+            </dl>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-label">ボトムズ</div>
+        <div class="item-details">
+            <dl>
+                <div class="detail-line"><dt>素材</dt><dd>綿 / ポリエステル</dd></div>
+                <div class="detail-line"><dt>生地感</dt><dd>柔らかめ</dd></div>
+                <div class="detail-line"><dt>ウエスト</dt><dd>ゴム ＋ ドローコード仕様</dd></div>
+                <div class="detail-line"><dt>透け感</dt><dd>なし</dd></div>
+                <div class="detail-line"><dt>サイズ感</dt><dd>ルーズフィット</dd></div>
+            </dl>
+        </div>
+    </div>
+</div>
+            <p class="henpin notop">返品・交換について</p>
+            <div class="henpin_nakami">
+    <p class="intro-title">返品・交換と配送料について</p>
+    <p class="intro-text">お客様に安心してお買い物をお楽しみいただけるよう、返品・交換を承っております。<br>ご注文前に下記内容をご確認ください。</p>
+
+    <section class="info-section">
+        <h2>■返品・交換方法</h2>
+        <p>ご返品または交換に関しましては,商品到着後7日以内にお問い合わせください。<br>こうしたサービスは、お客様に無料でご提供しております。詳しくは、返品手続きのページをご参照ください。</p>
+    </section>
+
+    <section class="info-section">
+        <h2>■配送料と所要時間</h2>
+        <p>どの商品においても、送料は常に330円です。配送は月曜日から金曜日まで受け付けており、通常5営業日以内にお届けいたします。配送期間についての詳細は、配配送のページをご参照ください。</p>
+    </section>
+</div>
+        </div>
+    </section>
+
+    <!-- shouhinshouzai done -->
+    <section class="shouhinshouzai_mixmatch">
+        <div class="main">
+        <div class="left">
+            <h1><span>MIX</span><span>MATCH</span></h1>
+        </div>
+        <div class="right">
+            <h2>着る前に、試せる</h2>
+           <p> <a href="./mixmatch.html">コーデを試す</a></p>
+        </div>
+        </div>
+    </section>
+<!-- mix match done -->
+
+  <section class="review-section">
+    <div class="review-container">
+      
+      <div class="review-header">
+        <h2 class="review-title">REVIEW</h2>
+     
+      </div>
+
+      <div class="review-carousel">
+        <div class="review-track">
+          
+          <div class="review-card">
+            <p class="review-date">2025.08.24</p>
+            <p class="review-user">れな / 年齢10代 / 身長:156-160cm / 体重:50kg-54kg</p>
+            <p class="review-info">購入サイズ:M / 購入カラー:right blue</p>
+            <p class="review-text">
+              シルエット綺麗すぎて普通に脚長見えするし、淡い色味もまじかわいい。どんなトップスにも合わせやすいし、生地柔らかくて履きやすすぎる。ゆるめのシルエットが今っぽくて、これ履くだけでコーデ盛れるから最近ずっと履いてる。
+            </p>
+          </div>
+
+          <div class="review-card">
+            <p class="review-date">2025.06.29</p>
+            <p class="review-user">おおにしゆき / 年齢20代 / 身長:146-150cm / 体重:40kg-44kg</p>
+            <p class="review-info">購入サイズ:S / 購入カラー:right blue</p>
+            <p class="review-text">
+              シルエットがいい感じで脚めっちゃ長く見えるし、この淡いカラーがほんと優勝。何にでも合わせやすいし、生地柔らかくてストレスなく履けるの最高。程よいゆるさで今っぽいし、履くだけで一気におしゃれ感出るからまじで使える。
+            </p>
+          </div>
+               <div class="review-card">
+            <p class="review-date">2025.06.29</p>
+            <p class="review-user">おおにしゆき / 年齢20代 / 身長:146-150cm / 体重:40kg-44kg</p>
+            <p class="review-info">購入サイズ:S / 購入カラー:right blue</p>
+            <p class="review-text">
+              シルエットがいい感じで脚めっちゃ長く見えるし、この淡いカラーがほんと優勝。何にでも合わせやすいし、生地柔らかくてストレスなく履けるの最高。程よいゆるさで今っぽいし、履くだけで一気におしゃれ感出るからまじで使える。
+            </p>
+          </div>
+
+        </div>
+
+        <button class="carousel-arrow" aria-label="Next"></button>
+      </div>
+
+     
+
+    </div>
+  </section>
+
+<!-- review done -->
+
+<!-- pickup -->
+ <section class="pickup">
+    <div class="pickup_holder">
+        <h1 class="pickup_header">PICKUP</h1>
+        
+        <div class="pickup_image_frame">
+            <dl class="pickup_img_frame_group">
+                <dt><a href="shouhinnshouzai.html?id=1" target="_blank"><img src="img/item01.png" alt="ブラックラインスリーブグラフィックシャツ"></a></dt>
+                <dd>
+                    <h2>ブラックラインスリーブグラフィックシャツ</h2>
+                    <ul class="pickup_img_frame_group_dd_ul">
+                        <li><h3>¥3,980</h3></li>
+                        <li><svg class="item_heart heart1" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="pickup_img_frame_group">
+                <dt><a href="shouhinnshouzai.html?id=3" target="_blank"><img src="img/item03.png" alt="テンポラリーウォッシュグラフィックシャツ"></a></dt>
+                <dd>
+                    <h2>テンポラリーウォッシュグラフィックシャツ</h2>
+                    <ul class="pickup_img_frame_group_dd_ul">
+                        <li><h3>¥3,480</h3></li>
+                        <li><svg class="item_heart heart1" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="pickup_img_frame_group">
+                <dt><a href="shouhinnshouzai.html?id=9" target="_blank"><img src="img/item09.png" alt="ヴィンテージダメージワイドデニムパンツ"></a></dt>
+                <dd>
+                    <h2>ヴィンテージダメージワイドデニムパンツ</h2>
+                    <ul class="pickup_img_frame_group_dd_ul">
+                        <li><h3>¥5,980</h3></li>
+                        <li><svg class="item_heart heart1" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="pickup_img_frame_group">
+                <dt><a href="shouhinnshouzai.html?id=13" target="_blank"><img src="img/item13.png" alt="ブラックバルーンデニムパンツ"></a></dt>
+                <dd>
+                    <h2>ブラックバルーンデニムパンツ</h2>
+                    <ul class="pickup_img_frame_group_dd_ul">
+                        <li><h3>¥6,480</h3></li>
+                        <li><svg class="item_heart heart1" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="pickup_more_btn_wrap">
+            <a href="item.html" class="pickup_more_btn">View more <span class="arrow">→</span></a>
+        </div>
+    </div>
+</section>
+<!-- pickup done -->
+
+<!-- follow -->
+         <section class="follow">
+        <div class="follow_left">
+            <h1 class="follow_left_header"><span>Follow</span> <span>us</span> </h1>
+          <ul class="follow_left_icon">
+                <li><a href="https://www.youtube.com/watch?v=XqZsoesa55w&list=RDXqZsoesa55w&start_radio=1"><img src="img/Tiktok_Black.svg" alt=""></a></li>
+                <li><a href="https://www.youtube.com/watch?v=XqZsoesa55w&list=RDXqZsoesa55w&start_radio=1"><img src="img/x_Black.svg" alt=""></a></li>
+                <li><a href="https://www.youtube.com/watch?v=XqZsoesa55w&list=RDXqZsoesa55w&start_radio=1"><img src="img/instagram_Black.svg" alt=""></a></li>
+            </ul>
+            <p class="follow_left_paragraph">最新のコーデや新作情報をチェック！</p>
+           <div class="viewmore">
+                <a><span>View</span> <span>more</span> <span>→</span></a>
+            </div>
+        </div>
+        <div class="follow_right">
+            <h1 class="follow_right_picture "><img src="img/model1.avif" alt=""></h1>
+            <h1 class="follow_right_picture"><img src="img/model2.avif" alt=""></h1>
+            <h1 class="follow_right_picture "><img src="img/model3.png" alt=""></h1>
+            <h1 class="follow_right_picture "><img src="img/model4.avif" alt=""></h1>
+            
+        </div>
+     </section>
+     <!-- カートトースト通知 -->
+     <div id="cart-toast" class="cart-toast">
+       <span>カートに入れました</span>
+       <a href="cart.html">カートを見る</a>
+     </div>
+
+     <div id="footer-placeholder"></div>
+     <script>
+
+        // サイズ選択
+        document.querySelectorAll('.select_size li').forEach(li => {
+          li.addEventListener('click', () => {
+            document.querySelectorAll('.select_size li').forEach(el => el.classList.remove('active'));
+            li.classList.add('active');
+          });
+        });
+
+        const shouhinmiru = document.querySelector(".shouzaiwomiru");
+        const shouhinnakami = document.querySelector(".shouzaiwomiru_nakami");
+
+        shouhinmiru.addEventListener('click', () => {
+            shouhinnakami.classList.toggle('active');
+        });
+
+     
+        const henpinBtn = document.querySelector(".henpin");
+        const henpinnakami = document.querySelector(".henpin_nakami");
+
+        henpinBtn.addEventListener('click', () => {
+            henpinnakami.classList.toggle('active');
+        });
+        const mainImg = document.getElementById('display-img');
+const thumbs = document.querySelectorAll('.thumbnails-container .thumb');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let currentIndex = 0;
+
+// 画像を更新する共通関数
+function updateGallery(index) {
+    if (index < 0) index = thumbs.length - 1;
+    if (index >= thumbs.length) index = 0;
+    
+    currentIndex = index;
+    
+    // メイン画像とサムネイルのクラスを更新
+    mainImg.src = thumbs[currentIndex].src;
+    document.querySelector('.thumbnails-container .thumb.active')?.classList.remove('active');
+    thumbs[currentIndex].classList.add('active');
+}
+
+// サムネイルクリック時のイベント
+thumbs.forEach((thumb, index) => {
+    thumb.addEventListener('click', () => {
+        updateGallery(index);
+    });
+});
+
+// 戻るボタン
+prevBtn.addEventListener('click', () => {
+    updateGallery(currentIndex - 1);
+});
+
+// 進むボタン
+nextBtn.addEventListener('click', () => {
+    updateGallery(currentIndex + 1);
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.querySelector('.review-track');
+  const nextButton = document.querySelector('.carousel-arrow');
+
+  if (nextButton && track) {
+    nextButton.addEventListener('click', () => {
+      // カード1枚分の幅 + 隙間(gap)の分だけ右にスクロール
+      const cardWidth = track.querySelector('.review-card').clientWidth;
+      const gap = 24;
+      
+      // 最後までスクロールしていたら最初に戻る、そうでなければ次に進む
+      if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        track.scrollBy({ left: cardWidth + gap, behavior: 'smooth' });
+      }
+    });
+  }
+});
+
+
+     </script>
+<script src="js/cart.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/heart.js"></script>
+<script src="js/indexheader.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/page-animations.js"></script>
+<script>
+const itemData = {
+  '1':  { name: 'ブラックラインスリーブグラフィックシャツ', price: '¥3,980', color: 'ブラック',   desc: 'スポーティーなラインデザインとミニマルなワンポイントロゴを組み合わせた、ストリート感漂うオーバーサイズシャツ。肩の力を抜いたルーズなシルエットがクールで、一枚でも存在感のある仕上がりです。デニムやカーゴパンツはもちろん、ショーツと合わせたラフなスタイリングもおすすめ。シンプルながらコーデの主役になる万能アイテムです。', imgs: ['img/item01.png', 'img/item01_02.png', 'img/item01_03.png', 'img/item01_01.png'], material: '素材：綿○%、ポリエステル○%', fabric: '中厚手', transparency: 'なし', stretch: 'あり',   size: 'オーバーサイズ' },
+  '2':  { name: 'ヴィンテージコンパスウォッシュシャツ',     price: '¥2,990', color: 'インディゴ', desc: 'ヴィンテージ加工による色落ち感と胸元のコンパスモチーフが特徴のデザインシャツ。程よくフェードした風合いが古着のような雰囲気を演出し、着るだけでこなれた印象。ゆったりとしたシルエットで快適な着用感を実現し、デニムやワイドパンツとの相性も抜群です。', imgs: ['img/item02.png', 'img/item02_02.png', 'img/item02_03.png', 'img/item02_01.png'], material: '素材：綿○%',                 fabric: '中厚手', transparency: 'なし', stretch: 'ややあり', size: 'オーバーサイズ' },
+  '3':  { name: 'テンポラリーウォッシュグラフィックシャツ', price: '¥3,480', color: 'ブラック',   desc: 'ヴィンテージライクなウォッシュ加工とアートグラフィックを融合したデザインシャツ。色褪せたような独特の風合いがこなれ感を演出し、着るだけで雰囲気のあるスタイリングが完成します。ゆったりとしたシルエットで快適な着心地を実現。ストリートからモードまで幅広いコーディネートに対応する一着です。', imgs: ['img/item03.png', 'img/item03_02.png', 'img/item03_03.png', 'img/item03_01.png'], material: '素材：綿○○%',                fabric: '中厚手', transparency: 'なし', stretch: 'ややあり', size: 'ルーズフィット' },
+  '4':  { name: 'ゴシッククロスワンポイントシャツ',         price: '¥2,980', color: 'ホワイト',   desc: 'フロントに施されたクロスモチーフが目を引くモノトーンシャツ。シンプルなデザインの中に程よい個性をプラスし、洗練されたストリートスタイルを演出します。一枚着はもちろん、シャツやジャケットのインナーとしても存在感を発揮。シーズンを問わず活躍する万能アイテムです。', imgs: ['img/item04.png', 'img/item04_02.png', 'img/item04_03.png', 'img/item04_01.png'], material: '素材：綿○%、ポリウレタン○%', fabric: '中厚手', transparency: 'ややあり', stretch: 'あり', size: 'レギュラーフィット〜ゆるめ' },
+  '5':  { name: 'ダークロゴオーバーサイズシャツ',           price: '¥3,980', color: 'ブラック',   desc: 'エッジの効いたロゴデザインが印象的なオーバーサイズシャツ。無骨な雰囲気を持ちながらもシンプルなカラーリングで着回しやすく、ストリートスタイルとの相性は抜群です。ゆとりのあるシルエットがリラックス感を演出し、一枚着でもレイヤードでも活躍します。', imgs: ['img/item05.png', 'img/item05_02.png', 'img/item05_03.png', 'img/item05_01.png'], material: '素材：綿○○%',                fabric: '中厚手', transparency: 'なし', stretch: 'あり',   size: 'オーバーサイズ' },
+  '6':  { name: 'ダメージウォッシュスウェットプルオーバー', price: '¥5,980', color: 'ブラック',   desc: '大胆なダメージ加工とフェードウォッシュを施した存在感抜群のスウェットプルオーバー。ヴィンテージウェアのような風合いとダークなグラフィックが、独特の世界観を演出します。ゆったりとしたビッグシルエットでトレンド感があり、一枚でコーディネートの主役になるアイテムです。', imgs: ['img/item06.png', 'img/item06_02.png', 'img/item06_03.png', 'img/item06_01.png'], material: '素材：綿○%、ポリエステル○%', fabric: '厚手（裏毛仕様）', transparency: 'なし', stretch: 'あり', size: 'ビッグシルエット' },
+  '7':  { name: 'ミニロゴベーシックシャツ',                 price: '¥2,480', color: 'ホワイト',   desc: '胸元のさりげないロゴ刺繍がアクセントになったミニマルデザインシャツ。クセのないクリーンな印象で、カジュアルからストリートまで幅広いスタイリングにマッチします。柔らかなコットン素材を使用し、デイリーユースに最適な着心地を実現。何枚あっても困らない定番アイテムです。', imgs: ['img/item07.png', 'img/item07_02.png', 'img/item07_03.png', 'img/item07_01.png'], material: '素材：綿○○%',                fabric: '薄手〜中厚手', transparency: 'ややあり', stretch: 'あり', size: 'レギュラーフィット' },
+  '8':  { name: 'ヴィンテージブラウンロングスリーブシャツ', price: '¥3,480', color: 'ブラウン',   desc: '深みのあるブラウンカラーにウォッシュ加工を施したロングスリーブシャツ。胸元のワンポイントロゴが程よいアクセントとなり、落ち着いた雰囲気の中にも個性を感じさせます。ゆとりのあるシルエットで快適な着心地を実現し、季節の変わり目からロングシーズン活躍する一着です。', imgs: ['img/item08.png', 'img/item08_02.png', 'img/item08_03.png', 'img/item08_01.png'], material: '素材：綿○%',                 fabric: '中厚手', transparency: 'なし', stretch: 'あり',   size: 'ルーズフィット' },
+  '9':  { name: 'ヴィンテージダメージワイドデニムパンツ',   price: '¥5,980', color: 'インディゴ', desc: 'リアルな色落ち加工とダメージディテールが目を引くヴィンテージライクなワイドデニム。程よくルーズなシルエットが抜け感を演出し、穿くだけでトレンド感のあるスタイリングが完成します。シンプルなトップスと合わせるだけで存在感のあるコーディネートを楽しめる一本。ストリートからカジュアルまで幅広く活躍します。', imgs: ['img/item09.png', 'img/item09_02.png', 'img/item09_03.png', 'img/item09_01.png'], material: '素材：綿○%、ポリエステル○%', fabric: '中厚手', transparency: 'なし', stretch: 'なし',   size: 'ワイドシルエット' },
+  '10': { name: 'ダークグラフィックワイドパンツ',           price: '¥5,480', color: 'ブラック',   desc: '両サイドに大胆なグラフィックプリントを施したインパクト抜群のワイドパンツ。ストリートカルチャーを感じさせるデザインがコーディネートのアクセントになります。ゆとりのあるシルエットで動きやすく、存在感のあるスタイリングを演出。シンプルなトップスとの相性も抜群です。', imgs: ['img/item10.png', 'img/item10_02.png', 'img/item10_03.png', 'img/item10_01.png'], material: '素材：綿○%、ポリエステル○%', fabric: '中厚手', transparency: 'なし', stretch: 'あり',   size: 'ワイドシルエット' },
+  '11': { name: 'ナイロンバルーンワイドパンツ',             price: '¥5,480', color: 'カーキ',     desc: '軽量なナイロン素材を使用した、ボリューム感のあるバルーンシルエットのワイドパンツ。裾に向かって膨らむ独特のフォルムが、トレンド感のあるストリートスタイルを演出します。ドローコード仕様で快適な着用感を実現。機能性とデザイン性を兼ね備えたデイリーユースに最適な一本です。', imgs: ['img/item11.png', 'img/item11_02.png', 'img/item11_03.png', 'img/item11_01.png'], material: '素材：ナイロン○%',            fabric: '軽量・薄手', transparency: 'なし', stretch: 'なし', size: 'オーバーサイズ' },
+  '12': { name: 'ヴィンテージカーゴワイドパンツ',           price: '¥5,980', color: 'カーキ',     desc: 'ウォッシュ加工によるヴィンテージ感とカーゴディテールを組み合わせたワイドパンツ。無骨な雰囲気の中にも洗練されたシルエットを取り入れ、ストリートからアウトドアミックスまで幅広く対応します。立体感のあるポケットデザインが機能性とデザイン性を再立した一着です。', imgs: ['img/item12.png', 'img/item12_02.png', 'img/item12_03.png', 'img/item12_01.png'], material: '素材：綿○%',                 fabric: '中厚手', transparency: 'なし', stretch: 'なし',   size: 'ワイドフィット' },
+  '13': { name: 'ブラックバルーンデニムパンツ',             price: '¥6,480', color: 'ブラック',   desc: '大胆なワイドシルエットが特徴のブラックデニムパンツ。立体感のあるバルーンフォルムが個性的な存在感を放ち、モードとストリートを融合させたスタイリングを楽しめます。シンプルなトップスと合わせるだけで洗練された印象。コーディネートの主役として活躍するトレンドアイテムです。', imgs: ['img/item13.png', 'img/item13_02.png', 'img/item13_03.png', 'img/item13_01.png'], material: '素材：綿○%、ポリエステル○%', fabric: '中厚手', transparency: 'なし', stretch: 'あり',   size: 'バルーンシルエット' },
+  '14': { name: 'ゴシックロゴスウェットパンツ',             price: '¥4,480', color: 'ブラック',   desc: 'サイドに施されたゴシック調のロゴプリントが印象的なスウェットパンツ。ゆったりとしたストレートシルエットで、リラックス感とスタイル感を両立しています。柔らかなスウェット素材を使用し、デイリーからルームウェアまで快適に着用可能。セットアップ風のコーディネートにもおすすめです。', imgs: ['img/item14.png', 'img/item14_02.png', 'img/item14_03.png', 'img/item14_01.png'], material: '素材：綿○%、ポリエステル○%', fabric: '中厚手', transparency: 'なし', stretch: 'あり',   size: 'ルーズフィット' },
+  '15': { name: 'ヴィンテージウォッシュテーパードデニム',   price: '¥5,480', color: 'インディゴ', desc: '自然な色落ち加工とダメージディテールが魅力のヴィンテージデニム。程よいルーズ感を残しながらも、すっきりとしたシルエットで幅広いスタイリングに対応します。履き込んだような風合いがコーディネートに深みを与え、季節を問わず活躍する一本です。', imgs: ['img/item15_01.png', 'img/item15_02.png', 'img/item15.png', 'img/item15_01.png'], material: '素材：綿○%、ポリエステル○%', fabric: '中厚手', transparency: 'なし', stretch: 'なし',   size: 'ルーズフィット' },
+  '16': { name: 'ドレープワイドスラックスパンツ',           price: '¥5,980', color: 'ブラック',   desc: '美しい落ち感とワイドシルエットが魅力のモード系スラックスパンツ。ゆったりとしたシルエットながらも上品なドレープが生まれ、洗練された印象を演出します。カジュアルなトップスからシャツスタイルまで幅広く合わせられ、オンオフ問わず活躍する一本です。シンプルだからこそ長く愛用できる万能アイテムです。', imgs: ['img/item16.png', 'img/item16_02.png', 'img/item16_03.png', 'img/item16_01.png'], material: '素材：ポリエステル○%、レーヨン○%、ポリウレタン○%', fabric: 'なし', transparency: 'なし', stretch: 'ややあり', size: 'ワイドシルエット' },
+};
+
+const id = new URLSearchParams(location.search).get('id') || '1';
+const item = itemData[id] || itemData['1'];
+
+document.getElementById('detail-name').textContent  = item.name;
+document.getElementById('detail-price').textContent = item.price;
+document.getElementById('detail-desc').textContent  = item.desc;
+document.getElementById('detail-color').textContent = item.color;
+document.getElementById('display-img').src          = item.imgs[0];
+document.querySelectorAll('.thumb').forEach((t, i) => { t.src = item.imgs[i] ?? item.imgs[0]; });
+
+// カートに追加
+document.querySelector('.tsuika').addEventListener('click', (e) => {
+  e.preventDefault();
+  const selectedSize = document.querySelector('.select_size li.active')?.textContent?.trim() || 'フリー';
+  addToCart({
+    name: item.name,
+    price: item.price,
+    color: item.color,
+    size: selectedSize,
+    img: item.imgs[0],
+    qty: 1
+  });
+});
+</script>
+</body>
+</html>

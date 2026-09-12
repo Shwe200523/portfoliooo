@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(node \"/private/tmp/claude-502/-Users-design-Documents-----wedding/35ff60d7-ccd4-4690-b74f-5141658b2f66/scratchpad/deamp.mjs\" css/style.css.bak2 /tmp/claude-502/deamp.css)",
+      "Bash(grep -n '    \\\\.[a-z].*{$' /tmp/claude-502/deamp.css)",
+      "Bash(python3 -c \"s=open\\('css/style.css'\\).read\\(\\); print\\('{',s.count\\('{'\\),'} ',s.count\\('}'\\), 'OK' if s.count\\('{'\\)==s.count\\('}'\\) else 'NG'\\)\")",
+      "Bash(node \"/private/tmp/claude-502/-Users-design-Documents-----wedding/35ff60d7-ccd4-4690-b74f-5141658b2f66/scratchpad/deamp.mjs\" css/style.css /tmp/claude-502/deamp2.css)",
+      "Bash(sed -n '/^\\\\[data-ring-slot\\\\] {/,/^}/p' /tmp/claude-502/deamp2.css)",
+      "Bash(node -e ' *)",
+      "Bash(curl -s \"http://localhost:8765/index.html\")",
+      "Bash(perl -0pi -e 's#\\(href|src\\)=\"\\(css|js|img\\)/#$1=\"http://localhost:8765/$2/#g' idx_base.html)",
+      "Bash(perl -0pi -e 's#</body>#<script>window.addEventListener\\(\"load\",function\\(\\){setTimeout\\(function\\(\\){var c=document.querySelector\\(\".craft\"\\);var t=c.getBoundingClientRect\\(\\).top+window.scrollY;window.scrollTo\\(0,t+window.innerHeight*1.6\\);setTimeout\\(function\\(\\){document.title=\"READY\"},900\\)},2200\\)}\\)</script></body>#' idx_base.html)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --window-size=390,844 --force-device-scale-factor=1 --virtual-time-budget=9000 --screenshot=craft_pin.png file://__TRACKED_VAR__/idx_shot.html)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --window-size=390,3200 --force-device-scale-factor=1 --virtual-time-budget=4500 --screenshot=craft_final.png file://__TRACKED_VAR__/craftonly.html)",
+      "Bash(cat)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --window-size=390,844 --force-device-scale-factor=1 --virtual-time-budget=4000 --screenshot=craftpin.png file://__TRACKED_VAR__/craftpin.html)",
+      "Bash(perl -0pi -e 's#\\(href|src\\)=\"\\(css|js|img\\)/#$1=\"http://localhost:8765/$2/#g' probe.html)",
+      "Bash(perl -0pi -e 's#</body>#<script> *)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --window-size=390,844 --force-device-scale-factor=1 --virtual-time-budget=6000 --dump-dom file://__TRACKED_VAR__/probe.html)",
+      "Bash(perl -0pi -e 's#\\(href|src\\)=\"\\(css|js|img\\)/#$1=\"http://localhost:8765/$2/#g' probe2.html)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --hide-scrollbars --window-size=390,844 --force-device-scale-factor=1 --virtual-time-budget=6000 --dump-dom file://__TRACKED_VAR__/probe2.html)",
+      "Bash(curl -s \"http://localhost:8765/js/script.js\")",
+      "Bash(curl -s http://localhost:8765/js/script.js)"
+    ]
+  }
+}

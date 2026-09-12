@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="img/favicon.ico" />
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>.SELECT - お問い合わせ確認</title>
+  </head>
+  <body>
+    <div id="header_placeholder"></div>
+    <section class="contact-check">
+      <div class="contact-check-head">
+        <h2>CONTACT</h2>
+        <p>
+          入力内容をご確認のうえ、<br />
+          問題なければ送信ボタンを押してください。
+        </p>
+      </div>
+
+      <div class="check-box">
+        <div class="check-item">
+          <h3>氏名</h3>
+          <p id="conf-name"></p>
+        </div>
+        <div class="check-item">
+          <h3>メールアドレス</h3>
+          <p id="conf-email"></p>
+        </div>
+        <div class="check-item">
+          <h3>電話番号</h3>
+          <p id="conf-tel"></p>
+        </div>
+        <div class="check-item">
+          <h3>お問い合わせ項目</h3>
+          <p id="conf-category"></p>
+        </div>
+        <div class="check-item">
+          <h3>お問い合わせ内容</h3>
+          <p id="conf-message"></p>
+        </div>
+      </div>
+
+      <div class="check-btn-wrap">
+        <a href="contact.html" class="back-btn">戻る</a>
+        <a href="contact-completed.html" class="send-btn">送信する</a>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/common-animations.js"></script>
+    <div id="footer-placeholder"></div>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      document.getElementById('conf-name').textContent     = sessionStorage.getItem('cf_name')     || '';
+      document.getElementById('conf-email').textContent    = sessionStorage.getItem('cf_email')    || '';
+      document.getElementById('conf-tel').textContent      = sessionStorage.getItem('cf_tel')      || '';
+      document.getElementById('conf-category').textContent = sessionStorage.getItem('cf_category') || '';
+      document.getElementById('conf-message').textContent  = sessionStorage.getItem('cf_message')  || '';
+    </script>
+  </body>
+</html>

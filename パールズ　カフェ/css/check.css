@@ -1,0 +1,154 @@
+
+body{
+    color: #571B00;
+    text-wrap: nowrap;
+    overflow-x: hidden !important;
+    width: 100% !important;
+}
+
+.dami{
+  width: 120px;
+  position: fixed;
+  bottom: 59px;
+  right: 0px;
+  z-index: 1000000000000000000;
+
+}
+
+.main{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    max-width: 1200px;
+ .naiyou dl{
+    display: flex;
+    gap: 16px;
+    padding: 2em;
+    align-items: flex-start;
+    color: #8b5a3c;
+}
+
+.naiyou dt{
+    width: 8em;        
+    text-align: left;
+}
+
+.naiyou dd{
+    flex: 1;           
+    text-align: left;  
+    color: #571B00;
+}
+dl:nth-child(4){
+    flex-direction: column;
+    text-align: left !important;
+    dd{
+        line-height: 2em;
+    }
+}
+.bottom{
+      width: 70%;
+      max-width: 300px;
+      padding: 25px 0;
+  border-radius: 999px;
+  margin-top: 10px;
+  border: none;
+  background: #8b5a3c;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+font-size: clamp(1em,1vw,1em);
+ margin: auto;
+  min-height: 50px;
+
+}
+.bottom:hover{
+  background-color: #5D792A;
+              
+                transition: all 0.5s linear;
+}
+}
+
+
+
+
+
+.co-hi-{
+    position: absolute;
+    width: 40%;
+    top: -30px;
+    max-width: 300px;
+    /* top: -600px;
+    left: -200px; */
+    /* min-width: 600px; */
+  }
+  
+  .beans{
+    position: absolute;
+    width: 10%;
+    min-width: 100px;
+    right: 0;
+    top: 100px;
+    /* transform: rotate(-10deg); */
+  }
+  
+  .beans2{
+    position: absolute;
+    width: 10%;
+    bottom: -50px;
+    left:70px;
+    transform: rotate(-60deg);
+  }
+  
+  .cat{
+    position: absolute;
+    right: 50px;
+    width: 30%;
+    bottom: 0;
+    min-width: 300px;
+  }
+  
+  .beans3{
+    display: none;
+  }
+  
+  
+@media (max-width:600px){
+    .main{
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .cat{
+        display: none;
+      }
+    
+      .beans2{
+        display: none;
+      }
+    
+      .beans{
+        right: 0;
+        top: 70px;
+      }
+    
+      .beans3{
+        display: block;
+        position: absolute;
+        width: 100px;
+        bottom: -100px;
+        left: -120px;
+        z-index: -1;
+       
+      }
+      .bottom{
+        margin-top: 3em;
+      }
+
+      .dami{
+        display: none;
+    }
+
+
+    
+}

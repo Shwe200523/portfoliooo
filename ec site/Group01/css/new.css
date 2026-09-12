@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "zou";
+    src: url(../font/002zouver.2-Regular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+body{
+    font-family: "zengaku";
+      font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+
+}
+
+/* ==========================================
+   NEWS HERO BANNER  (bijyuaru と統一)
+========================================== */
+.news-hero {
+    width: 100%;
+    height: 40vh;
+    margin-top: 4.375rem;
+    background-image: url('../img/set-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.news-hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.news-hero__title {
+    font-family: "zou", sans-serif;
+    font-size: clamp(4em, 2vw, 7em);
+    font-weight: normal;
+    line-height: 1;
+    padding: 10px 0;
+}
+
+.news-hero__desc {
+    font-size: clamp(1em, 2vw, 3em);
+}
+@media screen and (max-width: 48em) {
+
+    .news-hero {
+        height: 20vh;
+    }
+
+    .news-hero__title {
+        font-size: clamp(2em, 2vw, 5em);
+    }
+
+    .news-hero__desc {
+        font-size: clamp(0.7em, 2vw, 3em);
+    }
+
+    .container {
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+  }
+ /*-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  birtual done              
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー --*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 960px;
+  margin: 60px auto;
+  padding: 0 40px;
+
+}
+ 
+@media (max-width:768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    
+    gap: 16px;
+    margin: 32px auto;
+    padding: 0 16px;
+  }
+}
+ 
+a.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a.card:hover img {
+  opacity: 0.85;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  display: block;
+  background: #d9d9d9;
+  transition: opacity 0.25s;
+}
+ 
+.card-body {
+  margin-top: 10px;
+}
+ 
+.card-title {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+ 
+.card-date {
+  font-size: 0.7em;
+  color: #999;
+}
+
+.card-readmore {
+  font-size: 0.78em;
+  color: #576A58;
+  font-weight: 700;
+  margin-top: 8px;
+  letter-spacing: 0.04em;
+}

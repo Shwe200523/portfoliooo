@@ -1,0 +1,202 @@
+
+
+
+.main{
+    text-align: center;
+    width: 55%;
+    max-width:750px;
+    margin: auto;
+     min-height: 100vh;
+     position:relative;
+     z-index:2;
+     filter: invert(0);
+   
+     
+}
+.boxholder{
+    text-align: left;
+    margin: auto;
+    width: 100%;
+    min-width: 200px;
+}
+.bottom1{
+      /* padding: 10px 35px; */
+     width: 100%;
+      max-width: 250px;
+      padding: 15px;
+  border-radius: 999px;
+  
+
+  border: none;
+  background: #8b5a3c;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  text-wrap: nowrap;
+ margin: auto;
+ margin: 20px auto;
+
+
+
+}
+.bottom1:hover{
+  background-color: #5D792A;
+                border-radius: 30px;
+                transition: all 0.5s linear;
+}
+.box{
+         background:#fffdfa;/**/
+    color: #9E6341;
+                width: 100%;
+                height: 4vw;
+                max-height: 35px;
+                /*min-width: 300px;*/
+                min-height: 30px;
+                border:1px solid #9E6341;
+                border-radius: 5px;
+                margin: 0.7em 0;
+                padding-left: 0.5em;
+                font-size: clamp(0.7em,1vw,1em);
+}
+
+label{
+    line-height: 2em;
+   color: #7a3c17;
+    font-size: clamp(1em,1vw,1.3em);
+
+  text-shadow:0px 0px 3px #fffdfa,
+              0px 0px 3px #fffdfa,
+              0px 0px 3px #fffdfa,
+              0px 0px 3px #fffdfa,
+              0px 0px 3px #fffdfa,
+              0px 0px 3px #fffdfa,
+              0px 0px 3px #fffdfa,
+              0px 0px 3px #fffdfa,
+              0px 0px 3px #fffdfa;
+}
+.otoi{
+    min-height: 100px;
+}
+
+.dami{
+  width: 120px;
+  position: fixed;
+  bottom: 59px;
+  right: 0px;
+  z-index: 1000000000000000000;
+  pointer-events: all;
+
+}
+
+
+/* こせ */
+.co-hi-{
+    position: absolute;
+    width: 40%;
+    top: -30px;
+    /* left: -200px; */
+    /* min-width: 600px; */
+    max-width: 400px;
+    z-index:1;
+  }
+  
+  .beans{
+    position: absolute;
+    width: 10%;
+    min-width: 100px;
+    right: 20px;
+    top: 100px;
+    /* transform: rotate(-10deg); */
+  }
+  
+  .beans2{
+    position: absolute;
+    width: 10%;
+    bottom: 0;
+    left:70px;
+    max-width: 200px;
+    transform: rotate(-60deg);
+    z-index: -1;
+  }
+  
+  .cat{
+    position: absolute;
+    right: 50px;
+    width: 30%;
+    bottom: 30px;
+    min-width: 300px;
+  }
+  
+  .beans3{
+    display: none;
+  }
+
+
+
+  body{
+    overflow-x: hidden;
+  }
+
+footer{
+  position: relative;
+  bottom: 0;
+}
+  
+
+
+
+
+@media (max-width:600px) {
+.main{
+    width:75%;
+    margin: auto;
+    .box{
+        /*width: 50%;*/
+        min-width: 200px;
+        
+    }
+    .bottom{
+      transform: translate(-20px);
+    }
+
+}
+
+.dami{
+  display: none;
+}
+
+
+  /* こせ */
+  .cat{
+    display: none;
+  }
+
+  .beans2{
+    display: none;
+  }
+
+  .beans{
+    right: 0;
+    top: 70px;
+  }
+
+  .beans3{
+    display: block;
+    position: absolute;
+    width: 100px;
+    bottom: -100px;
+    left: -120px;
+    z-index: -1;
+   
+  }
+
+  .co-hi-2{
+    display: block;
+    position: absolute;
+    transform: rotate(180deg);
+    width: 670px;
+    z-index: -1;
+    bottom: -600px;
+  }
+}

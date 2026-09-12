@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>デザインしたもの ｜ SHWE TUN KHAING</title>
+<meta name="description" content="SHWE TUN KHAING（シュエ トゥン カイン）が制作したWebサイト・グラフィックの一覧です。">
+
+<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Yomogi&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+
+<!-- ============================================
+     Loading
+============================================ -->
+<div class="loading" id="loading">
+  <div class="loading__inner">
+    <p class="loading__name">WORKS</p>
+    <div class="loading__bar"><span class="loading__bar-fill"></span></div>
+  </div>
+</div>
+
+<!-- ============================================
+     Header
+============================================ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">S<span>.</span>K</a>
+
+    <nav class="gnav" id="gnav">
+      <ul class="gnav__list">
+        <li><a href="works.html" class="is-current">デザインしたもの</a></li>
+        <li><a href="about.html">わたしのこと</a></li>
+        <li><a href="#contact" data-scroll>お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <button class="menubtn" id="menubtn">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+<!-- Header done -->
+
+<main>
+
+  <!-- ============================================
+       ページタイトル
+  ============================================ -->
+  <section class="pagehead">
+    <div class="pagehead__blob"></div>
+    <div class="container">
+      <p class="pagehead__en">Works</p>
+      <h1 class="pagehead__ja">デザインしたもの</h1>
+    </div>
+  </section>
+  <!-- ページタイトル done -->
+
+  <!-- ============================================
+       一覧
+  ============================================ -->
+  <section class="section worksall">
+    <div class="container">
+
+      <div class="filter js-fade">
+        <button type="button" class="filter__btn is-active" data-filter="all">すべて</button>
+        <button type="button" class="filter__btn" data-filter="web">Webサイト</button>
+        <button type="button" class="filter__btn" data-filter="poster">ポスター・広告</button>
+        <button type="button" class="filter__btn" data-filter="logo">ロゴ・カード/バナー</button>
+      </div>
+
+      <div class="cards" id="cards">
+
+        <article class="card js-fade" data-cat="web">
+          <a href="結婚/wedding/index.html" class="card__link" target="_blank" rel="noopener">
+            <div class="card__thumb"><img src="img/works/wedding.png"></div>
+            <div class="card__body">
+              <p class="card__cat">Webサイト</p>
+              <h2 class="card__title">ETA-RING</h2>
+              <p class="card__role">企画 ／ デザイン ／ コーディング</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card js-fade" data-cat="web">
+          <a href="ec site/Group01/index.html" class="card__link" target="_blank" rel="noopener">
+            <div class="card__thumb"><img src="img/works/select.png"></div>
+            <div class="card__body">
+              <p class="card__cat">Webサイト</p>
+              <h2 class="card__title">.SELECT</h2>
+              <p class="card__role">チーム制作 ／ デザイン ／ コーディング</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card js-fade" data-cat="web">
+          <a href="パールズ　カフェ/html/index.html" class="card__link" target="_blank" rel="noopener">
+            <div class="card__thumb"><img src="img/works/pearls.png"></div>
+            <div class="card__body">
+              <p class="card__cat">Webサイト</p>
+              <h2 class="card__title">パールズ カフェ</h2>
+              <p class="card__role">デザイン ／ コーディング</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card js-fade" data-cat="web">
+          <a href="starbucks/index.html" class="card__link" target="_blank" rel="noopener">
+            <div class="card__thumb"><img src="img/works/starbucks.png"></div>
+            <div class="card__body">
+              <p class="card__cat">Webサイト</p>
+              <h2 class="card__title">Starbucks 模写</h2>
+              <p class="card__role">コーディング練習</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card js-fade" data-cat="poster">
+          <div class="card__link">
+            <div class="card__thumb"><img src="img/excebtion.jpg"></div>
+            <div class="card__body">
+              <p class="card__cat">ポスター</p>
+              <h2 class="card__title">進級制作発表会</h2>
+              <p class="card__role">デザイン ／ Illustrator</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card js-fade" data-cat="poster">
+          <div class="card__link">
+            <div class="card__thumb"><img src="img/autum.png"></div>
+            <div class="card__body">
+              <p class="card__cat">ポスター</p>
+              <h2 class="card__title">秋の東寺ライトアップ</h2>
+              <p class="card__role">デザイン ／ Photoshop</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card js-fade" data-cat="poster">
+          <div class="card__link">
+            <div class="card__thumb"><img src="img/newspaper.png"></div>
+            <div class="card__body">
+              <p class="card__cat">広告</p>
+              <h2 class="card__title">新聞広告</h2>
+              <p class="card__role">デザイン ／ Illustrator</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card js-fade" data-cat="poster">
+          <div class="card__link">
+            <div class="card__thumb"><img src="img/matcha.png"></div>
+            <div class="card__body">
+              <p class="card__cat">広告</p>
+              <h2 class="card__title">抹茶チョコ 商品広告</h2>
+              <p class="card__role">デザイン ／ Photoshop</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card js-fade" data-cat="poster">
+          <div class="card__link">
+            <div class="card__thumb"><img src="img/fashionai-1.png"></div>
+            <div class="card__body">
+              <p class="card__cat">表紙</p>
+              <h2 class="card__title">ファッション誌 表紙</h2>
+              <p class="card__role">デザイン ／ Photoshop</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card js-fade" data-cat="logo">
+          <div class="card__link">
+            <div class="card__thumb"><img src="img/namecard.png"></div>
+            <div class="card__body">
+              <p class="card__cat">名刺・ロゴ</p>
+              <h2 class="card__title">オリジナル名刺</h2>
+              <p class="card__role">ロゴ制作 ／ Illustrator</p>
+            </div>
+          </div>
+        </article>
+        <article class="card js-fade" data-cat="logo">
+          <div class="card__link">
+            <div class="card__thumb"><img src="img/danjiri.png"></div>
+            <div class="card__body">
+              <p class="card__cat">バナー</p>
+              <h2 class="card__title">だんじり祭り</h2>
+              <p class="card__role">ロゴ制作 ／ Photoshop</p>
+            </div>
+          </div>
+        </article>
+        <article class="card js-fade" data-cat="logo">
+          <div class="card__link">
+            <div class="card__thumb"><img src="img/halloween.jpg"></div>
+            <div class="card__body">
+              <p class="card__cat">バナー</p>
+              <h2 class="card__title">ハロウィンキャンペーン</h2>
+              <p class="card__role">ロゴ制作 ／ Photoshop</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <!-- 一覧 done -->
+
+  <!-- ============================================
+       次へ
+  ============================================ -->
+  <section class="section pagenav">
+    <div class="container pagenav__inner js-fade">
+      <p class="pagenav__text">わたしのことも、ぜひご覧ください。</p>
+      <a href="about.html" class="btn"><span class="btn__txt">プロフィールをみる</span></a>
+    </div>
+  </section>
+  <!-- 次へ done -->
+
+  <!-- ============================================
+       Contact
+  ============================================ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__inner js-fade">
+        <p class="sechead__en">Contact</p>
+        <h2 class="contact__title">最後までご覧いただき<br class="sp-br">ありがとうございました</h2>
+        <p class="contact__text">
+          採用に関するお問い合わせや、作品について気になることがあれば<br>
+          こちらまでお気軽にご連絡ください。
+        </p>
+
+        <p><a href="mailto:shwetun.khaing@icloud.com" class="contact__mail">shwetun.khaing@icloud.com</a></p>
+
+        <p><a href="tel:08098998220" class="contact__tel">080-9899-8220</a></p>
+
+      </div>
+    </div>
+  </section>
+  <!-- Contact done -->
+
+</main>
+<!-- Main done -->
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__logo"> <a href="index.html">S<span>.</span>K</a></p>
+    <p class="footer__copy">&copy; 2026 SHWE TUN KHAING. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Footer done -->
+
+<script src="js/common.js"></script>
+<script src="js/works.js"></script>
+</body>
+</html>

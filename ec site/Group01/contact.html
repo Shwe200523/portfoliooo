@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="img/favicon.ico" />
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>.SELECT - お問い合わせ</title>
+  </head>
+  <body>
+    <div id="header_placeholder"></div>
+    <section class="contact">
+      <div class="contact-head">
+        <h2>CONTACT</h2>
+
+        <p>
+          商品に関するご質問や配送についてのお問い合わせなど、<br />
+          お気軽にご連絡ください。<br />
+          内容を確認後、通常2〜3営業日以内にご返信いたします。
+        </p>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <!-- 名前 -->
+        <div class="form-group">
+          <label>氏名 <span>必須</span></label>
+          <div class="name-flex">
+            <input type="text" id="last-name" placeholder="姓" />
+            <input type="text" id="first-name" placeholder="名" />
+          </div>
+        </div>
+
+        <!-- メール -->
+        <div class="form-group">
+          <label>メールアドレス <span>必須</span></label>
+          <input type="email" id="email" placeholder="example@gmail.com" />
+        </div>
+
+        <!-- 電話 -->
+        <div class="form-group">
+          <label>電話番号 <span>必須</span></label>
+          <input type="tel" id="tel" placeholder="080-1234-5678" />
+        </div>
+
+        <div class="form-group">
+          <label>お問い合わせ項目 <span>必須</span></label>
+          <div class="select-wrap">
+            <select id="category">
+              <option value="">選択してください</option>
+              <option>商品について</option>
+              <option>配送について</option>
+              <option>返品・交換について</option>
+              <option>お支払いについて</option>
+              <option>利用規約について</option>
+              <option>プライバシーポリシーについて</option>
+              <option>その他</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 内容 -->
+        <div class="form-group">
+          <label>お問い合わせ内容 <span>必須</span></label>
+          <textarea id="message" placeholder="お問い合わせ内容をご記入ください"></textarea>
+        </div>
+
+        <div class="btn-wrap">
+          <button type="button" class="contact-btn" id="confirm-btn">確認する</button>
+        </div>
+      </form>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/common-animations.js"></script>
+    <script>
+      document.getElementById('confirm-btn').addEventListener('click', function () {
+        const lastName  = document.getElementById('last-name').value.trim();
+        const firstName = document.getElementById('first-name').value.trim();
+        const email     = document.getElementById('email').value.trim();
+        const tel       = document.getElementById('tel').value.trim();
+        const category  = document.getElementById('category').value;
+        const message   = document.getElementById('message').value.trim();
+
+        sessionStorage.setItem('cf_name',     lastName + (firstName ? '　' + firstName : ''));
+        sessionStorage.setItem('cf_email',    email);
+        sessionStorage.setItem('cf_tel',      tel);
+        sessionStorage.setItem('cf_category', category);
+        sessionStorage.setItem('cf_message',  message);
+
+        window.location.href = 'contact-confirmation.html';
+      });
+    </script>
+  </body>
+</html>

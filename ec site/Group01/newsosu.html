@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/newsosu.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>.SELECT - NEWS</title>
+  </head>
+  <body>
+    <div id="header_placeholder"></div>
+
+    <section class="news-hero">
+      <div class="news-hero__inner">
+        <h2 class="news-hero__title">NEWS</h2>
+        <p class="news-hero__desc">
+          ストリートの今を切り取るニュースをお届け。
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- メイン記事 -->
+      <section class="news-detail">
+        <div class="news-image">
+          <img id="detail-img" src="./img/news-photo01.webp" alt="" />
+        </div>
+
+        <div class="news-content">
+          <h1 id="detail-title"></h1>
+          <h2 id="detail-subtitle"></h2>
+          <p id="detail-body"></p>
+          <a href="news.html" class="back-link">&lt;&lt; NEWSに戻る</a>
+        </div>
+      </section>
+
+      <hr />
+    </div>
+    <div id="footer-placeholder"></div>
+    <script src="js/heart.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+      const newsData = {
+        1: {
+          img: "./img/news6.png",
+          title: "今週のSETLINEUP公開。",
+          subtitle: "週替わりで出会う、新しい主役。",
+          body: "今季の.SELECTは、アクティブなストリート感とトレンドのシルエットを軸にしたセットアップスタイルを提案。\n一枚で映える個性派トップスから、存在感のあるルーズなボトムまで、今週の新作ラインナップを公開します。",
+        },
+        2: {
+          img: "./img/news1.png",
+          title: "夏の新作コレクション公開。",
+          subtitle: "夏を軽く着る。",
+          body: "今季の.SELECTは、オーバーサイズと抜け感を軸にしたストリートスタイルを提案。一枚で主役になるトップスから、合わせやすいボトムまで、新作ラインナップを公開します。",
+        },
+        3: {
+          img: "./img/news2.png",
+          title: "スタッフおすすめスタイリング",
+          subtitle: "日常に溶け込む、リアルなストリート。",
+          body: "今季の.SELECTは、スタッフが厳選したリアルな着こなしと絶妙なサイズ感を軸にしたスタイリングを提案。\n真似するだけでこなれるトップスの合わせ方から、今すぐ欲しい最旬ボトムまで、厳選したルックを公開します。",
+        },
+        4: {
+          img: "./img/news3.png",
+          title: "夏休み応援セール",
+          subtitle: "夏を遊び尽くす、特別プライス。",
+          body: "今季の.SELECTは、夏のイベントに映える主役級アイテムを、今だけのスペシャルプライスで提案。\nヘビロテ確定のTシャツから、動きやすさ抜群のトレンドボトムまで、夏休みを彩る限定ラインナップを公開します。",
+        },
+        5: {
+          img: "./img/news5.png",
+          title: "着る前に読む。Tシャツ特集",
+          subtitle: "1枚で決まる、ストリートの基本。",
+          body: "今季の.SELECTは、初心者でも着るだけでサマになるオーバーサイズと、だらしなく見えない絶妙な抜け感を軸にしたTシャツスタイルを提案。\n主役になるグラフィックは「胸元か背中」のどちらか1箇所に絞り、ボトムスには少しボリュームを持たせる。これだけで、大人のストリートが完成します。",
+        },
+        6: {
+          img: "./img/news4.png",
+          title: "今、リアルに売れているストリートの正解。",
+          subtitle:
+            "今季の.SELECTで、特に支持を集めているリアルなヒットアイテムを厳選。",
+          body: "1枚で決まる定番Tシャツから、即戦力のセットアイテムまで、今買うべきトップ10を公開します。\n\n1位：テンポラリー ウォッシュグラフィックTシャツ\n絶妙な色落ち加工とフロントのグラフィックが絶品。着るだけでこなれ感が出る今季の絶対的エース。\n\n2位：ネックチェーンブラックオーバー×バルーンデニムセット\nアクセサリー付きの黒トップスと人気のバルーンデニムが一度に揃う。悩まず即ストリートが完成する最強セット。\n\n3位：ナイロンバルーン ワイドパンツ\nバナーでも目を引く圧倒的なボリュームシルエット。軽くて動きやすく、どんなTシャツとも相性抜群。\n\n4位：ヴィンテージコンパス ウォッシュTシャツ\n古着のような質感がストリートフリークに大刺さり。シンプルながらも存在感のあるバックプリントが人気。\n\n5位：ダボっとギンガムチェックTシャツ×カーゴパンツセット\nトレンドのチェック柄とミリタリーの組み合わせ。ストリート初心者でもバランス良く着こなせる優秀セット。\n\n6位：ヴィンテージダメージ ワイドデニムパンツ\n裾のダメージ感とルーズなサイズ感が絶妙。ストリートスタイルのベースとして色違いで買う人も続出中。\n\n7位：ダークロゴ オーバーサイズTシャツ\nプレーンに見えて、計算された究極のオーバーシルエット。シックなダークロゴが大人なストリートを演出。\n\n8位：ダボシャツ＋デニムサロペットセット\n個性を出したい層から大支持。ルーズなダボシャツとサロペットの組み合わせが、新鮮なストリート感を放つ。\n\n9位：ゴシッククロス ワンポイントTシャツ\n胸元のミニマルな刺繍がアクセント。インナーとしても使いやすく、着回し力の高さでランクイン。\n\n10位：スプラッシュライクシャツ×ワイドデニムセット\nエッジの効いた総柄シャツとワイドデニムのセット。夏のイベントやストリートで誰よりも映える主役級の1着。\n\n今週のランキングはいかがでしたか？ どれも1枚でサマになるクオリティと、.SELECTならではのサイズ感にこだわった自信作ばかり。完売してしまう前に、あなただけの「お気に入りの1着」をぜひ手に入れてください。",
+        },
+      };
+
+      const id = new URLSearchParams(location.search).get("id") || "1";
+      const item = newsData[id] || newsData["1"];
+
+      document.getElementById("detail-img").src = item.img;
+      document.getElementById("detail-title").textContent = item.title;
+      document.getElementById("detail-subtitle").textContent = item.subtitle;
+
+      if (id === "6") {
+        const paragraphs = item.body.split("\n\n");
+        const visibleHTML = paragraphs
+          .slice(0, 3)
+          .map((p) => `<p>${p.replace(/\n/g, "<br>")}</p>`)
+          .join("");
+        const hiddenHTML = paragraphs
+          .slice(3)
+          .map((p) => `<p>${p.replace(/\n/g, "<br>")}</p>`)
+          .join("");
+        document.getElementById("detail-body").innerHTML =
+          visibleHTML +
+          `<div id="see-more-content">${hiddenHTML}</div>` +
+          `<button id="see-more-btn" type="button">続きを読む ▼</button>`;
+
+        const content = document.getElementById("see-more-content");
+        const btn = document.getElementById("see-more-btn");
+        btn.addEventListener("click", () => {
+          const isOpen = content.classList.toggle("is-open");
+          if (isOpen) {
+            content.style.maxHeight = content.scrollHeight + "px";
+            btn.textContent = "閉じる ▲";
+          } else {
+            content.style.maxHeight = "0";
+            btn.textContent = "続きを読む ▼";
+            btn.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        });
+      } else {
+        document.getElementById("detail-body").innerHTML = item.body.replace(
+          /\n/g,
+          "<br>",
+        );
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/common-animations.js"></script>
+  </body>
+</html>

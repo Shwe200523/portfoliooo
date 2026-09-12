@@ -1,0 +1,486 @@
+@charset "utf-8";
+
+/* ============================================
+   下層ページ見出し
+============================================ */
+.pagehead{
+  position:relative;
+  padding:clamp(130px,17vw,190px) 0 clamp(40px,6vw,70px);
+  overflow:hidden;
+
+  .pagehead__blob{
+    position:absolute;
+    top:-16vw;
+    right:-10vw;
+    width:52vw;
+    aspect-ratio:1;
+    border-radius:50%;
+    background:radial-gradient(circle at 45% 45%, rgba(61,143,191,.26), rgba(61,143,191,0) 70%);
+    pointer-events:none;
+  }
+
+  .pagehead__en{
+    position:relative;
+    font-family:'Jost', sans-serif;
+    font-size:12px;
+    letter-spacing:.3em;
+    color:#3d8fbf;
+    margin-bottom:14px;
+  }
+
+  .pagehead__ja{
+    position:relative;
+    font-family:'Yomogi', 'Zen Maru Gothic', sans-serif;
+    font-size:clamp(30px,5.4vw,60px);
+    font-weight:400;
+    line-height:1.4;
+    letter-spacing:.04em;
+  }
+}
+
+/* 下層ページ見出し done */
+/* ============================================
+   プロフィール
+============================================ */
+.profile{
+  padding-top:clamp(30px,4vw,50px);
+
+  .profile__grid{
+    display:grid;
+    grid-template-columns:0.8fr 1.2fr;
+    gap:clamp(32px,6vw,80px);
+    align-items:start;
+  }
+
+  .profile__photo{
+    position:relative;
+    aspect-ratio:3/4;
+    overflow:hidden;
+    border-radius:3px;
+    background:#cfdce6;
+
+    img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center 22%;
+    }
+  }
+
+  .profile__name{
+    font-family:'Jost', sans-serif;
+    font-size:clamp(24px,3.2vw,34px);
+    font-weight:300;
+    letter-spacing:.08em;
+    line-height:1.4;
+  }
+
+  .profile__name-ja{
+    display:block;
+    font-family:'Zen Kaku Gothic New', sans-serif;
+    font-size:13px;
+    letter-spacing:.16em;
+    color:#56646f;
+    margin-top:10px;
+  }
+
+  .profile__lead{
+    font-size:13px;
+    color:#3d8fbf;
+    letter-spacing:.06em;
+    margin:18px 0 26px;
+  }
+
+  .profile__text{
+    font-size:14px;
+    color:#56646f;
+    line-height:2.15;
+    margin-bottom:20px;
+
+    strong{
+      color:#1e242b;
+      font-weight:500;
+    }
+  }
+
+  .profile__goal-label{
+    display:inline-block;
+    margin:18px 0 16px;
+    padding-bottom:6px;
+    font-size:13px;
+    letter-spacing:.14em;
+    color:#2a6d94;
+    border-bottom:1px solid #3d8fbf;
+  }
+
+  .profile__list{
+    margin-top:40px;
+    border-top:1px solid #cfdce6;
+
+    dt{
+      font-family:'Jost', sans-serif;
+      font-size:11px;
+      letter-spacing:.18em;
+      color:#8d9ba6;
+      padding-top:4px;
+    }
+
+    dd{
+      font-size:14px;
+      line-height:1.9;
+    }
+  }
+
+  .profile__list > div{
+    display:grid;
+    grid-template-columns:92px 1fr;
+    gap:16px;
+    padding-block:14px;
+    border-bottom:1px solid #cfdce6;
+  }
+
+  .profile__list dd a{
+    border-bottom:1px solid #cfdce6;
+    transition:border-color .4s cubic-bezier(.25,.8,.3,1);
+
+    &:hover{
+      border-bottom-color:#3d8fbf;
+    }
+  }
+}
+
+@media (max-width:900px){
+  .profile .profile__grid{
+    grid-template-columns:1fr;
+    gap:36px;
+  }
+
+  .profile .profile__photo{
+    aspect-ratio:4/3;
+    max-width:420px;
+  }
+}
+
+@media (max-width:767px){
+  .profile .profile__photo{
+    max-width:100%;
+  }
+
+  .profile .profile__list > div{
+    grid-template-columns:80px 1fr;
+    gap:10px;
+  }
+}
+/* プロフィール done */
+/* ============================================
+   Works一覧
+============================================ */
+.worksall{
+  padding-top:clamp(30px,4vw,50px);
+}
+
+.filter{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:clamp(36px,5vw,56px);
+
+  .filter__btn{
+    padding:9px 22px;
+    font-family:inherit;
+    font-size:12.5px;
+    letter-spacing:.08em;
+    color:#56646f;
+    background:none;
+    border:1px solid #cfdce6;
+    border-radius:999px;
+    cursor:pointer;
+    transition:color .4s cubic-bezier(.25,.8,.3,1),
+             background .4s cubic-bezier(.25,.8,.3,1),
+             border-color .4s cubic-bezier(.25,.8,.3,1);
+
+    &:hover{
+      border-color:#3d8fbf;
+      color:#2a6d94;
+    }
+
+    &.is-active{
+      color:#f8fafc;
+      background:#1e242b;
+      border-color:#1e242b;
+    }
+  }
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:clamp(28px,4vw,54px) clamp(20px,3vw,36px);
+}
+
+@media (max-width:767px){
+  .cards{
+    grid-template-columns:1fr;
+  }
+}
+
+.card.is-hide{
+  display:none;
+}
+
+.card__link{
+  display:block;
+}
+
+.card__thumb{
+  
+  border-radius:3px;
+  height:fit-content;
+  background:#e9f1f6;
+  transition:transform .6s cubic-bezier(.25,.8,.3,1);
+}
+
+.card__link:hover .card__thumb{
+  transform:translateY(-6px);
+}
+
+.card__thumb.is-c1{
+  background:#cfe3ef;
+}
+
+.card__thumb.is-c2{
+  background:#e3edf3;
+}
+
+.card__thumb.is-c3{
+  background:#bcd9e9;
+}
+
+.card__thumb.is-c4{
+  background:#f0e4d6;
+}
+
+.card__thumb.is-c5{
+  background:#d8e7f0;
+}
+
+.card__thumb.is-c6{
+  background:#e8dcd0;
+}
+
+.card__thumb.is-c7{
+  background:#c6dfec;
+}
+
+.card__thumb.is-c8{
+  background:#dde9f1;
+}
+
+.card__thumb.is-c9{
+  background:#ecdfd2;
+}
+
+.card__thumb.is-c10{
+  background:#cdd9e3;
+}
+
+.card__body{
+  padding-top:18px;
+}
+
+.card__cat{
+  font-family:'Jost', sans-serif;
+  font-size:11px;
+  letter-spacing:.16em;
+  color:#3d8fbf;
+  margin-bottom:8px;
+}
+
+.card__title{
+  font-size:clamp(17px,2.2vw,21px);
+  font-weight:500;
+  letter-spacing:.04em;
+  line-height:1.5;
+  margin-bottom:8px;
+}
+
+.card__role{
+  font-size:12.5px;
+  color:#56646f;
+  letter-spacing:.04em;
+  line-height:1.8;
+}
+
+/* Works一覧 done */
+/* ============================================
+   いまできること
+============================================ */
+.cando{
+  background:#e9f1f6;
+
+  .cando__list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:clamp(18px,2.6vw,30px);
+  }
+
+  .cando__item{
+    padding:clamp(28px,3.2vw,42px) clamp(24px,2.8vw,36px);
+    background:#fbfcfd;
+    border:1px solid #cfdce6;
+    border-radius:3px;
+  }
+
+  .cando__num{
+    font-family:'Jost', sans-serif;
+    font-size:11px;
+    letter-spacing:.22em;
+    color:#3d8fbf;
+    margin-bottom:14px;
+  }
+
+  .cando__title{
+    font-size:19px;
+    font-weight:500;
+    letter-spacing:.06em;
+    margin-bottom:16px;
+  }
+
+  .cando__text{
+    font-size:13.5px;
+    color:#56646f;
+    line-height:2.1;
+    margin-bottom:22px;
+  }
+
+  .cando__tools{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px;
+    padding-top:18px;
+    border-top:1px solid #cfdce6;
+
+    li{
+      font-family:'Jost', sans-serif;
+      font-size:11px;
+      letter-spacing:.08em;
+      color:#56646f;
+    }
+
+    li:not(:last-child)::after{
+      content:'/';
+      margin-left:7px;
+      color:#a8b4bd;
+    }
+  }
+}
+
+@media (max-width:900px){
+  .cando .cando__list{
+    grid-template-columns:1fr;
+  }
+}
+/* いまできること done */
+/* ============================================
+   強み
+============================================ */
+.strength__list{
+  display:flex;
+  flex-direction:column;
+  gap:clamp(26px,3.4vw,44px);
+}
+
+.strength__item{
+  padding-bottom:clamp(26px,3.4vw,44px);
+  border-bottom:1px solid #cfdce6;
+}
+
+.strength__item:last-child{
+  border-bottom:none;
+  padding-bottom:0;
+}
+
+.strength__title{
+  display:flex;
+  align-items:baseline;
+  gap:16px;
+  font-size:clamp(17px,2.2vw,22px);
+  font-weight:500;
+  letter-spacing:.06em;
+  margin-bottom:16px;
+}
+
+.strength__no{
+  font-family:'Jost', sans-serif;
+  font-size:12px;
+  letter-spacing:.2em;
+  color:#3d8fbf;
+  flex-shrink:0;
+}
+
+.strength__text{
+  font-size:14px;
+  color:#56646f;
+  line-height:2.15;
+  padding-left:38px;
+}
+
+@media (max-width:767px){
+  .strength__text{
+    padding-left:0;
+  }
+}
+/* 強み done */
+/* ============================================
+   資格
+============================================ */
+.license{
+  background:#e9f1f6;
+
+  .license__list{
+    border-top:1px solid #cfdce6;
+
+    li{
+      display:grid;
+      grid-template-columns:110px 1fr;
+      gap:20px;
+      align-items:baseline;
+      padding-block:18px;
+      border-bottom:1px solid #cfdce6;
+    }
+  }
+
+  .license__date{
+    font-family:'Jost', sans-serif;
+    font-size:12px;
+    letter-spacing:.14em;
+    color:#8d9ba6;
+  }
+
+  .license__name{
+    font-size:14.5px;
+    letter-spacing:.04em;
+  }
+}
+
+@media (max-width:767px){
+  .license .license__list li{
+    grid-template-columns:1fr;
+    gap:6px;
+  }
+}
+/* 資格 done */
+/* ============================================
+   ページ下部の誘導
+============================================ */
+.pagenav{
+  text-align:center;
+
+  .pagenav__text{
+    font-size:14px;
+    color:#56646f;
+    letter-spacing:.06em;
+  }
+}
+
+/* ページ下部の誘導 done */

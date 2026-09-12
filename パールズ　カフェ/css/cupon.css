@@ -1,0 +1,148 @@
+img{
+    width: 100%;
+}
+  h1,h2{
+    color: #571B00 !important;
+}
+h1{
+    font-size: 2em !important;
+}
+h2{
+    font-size: 0.7em;
+}
+body{
+    overflow-y: visible;
+    overflow-x: hidden !important;
+    width: 100%;
+}
+
+.dami{
+    width: 120px;
+    position: fixed;
+    bottom: 59px;
+    right: 0px;
+    z-index: 1000000000000000000;
+    pointer-events: all;
+
+}
+
+
+
+
+
+.bean1{
+    right: 0;
+    position: absolute;
+    max-width: 200px;
+    width: 20%;
+    min-width: 100px;
+    transform: rotate(-10deg);
+    top: 40px;
+}
+.bean2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 200px;
+    width: 20%;
+    min-width: 100px;
+    transform: rotate(-10deg);
+    display: block;
+
+}
+.main{
+    width: 100%;
+    margin: auto;
+    background-color:#FFFDFA;
+    min-height: 88vh;
+    position: relative;
+    
+}
+.background{
+    position: absolute;
+    left: 0;
+    width: 20%;
+    max-width: 300px;
+    top: -30px;
+
+    min-width: 100px;
+}
+.header{
+    
+    text-align: center;
+    padding-bottom: 1em;
+     h1,h2{
+    color: #571B00 !important;
+    
+}
+h1{
+    font-size: 2em !important;
+    padding-top: 1em;
+}
+h2{
+    font-size: 0.7em;
+    padding:1em ;
+}
+img{
+    border-radius: 10px;
+    width: 40%;
+    min-width: 300px;
+    margin: auto;
+    max-width: 400px;
+}
+}
+.sec01{
+    width:80%;
+    margin: auto;
+   max-width: 400px;
+    
+    h1{
+        font-size: 1.5em;
+        color: #571B00;
+        font-weight: bolder;
+        text-decoration: underline green ;
+         text-underline-offset: 5px;
+    }
+    dl{
+        dt{
+            color: #571B00;
+            font-weight: bolder;
+            padding:1em 0;
+            font-weight: bolder;
+          
+
+        }
+        dd{
+            color: #571B00;
+        }
+        ul{
+            line-height: 2em;
+            li{
+                color: #571B00;
+            }
+        }
+    }
+    .dot{
+        list-style:inside ;
+    }
+    .num{
+        list-style:decimal ;
+        padding-bottom: 50px;
+       
+         transform: translate(18px);
+    }
+}
+@media (max-width:600px) {
+    .main{
+        width: 100%;
+    }
+
+    .dami{
+        display: none;
+    }
+
+    .bean2{
+        display: none;
+    }
+    
+}

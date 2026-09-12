@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+  
+
+footer{
+        font-family: "Zen Kaku Gothic New", sans-serif;
+background-image: url(../img/footer.png);
+background-size: cover !important;
+background-repeat: no-repeat;
+height: fit-content;
+color: white;
+.footer_holder{
+ margin: auto;
+ width: 70% !important;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ .footer_logo{
+    padding: 30px 0;
+    a{
+        transition: 0.2s linear;
+        display: block;
+    }
+    img {
+        width: clamp(120px, 20vw, 200px);
+        height: auto;
+        display: block;
+    }
+ }
+
+ .footer_nav{
+    padding: 10px 0;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      li{
+        font-weight: bolder;
+        position: relative;
+      }
+  
+    }
+     }
+
+.footer_nav_2{
+    margin: 7px 0;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        li{
+            font-size: clamp(0.7em,1vw,1em);
+        }
+    }
+}
+
+.footer_social{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    gap: 10px;
+    img{
+        width: 90%;
+    }
+}
+
+.footer_law{
+ul{
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    opacity: 0.7;
+    gap: 10px;
+    li{
+        font-size:0.5em ;
+    }
+}
+}
+
+.footer_pp{
+    font-size:clamp(8px,1vw,1em);
+
+    margin-bottom: 20px;
+    color: rgb(105, 117, 105);
+}
+   }
+
+
+}
+@media (max-width:768px) {
+footer{
+    
+     .footer_nav{
+   padding-bottom: 2em !important;
+    border-bottom: 1px solid white;
+    ul{
+     flex-direction: column !important;
+      li{
+        font-weight: bolder;
+        position: relative;
+      }
+  
+    }
+     }
+     .footer_nav_2{
+         margin: 1em 0 !important;
+        ul{
+            flex-direction: column !important;
+            text-align: center;
+           
+           
+        }
+        li{
+            margin: 1em 0;
+        }
+        li:nth-child(3){
+            margin: inherit !important;
+        }
+
+     }
+.footer_law{
+    ul{
+       flex-direction: column !important; 
+       text-align: center;
+    }
+
+
+}
+    
+}
+}

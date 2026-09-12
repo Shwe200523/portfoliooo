@@ -1,0 +1,362 @@
+/* ==========================================
+   RESET
+========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f6f6;
+         font-family: "Zen Kaku Gothic New", sans-serif;
+    color: #222;
+}
+
+/* ==========================================
+   HEADER PLACEHOLDER HERO COLLAPSE
+========================================== */
+#header_placeholder .hero {
+    height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+}
+
+/* ==========================================
+   NEWS HERO BANNER  (bijyuaru と統一)
+========================================== */
+.news-hero {
+    width: 100%;
+    height: 40vh;
+    margin-top: 4.375rem;
+    background-image: url('../img/set-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.news-hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.news-hero__title {
+    font-family: "zou", sans-serif;
+    font-size: clamp(4em, 2vw, 7em);
+    font-weight: normal;
+    line-height: 1;
+    padding: 10px 0;
+}
+
+.news-hero__desc {
+    font-size: clamp(1em, 2vw, 3em);
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+.container {
+    width: 100%;
+    max-width: 68.75rem;
+    margin: clamp(2rem, 4vw, 3.125rem) auto clamp(3rem, 6vw, 5rem);
+    padding: 0 clamp(1rem, 3vw, 2.5rem);
+}
+
+/* ==========================================
+   NEWS DETAIL (article)
+========================================== */
+.news-detail {
+    display: flex;
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: flex-start;
+}
+
+.news-image img {
+    width: clamp(12rem, 35vw, 26.25rem);
+    display: block;
+    flex-shrink: 0;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-content h1 {
+    font-size: clamp(1.4rem, 3vw, 2.5rem);
+    font-weight: 500;
+    margin-bottom: clamp(1.25rem, 3vw, 3.125rem);
+}
+
+.news-content h2 {
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+
+.news-content p {
+    font-size: clamp(0.8rem, 1.2vw, 0.875rem);
+    line-height: 2;
+    color: #555;
+    max-width: 28rem;
+}
+
+.back-link {
+    display: block;
+    margin-top: clamp(2rem, 5vw, 5.625rem);
+    text-align: right;
+    text-decoration: none;
+    color: #888;
+    font-size: 0.75rem;
+}
+
+/* ==========================================
+   HR
+========================================== */
+hr {
+    margin: clamp(3rem, 7vw, 5rem) 0 clamp(2rem, 4vw, 3.75rem);
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* ==========================================
+   NEW ARRIVAL TITLE
+========================================== */
+.newsitem_section_title {
+    font-size: clamp(2em,1vw,5em) !important;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newsitem_section_title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+/* ==========================================
+   PRODUCT GRID
+========================================== */
+.newsitem_product_list {
+    display: grid;
+    grid-template-columns: repeat(2, clamp(12rem, 25vw, 18.375rem));
+    justify-content: center;
+    gap: clamp(3rem, 6vw, 5rem) clamp(3rem, 8vw, 7.5rem);
+}
+
+.newsitem_product_group {
+    position: relative;
+}
+
+.newsitem_product_group dt {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+}
+
+.newsitem_product_group dt a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.newsitem_product_group dt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.newsitem_product_group dt:hover img {
+    transform: scale(1.03);
+}
+
+.newsitem_product_group dd {
+    padding-top: 0.75rem;
+}
+
+.newsitem_product_group dd h2 {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.newsitem_product_group_dd_ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.newsitem_product_group_dd_ul h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* ==========================================
+   HEART ICON
+========================================== */
+.item_heart {
+    width: 1.375rem;
+    height: 1.375rem;
+    fill: #D4D3DD;
+    stroke: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, fill 0.3s ease;
+    -webkit-user-drag: none;
+}
+
+.item_heart:active {
+    transform: scale(1.2);
+}
+
+.item_heart.is-active {
+    fill: #E39292 !important;
+}
+
+.heart1,
+.heart2 {
+    width: 1.75rem !important;
+    height: auto;
+}
+
+/* ==========================================
+   RESPONSIVE (≤768px = 48em)
+========================================== */
+@media screen and (max-width: 48em) {
+
+    .news-hero {
+        height: 20vh;
+    }
+
+    .news-hero__title {
+        font-size: clamp(2em, 2vw, 5em);
+    }
+
+    .news-hero__desc {
+        font-size: clamp(0.7em, 2vw, 3em);
+    }
+
+    .container {
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .news-detail {
+        flex-direction: column;
+        gap: 1.25rem;
+        align-items: stretch;
+    }
+
+    .news-image img {
+        width: 100%;
+    }
+
+    .news-content h1 {
+        font-size: clamp(1.2rem, 5.5vw, 1.5rem);
+        margin-bottom: 1.25rem;
+    }
+
+    .news-content h2 {
+        font-size: clamp(0.95rem, 4vw, 1.1rem);
+        margin-bottom: 1rem;
+    }
+
+    .news-content p {
+        max-width: 100%;
+        font-size: 0.8125rem;
+    }
+
+    .back-link {
+        margin-top: 2rem;
+    }
+
+    hr {
+        margin: 3rem 0 2.5rem;
+    }
+
+    .newsitem_section_title {
+        font-size: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .newsitem_product_list {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .newsitem_product_group {
+        width: 13.75rem;
+        margin: 0 auto;
+    }
+
+    .newsitem_product_group dt {
+        width: 13.75rem;
+        height: 19.375rem;
+    }
+
+    .newsitem_product_group dd {
+        padding-top: 0.625rem;
+    }
+
+    .newsitem_product_group dd h2 {
+        font-size: 0.75rem;
+    }
+
+    .newsitem_product_group_dd_ul h3 {
+        font-size: 0.8125rem;
+    }
+
+    .item_heart {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
+
+/* See More button */
+#see-more-btn {
+    display: block;
+    margin: 2rem auto 0;
+    padding: 0.6rem 2rem;
+    background: #111;
+    color: #fff;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+#see-more-btn:hover {
+    background: #444;
+}
+#detail-body p {
+    margin-bottom: 1.2em;
+}
+
+/* See More expand animation */
+#see-more-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+#see-more-content.is-open {
+    opacity: 1;
+}
+

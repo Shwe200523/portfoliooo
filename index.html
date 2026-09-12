@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHWE TUN KHAING ｜ Web Design Portfolio</title>
+<meta name="description" content="清風情報工科学院でWebデザインを学ぶ SHWE TUN KHAING のポートフォリオサイトです。">
+
+<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Yomogi&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+<body>
+
+<!-- ============================================
+     Loading
+============================================ -->
+
+<div class="loading" id="loading">
+  <div class="loading__inner">
+    <p class="loading__name">PORTFOLIO</p>
+    <div class="loading__bar"><span class="loading__bar-fill"></span></div>
+  </div>
+</div>
+
+<!-- ============================================
+     Header
+============================================ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#top" class="header__logo" data-scroll>
+      S<span>.</span>K
+    </a>
+
+    <nav class="gnav" id="gnav">
+      <ul class="gnav__list">
+        <li><a href="works.html">デザインしたもの</a></li>
+        <li><a href="#about" data-scroll>わたしのこと</a></li>
+        <li><a href="#contact" data-scroll>お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <button class="menubtn" id="menubtn">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+<!-- Header done -->
+
+<main id="top">
+
+  <!-- ============================================
+       Hero
+  ============================================ -->
+  <section class="hero">
+    <div class="hero__blob hero__blob--a"></div>
+    <div class="hero__blob hero__blob--b"></div>
+
+    <div class="hero__text">
+
+      <h1 class="hero__title">
+        <span class="hero__title-l1">シュエトゥンカインの</span>
+        <span class="hero__title-l2">ポートフォリオ</span>
+      </h1>
+
+      <p class="hero__catch">
+        つくりたいものを、<br>
+        自分の手で最後までかたちに。
+      </p>
+
+      <p class="hero__sub">
+        <span class="hero__sub-line"></span>
+        <span class="hero__sub-txt">WEB DESIGN<br>CODING</span>
+      </p>
+    </div>
+
+    <div class="hero__visual">
+      <img src="img/470b63fa-94c2-4302-a251-6589120b9caa.jpg" width="1536" height="2048">
+    </div>
+
+    <a href="#works" class="scrolldown" data-scroll>
+      <span class="scrolldown__txt">SCROLL</span>
+      <span class="scrolldown__line"></span>
+    </a>
+  </section>
+  <!-- Hero done -->
+
+  <!-- ============================================
+       Works
+  ============================================ -->
+  <section class="section works" id="works">
+    <div class="container">
+
+      <div class="sechead">
+        <p class="sechead__en js-fade">01 — Works</p>
+        <h2 class="sechead__ja js-fade">制作実績</h2>
+        <p class="sechead__desc js-fade">
+          学習の中で制作した4つのプロジェクトです。<br>
+          企画・デザインからコーディングまでいろいろ担当しました。
+        </p>
+      </div>
+
+      <div class="worklist">
+
+        <article class="work js-fade">
+          <a href="結婚/wedding/index.html" class="work__link" target="_blank" rel="noopener">
+            <div class="work__thumb">
+              <img src="img/works/wedding.png">
+            </div>
+            <div class="work__body">
+              <div class="work__head">
+                <span class="work__num">01</span>
+                <span class="work__cat">Brand Site</span>
+              </div>
+              <h3 class="work__title">ETA-RING</h3>
+              <p class="work__sub">一生に一度の、その一瞬のために。</p>
+              <p class="work__text">
+                オーダーメイド結婚指輪ブランドのコンセプトサイト。企画書の作成から
+                ロゴ・世界観の設計、SVGロゴのストロークアニメーションを使ったローディング演出まで制作しました。
+              </p>
+              <ul class="work__tags">
+                <li>企画</li><li>デザイン</li><li>HTML / CSS</li><li>JavaScript</li><li>Illustrator</li>
+              </ul>
+              <span class="work__more">詳しくみる</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="work js-fade">
+          <a href="ec site/Group01/index.html" class="work__link" target="_blank" rel="noopener">
+            <div class="work__thumb">
+              <img src="img/works/select.png">
+            </div>
+            <div class="work__body">
+              <div class="work__head">
+                <span class="work__num">02</span>
+                <span class="work__cat">EC Site / Team</span>
+              </div>
+              <h3 class="work__title">.SELECT</h3>
+              <p class="work__sub">チーム制作のECサイト</p>
+              <p class="work__text">
+                商品一覧・カート・会員登録・お問い合わせまで20ページ以上を実装したECサイト。
+                スクロールに合わせて要素が現れる演出や、カスタムカーソル・ローディング画面を担当しました。
+              </p>
+              <ul class="work__tags">
+                <li>チーム制作</li><li>HTML / CSS</li><li>JavaScript</li><li>Photoshop</li>
+              </ul>
+              <span class="work__more">詳しくみる</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="work js-fade">
+          <a href="パールズ　カフェ/html/index.html" class="work__link" target="_blank" rel="noopener">
+            <div class="work__thumb">
+              <img src="img/works/pearls.png">
+            </div>
+            <div class="work__body">
+              <div class="work__head">
+                <span class="work__num">03</span>
+                <span class="work__cat">Shop Site</span>
+              </div>
+              <h3 class="work__title">パールズ カフェ</h3>
+              <p class="work__sub">親しみやすさを大切にしたカフェサイト</p>
+              <p class="work__text">
+                商品紹介・クーポン・会社概要・会員登録など多ページ構成のカフェサイト。
+                メインビジュアルのスライダーやドロップダウンメニュー、スマホ用ハンバーガーメニューを実装しました。
+              </p>
+              <ul class="work__tags">
+                <li>デザイン</li><li>HTML / CSS</li><li>JavaScript</li><li>レスポンシブ</li>
+              </ul>
+              <span class="work__more">詳しくみる</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="work js-fade">
+          <a href="starbucks/index.html" class="work__link" target="_blank" rel="noopener">
+            <div class="work__thumb">
+              <img src="img/works/starbucks.png">
+            </div>
+            <div class="work__body">
+              <div class="work__head">
+                <span class="work__num">04</span>
+                <span class="work__cat">Trace / Study</span>
+              </div>
+              <h3 class="work__title">Starbucks 模写</h3>
+              <p class="work__sub">レイアウト再現のトレーニング</p>
+              <p class="work__text">
+                既存サイトの模写を通して、余白設計・グリッドレイアウト・レスポンシブ対応を練習した制作物です。
+                バナー用のバーコード画像は Illustrator で自作しました。
+              </p>
+              <ul class="work__tags">
+                <li>模写</li><li>HTML / CSS</li><li>JavaScript</li><li>Illustrator</li>
+              </ul>
+              <span class="work__more">詳しくみる</span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <!-- Works done -->
+
+  <!-- ============================================
+       数字で見る（Worksのあとの箸休め）
+  ============================================ -->
+  <section class="numbers">
+
+    <div class="container">
+      <ul class="numbers__list">
+        <li class="js-fade">
+          <span class="numbers__num">4<small>件</small></span>
+          <span class="numbers__label">制作したWebサイト</span>
+        </li>
+        <li class="js-fade">
+          <span class="numbers__num">20<small>P+</small></span>
+          <span class="numbers__label">チーム制作での担当ページ</span>
+        </li>
+        <li class="js-fade">
+          <span class="numbers__num">2<small>年</small></span>
+          <span class="numbers__label">日本語N1までの学習期間</span>
+        </li>
+        <li class="js-fade">
+          <span class="numbers__num">5<small>つ</small></span>
+          <span class="numbers__label">取得した資格</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- 数字で見る done -->
+
+  <!-- ============================================
+       About
+  ============================================ -->
+  <section class="section about" id="about">
+    <div class="container">
+
+      <div class="sechead">
+        <p class="sechead__en js-fade">02 — About</p>
+        <h2 class="sechead__ja js-fade">私について</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__photo js-fade">
+          <img src="img/9e098e85-631d-46c9-bfdb-a3ff1a169f02.jpg">
+        </div>
+
+        <div class="about__body js-fade">
+          <p class="about__name">
+            SHWE TUN KHAING
+            <span class="about__name-en">シュエ トゥン カイン ／ Web Designer</span>
+          </p>
+
+          <p class="about__text">
+            ミャンマー出身、大阪在住です。清風情報工科学院でWeb・ビジュアルデザインを学んでいます。
+          </p>
+          <p class="about__text">
+            目指しているのは、デザインからコーディングまでを一人でやりきれる人になることです。
+            人に任せる部分をできるだけ減らして、頭の中にあるものを
+            そのまま形にできるようになりたいと思っています。
+          </p>
+
+          <a href="about.html" class="btn">
+            <span class="btn__txt">もっと詳しくみる</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- About done -->
+
+  <!-- ============================================
+       Skills
+  ============================================ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+
+      <div class="sechead">
+        <p class="sechead__en js-fade">03 — Skills</p>
+        <h2 class="sechead__ja js-fade">できること</h2>
+      </div>
+
+      <div class="skilllist">
+
+        <div class="skill js-fade">
+          <p class="skill__en">HTML</p>
+          <h3 class="skill__ja">マークアップ</h3>
+          <div class="skill__meter">
+            <span class="skill__pct">85<small>%</small></span>
+            <span class="skill__level"><span class="skill__bar" style="width:85%"></span></span>
+          </div>
+          <p class="skill__text">
+            意味を考えたタグ選びを意識して、複数ページ構成のサイトを一通り組み上げられます。
+          </p>
+        </div>
+
+        <div class="skill js-fade">
+          <p class="skill__en">CSS</p>
+          <h3 class="skill__ja">スタイリング</h3>
+          <div class="skill__meter">
+            <span class="skill__pct">85<small>%</small></span>
+            <span class="skill__level"><span class="skill__bar" style="width:85%"></span></span>
+          </div>
+          <p class="skill__text">
+            FlexboxやGridでのレイアウト、レスポンシブ対応、アニメーションまで対応できます。
+          </p>
+        </div>
+
+        <div class="skill js-fade">
+          <p class="skill__en">JavaScript</p>
+          <h3 class="skill__ja">動きの実装</h3>
+          <div class="skill__meter">
+            <span class="skill__pct">50<small>%</small></span>
+            <span class="skill__level"><span class="skill__bar" style="width:50%"></span></span>
+          </div>
+          <p class="skill__text">
+            調べながらであれば、スライダーやメニューの開閉、スクロール連動の動きを実装できます。
+          </p>
+        </div>
+
+        <div class="skill js-fade">
+          <p class="skill__en">Photoshop</p>
+          <h3 class="skill__ja">画像加工</h3>
+          <div class="skill__meter">
+            <span class="skill__pct">75<small>%</small></span>
+            <span class="skill__level"><span class="skill__bar" style="width:75%"></span></span>
+          </div>
+          <p class="skill__text">
+            写真の補正や切り抜き、バナー制作など、Web用の画像づくりに使っています。
+          </p>
+        </div>
+
+        <div class="skill js-fade">
+          <p class="skill__en">Illustrator</p>
+          <h3 class="skill__ja">作図・ロゴ</h3>
+          <div class="skill__meter">
+            <span class="skill__pct">75<small>%</small></span>
+            <span class="skill__level"><span class="skill__bar" style="width:75%"></span></span>
+          </div>
+          <p class="skill__text">
+            ロゴやアイコンの作成、SVGの書き出しなど、サイトで使うパーツを自分で用意できます。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Skills done -->
+
+  <!-- ============================================
+       流れる画像の帯
+  ============================================ -->
+  <section class="marquee">
+    <div class="marquee__track">
+
+      <div class="marquee__item"><img src="img/autum.png"></div>
+      <div class="marquee__item"><img src="img/excebtion.jpg"></div>
+      <div class="marquee__item"><img src="img/fashionai-1.png"></div>
+      <div class="marquee__item"><img src="img/matcha.png"></div>
+      <div class="marquee__item"><img src="img/newspaper.png"></div>
+
+      <div class="marquee__item"><img src="img/autum.png"></div>
+      <div class="marquee__item"><img src="img/excebtion.jpg"></div>
+      <div class="marquee__item"><img src="img/fashionai-1.png"></div>
+      <div class="marquee__item"><img src="img/matcha.png"></div>
+      <div class="marquee__item"><img src="img/newspaper.png"></div>
+
+
+    </div>
+  </section>
+  <!-- 流れる画像の帯 done -->
+
+  <!-- ============================================
+       Contact
+  ============================================ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__inner js-fade">
+        <p class="sechead__en">04 — Contact</p>
+        <h2 class="contact__title">最後までご覧いただき<br class="sp-br">ありがとうございました</h2>
+        <p class="contact__text">
+          採用に関するお問い合わせや、作品について気になることがあれば<br>
+          こちらまでお気軽にご連絡ください。
+        </p>
+
+        <p><a href="mailto:shwetun.khaing@icloud.com" class="contact__mail">shwetun.khaing@icloud.com</a></p>
+
+        <p><a href="tel:08098998220" class="contact__tel">080-9899-8220</a></p>
+
+      </div>
+    </div>
+  </section>
+  <!-- Contact done -->
+
+</main>
+<!-- Main done -->
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__logo"><a href="index.html">S<span>.</span>K</a></p>
+    <p class="footer__copy">&copy; 2026 SHWE TUN KHAING. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Footer done -->
+
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

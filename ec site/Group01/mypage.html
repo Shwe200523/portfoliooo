@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="img/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mypage.css">
+<link rel="stylesheet" href="css/footer.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<title>.SELECT - MY PAGE</title>
+<script>
+  // 未ログインなら login へ（ページ描画前に即リダイレクト）
+  if (!sessionStorage.getItem('selectLoggedIn')) {
+    location.replace('login.html');
+  }
+</script>
+</head>
+<body>
+
+<div id="header_placeholder"></div>
+
+<main class="mypage">
+
+  <!-- MY PAGE heading -->
+  <h1 class="mypage__title">MY PAGE</h1>
+
+  <!-- PROFILE -->
+  <section class="mypage__profile">
+    <div class="mypage__profile-inner">
+      <div class="mypage__profile-img"><img src="img/model1.avif" alt="プロフィール画像"></div>
+      <div class="mypage__profile-right">
+        <h2 class="mypage__profile-heading">PROFILE</h2>
+        <dl>
+          <div class="mypage__profile-row"><dt>ニックネーム：</dt><dd>タロー</dd></div>
+          <div class="mypage__profile-row"><dt>年齢：</dt><dd>18歳</dd></div>
+          <div class="mypage__profile-row"><dt>身長：</dt><dd>156-160cm</dd></div>
+          <div class="mypage__profile-row"><dt>体重：</dt><dd>50kg-54kg</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mypage__divider">
+
+  <!-- FAVORITE -->
+  <section class="mypage__favorite">
+    <div class="mypage__section-head">
+      <h2 class="mypage__big-title">FAVORITE</h2>
+      <span class="mypage__section-ja">お気に入り</span>
+    </div>
+
+    <div class="mypage__sub-section">
+      <h3 class="mypage__sub-title">SETS</h3>
+      <div class="mypage__grid" id="fav-sets-grid">
+        <p class="mypage__empty">まだありません</p>
+      </div>
+    </div>
+
+    <div class="mypage__sub-section">
+      <h3 class="mypage__sub-title">ITEMS</h3>
+      <div class="mypage__grid" id="fav-items-grid">
+        <p class="mypage__empty">まだありません</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mypage__divider">
+
+  <!-- PURCHASE HISTORY -->
+  <section class="mypage__history">
+    <div class="mypage__section-head mypage__section-head--split">
+      <div class="mypage__history-head-left">
+        <h2 class="mypage__big-title">PURCHASE<br>HISTORY</h2>
+        <span class="mypage__section-ja">購入履歴</span>
+      </div>
+      <div class="mypage__history-nav">
+        <button class="mypage__nav-btn" id="history-prev">&lt;</button>
+        <button class="mypage__nav-btn" id="history-next">&gt;</button>
+      </div>
+    </div>
+    <div class="mypage__history-list" id="history-list">
+      <p class="mypage__empty">まだありません</p>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/common-animations.js"></script>
+<script>
+const FAVORITES_KEY = 'selectFavorites';
+const HISTORY_KEY   = 'selectPurchaseHistory';
+
+function getFavorites() {
+  return JSON.parse(sessionStorage.getItem(FAVORITES_KEY) || '[]');
+}
+function saveFavorites(favs) {
+  sessionStorage.setItem(FAVORITES_KEY, JSON.stringify(favs));
+}
+
+function heartSVG(name) {
+  return `<svg class="item_heart is-active" viewBox="0 0 24 24" data-fav-name="${name}">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>`;
+}
+
+function getDetailLink(item) {
+  if (item.link) return item.link;
+  if (item.img) {
+    const setMatch = item.img.match(/set(\d+)/i);
+    if (setMatch) {
+      const n = String(parseInt(setMatch[1])).padStart(3, '0');
+      return `shouhinshouzai2.html?id=set_${n}`;
+    }
+    const itemMatch = item.img.match(/item(\d+)/i);
+    if (itemMatch) return `shouhinnshouzai.html?id=${parseInt(itemMatch[1])}`;
+  }
+  return null;
+}
+
+function renderFavoriteCard(item) {
+  const div = document.createElement('div');
+  div.className = 'mypage__fav-card';
+  const imgTag = item.img
+    ? `<img src="${item.img}" alt="${item.name}" onerror="this.style.display='none'">`
+    : '';
+  const link = getDetailLink(item);
+  const imgWrap = link
+    ? `<a href="${link}" class="mypage__fav-img">${imgTag}</a>`
+    : `<div class="mypage__fav-img">${imgTag}</div>`;
+  div.innerHTML = `
+    ${imgWrap}
+    <p class="mypage__fav-name">${item.name}</p>
+    <div class="mypage__fav-foot">
+      <span class="mypage__fav-price">${item.price}</span>
+      ${heartSVG(item.name)}
+    </div>`;
+  return div;
+}
+
+function renderFavorites() {
+  const favs  = getFavorites();
+  const sets  = favs.filter(f => f.type === 'set');
+  const items = favs.filter(f => f.type !== 'set');
+
+  const setsGrid  = document.getElementById('fav-sets-grid');
+  const itemsGrid = document.getElementById('fav-items-grid');
+
+  setsGrid.innerHTML  = '';
+  itemsGrid.innerHTML = '';
+
+  if (sets.length === 0) {
+    setsGrid.innerHTML = '<p class="mypage__empty">まだありません</p>';
+  } else {
+    sets.forEach(item => setsGrid.appendChild(renderFavoriteCard(item)));
+  }
+
+  if (items.length === 0) {
+    itemsGrid.innerHTML = '<p class="mypage__empty">まだありません</p>';
+  } else {
+    items.forEach(item => itemsGrid.appendChild(renderFavoriteCard(item)));
+  }
+}
+
+// Heart click: カードをアニメーションで消してから re-render
+document.addEventListener('click', (e) => {
+  const heart = e.target.closest('[data-fav-name]');
+  if (!heart) return;
+  e.preventDefault();
+  const name = heart.dataset.favName;
+  const card = heart.closest('.mypage__fav-card');
+
+  const doRemove = () => {
+    saveFavorites(getFavorites().filter(f => f.name !== name));
+    renderFavorites();
+  };
+
+  if (card && typeof gsap !== 'undefined') {
+    gsap.to(card, {
+      scale: 0.75, opacity: 0, duration: 0.28, ease: 'power2.in',
+      onComplete: doRemove,
+    });
+  } else {
+    doRemove();
+  }
+});
+
+// Purchase history
+function renderHistory() {
+  const history = JSON.parse(sessionStorage.getItem(HISTORY_KEY) || '[]');
+  const listEl  = document.getElementById('history-list');
+  listEl.innerHTML = '';
+
+  const allItems = [];
+  history.forEach(order => {
+    (order.items || []).forEach(item => allItems.push({ ...item, date: order.date }));
+  });
+
+  if (allItems.length === 0) {
+    listEl.innerHTML = '<p class="mypage__empty">まだありません</p>';
+    return;
+  }
+
+  allItems.forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'mypage__history-card';
+    const imgTag = item.img
+      ? `<img src="${item.img}" alt="${item.name}" onerror="this.style.display='none'">`
+      : '';
+    div.innerHTML = `
+      <div class="mypage__history-img">${imgTag}</div>
+      <div class="mypage__history-info">
+        <p class="mypage__history-name">${item.name}</p>
+        <p class="mypage__history-detail">COLOR : ${item.color || '-'}</p>
+        <p class="mypage__history-detail">SIZE : ${item.size || '-'}</p>
+        <p class="mypage__history-price">${item.price}</p>
+      </div>`;
+    listEl.appendChild(div);
+  });
+}
+
+document.getElementById('history-prev').addEventListener('click', () => {
+  const el = document.getElementById('history-list');
+  el.scrollBy({ left: -(el.clientWidth / 2 + 7), behavior: 'smooth' });
+});
+document.getElementById('history-next').addEventListener('click', () => {
+  const el = document.getElementById('history-list');
+  el.scrollBy({ left: el.clientWidth / 2 + 7, behavior: 'smooth' });
+});
+
+renderFavorites();
+renderHistory();
+</script>
+</body>
+</html>

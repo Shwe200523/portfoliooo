@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="img/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+<link rel="stylesheet" href="css/shouhinshouzai.css">
+<link rel="stylesheet" href="css/footer.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<title>.SELECT - SET</title>
+</head>
+<body>
+    <div id="header_placeholder"></div>
+    <section class="shouhinshouzai">
+        <div class="shouhinshouzai_left">
+            <div class="shouhinshouzai_left_imageContainer">
+                <div class="main-image-wrapper">
+                    <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+                    
+                    <img id="display-img" src="img/news-photo01.webp" alt="Main">
+                    
+                    <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+                </div>
+            
+                <div class="thumbnails-container">
+                    <img src="img/news-photo01.webp" class="thumb active">
+                    <img src="img/news-photo01.webp" class="thumb">
+                    <img src="img/news-photo01.webp" class="thumb">
+                    <img src="img/news-photo01.webp" class="thumb">
+                </div>
+            </div>
+
+        </div>
+        <div class="shouhinshouzai_right">
+            <div class="productNameAndHeart">
+                <ul>
+                    <li><h1 id="detail-name">ナンジャらジーンズ</h1></li>
+                    <li><svg class="heart item_heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                </li>
+                </ul>
+            </div>
+            <p class="price" id="detail-price">¥9,990</p>
+            <p class="shouzai" id="detail-desc">説明文が入ります。</p>
+            <div class="colorandname">
+                <p class="color">カラー</p>
+                <p class="colorname" id="detail-color">-</p>
+            </div>
+            <div class="size">
+                <p>サイズ：</p>
+                <ul class="select_size">
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                </ul>
+            </div>
+            <p class="souryou">送料：330円　購入金額5,000円以上で送料無料</p>
+            <a href="" class="tsuika"><p>カートに追加</p></a>
+            <div class=""></div>
+            <p class="shouzaiwomiru">詳細を見る</p>
+       <div class="shouzaiwomiru_nakami">
+    <div class="item-row">
+        <div class="item-label">ニット帽</div>
+        <div class="item-details">
+            <dl>
+                <div class="detail-line"><dt>素材</dt><dd>アクリル100%</dd></div>
+                <div class="detail-line"><dt>生地感</dt><dd>柔らかめ</dd></div>
+                <div class="detail-line"><dt>伸縮性</dt><dd>あり</dd></div>
+                <div class="detail-line"><dt>厚み</dt><dd>普通</dd></div>
+                <div class="detail-line"><dt>サイズ感</dt><dd>フィット感のあるベーシックシルエット</dd></div>
+            </dl>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-label">トップス（ロンT）</div>
+        <div class="item-details">
+            <dl>
+                <div class="detail-line"><dt>素材</dt><dd>綿100%（一部ポリエステル混を含む場合あり）</dd></div>
+                <div class="detail-line"><dt>生地感</dt><dd>薄手〜中厚手</dd></div>
+                <div class="detail-line"><dt>透け感</dt><dd>なし</dd></div>
+                <div class="detail-line"><dt>伸縮性</dt><dd>あり</dd></div>
+                <div class="detail-line"><dt>サイズ感</dt><dd>オーバーサイズ</dd></div>
+            </dl>
+        </div>
+    </div>
+
+    <div class="item-row">
+        <div class="item-label">ボトムズ</div>
+        <div class="item-details">
+            <dl>
+                <div class="detail-line"><dt>素材</dt><dd>綿 / ポリエステル</dd></div>
+                <div class="detail-line"><dt>生地感</dt><dd>柔らかめ</dd></div>
+                <div class="detail-line"><dt>ウエスト</dt><dd>ゴム ＋ ドローコード仕様</dd></div>
+                <div class="detail-line"><dt>透け感</dt><dd>なし</dd></div>
+                <div class="detail-line"><dt>サイズ感</dt><dd>ルーズフィット</dd></div>
+            </dl>
+        </div>
+    </div>
+</div>
+            <p class="henpin notop">返品・交換について</p>
+            <div class="henpin_nakami">
+    <p class="intro-title">返品・交換と配送料について</p>
+    <p class="intro-text">お客様に安心してお買い物をお楽しみいただけるよう、返品・交換を承っております。<br>ご注文前に下記内容をご確認ください。</p>
+
+    <section class="info-section">
+        <h2>■返品・交換方法</h2>
+        <p>ご返品または交換に関しましては,商品到着後7日以内にお問い合わせください。<br>こうしたサービスは、お客様に無料でご提供しております。詳しくは、返品手続きのページをご参照ください。</p>
+    </section>
+
+    <section class="info-section">
+        <h2>■配送料と所要時間</h2>
+        <p>どの商品においても、送料は常に330円です。配送は月曜日から金曜日まで受け付けており、通常5営業日以内にお届けいたします。配送期間についての詳細は、配配送のページをご参照ください。</p>
+    </section>
+</div>
+        </div>
+    </section>
+
+    <!-- shouhinshouzai done -->
+
+
+<!-- review -->
+  <section class="review-section">
+    <div class="review-container">
+      
+      <div class="review-header">
+        <h2 class="review-title">REVIEW</h2>
+     
+      </div>
+
+      <div class="review-carousel">
+        <div class="review-track">
+          
+          <div class="review-card">
+            <p class="review-date">2025.08.24</p>
+            <p class="review-user">れな / 年齢10代 / 身長:156-160cm / 体重:50kg-54kg</p>
+            <p class="review-info">購入サイズ:M / 購入カラー:right blue</p>
+            <p class="review-text">
+              シルエット綺麗すぎて普通に脚長見えするし、淡い色味もまじかわいい。どんなトップスにも合わせやすいし、生地柔らかくて履きやすすぎる。ゆるめのシルエットが今っぽくて、これ履くだけでコーデ盛れるから最近ずっと履いてる。
+            </p>
+          </div>
+
+          <div class="review-card">
+            <p class="review-date">2025.06.29</p>
+            <p class="review-user">おおにしゆき / 年齢20代 / 身長:146-150cm / 体重:40kg-44kg</p>
+            <p class="review-info">購入サイズ:S / 購入カラー:right blue</p>
+            <p class="review-text">
+              シルエットがいい感じで脚めっちゃ長く見えるし、この淡いカラーがほんと優勝。何にでも合わせやすいし、生地柔らかくてストレスなく履けるの最高。程よいゆるさで今っぽいし、履くだけで一気におしゃれ感出るからまじで使える。
+            </p>
+          </div>
+               <div class="review-card">
+            <p class="review-date">2025.06.29</p>
+            <p class="review-user">おおにしゆき / 年齢20代 / 身長:146-150cm / 体重:40kg-44kg</p>
+            <p class="review-info">購入サイズ:S / 購入カラー:right blue</p>
+            <p class="review-text">
+              シルエットがいい感じで脚めっちゃ長く見えるし、この淡いカラーがほんと優勝。何にでも合わせやすいし、生地柔らかくてストレスなく履けるの最高。程よいゆるさで今っぽいし、履くだけで一気におしゃれ感出るからまじで使える。
+            </p>
+          </div>
+
+        </div>
+
+        <button class="carousel-arrow" aria-label="Next"></button>
+      </div>
+
+      
+    </div>
+  </section>
+
+<!-- review done -->
+
+<!-- pickup -->
+ <section class="pickup">
+    <div class="pickup_holder">
+        <h1 class="pickup_header">PICKUP</h1>
+        
+        <div class="pickup_image_frame" id="pickup-frame"></div>
+
+        <div class="pickup_more_btn_wrap">
+            <a href="set.html" class="pickup_more_btn">View more <span class="arrow">→</span></a>
+        </div>
+    </div>
+</section>
+<!-- pickup done -->
+
+<!-- follow -->
+         <section class="follow">
+        <div class="follow_left">
+            <h1 class="follow_left_header"><span>Follow</span> <span>us</span> </h1>
+            <ul class="follow_left_icon">
+                <li><a href=""><img src="img/Tiktok_Black.svg" alt=""></a></li>
+                <li><a href=""><img src="img/x_Black.svg" alt=""></a></li>
+                <li><a href=""><img src="img/instagram_Black.svg" alt=""></a></li>
+            </ul>
+            <p class="follow_left_paragraph">最新のコーデや新作情報をチェック！</p>
+           <div class="viewmore">
+                <a><span>View</span> <span>more</span> <span>→</span></a>
+            </div>
+        </div>
+        <div class="follow_right">
+            <h1 class="follow_right_picture "><img src="img/model1.avif" alt=""></h1>
+            <h1 class="follow_right_picture"><img src="img/model2.avif" alt=""></h1>
+            <h1 class="follow_right_picture "><img src="img/model3.png" alt=""></h1>
+            <h1 class="follow_right_picture "><img src="img/model4.avif" alt=""></h1>
+            
+        </div>
+     </section>
+     <!-- カートトースト通知 -->
+     <div id="cart-toast" class="cart-toast">
+       <span>カートに入れました</span>
+       <a href="cart.html">カートを見る</a>
+     </div>
+
+     <div id="footer-placeholder"></div>
+     <script>
+        // サイズ選択
+        document.querySelectorAll('.select_size li').forEach(li => {
+          li.addEventListener('click', () => {
+            document.querySelectorAll('.select_size li').forEach(el => el.classList.remove('active'));
+            li.classList.add('active');
+          });
+        });
+
+        // セット商品データ
+        const setData = {
+          'set_001': { name: 'ブルースウェット×パンツセット',          price: '¥11,800', color: 'ブルー×グレー',    desc: 'さりげないロゴプリントのスウェットと、ゆったりワイドシルエットのパンツを合わせたセットアップ。ブルーのカラーリングがコーデに爽やかな印象を与え、リラックス感とスタイル感を両立します。', img: 'img/set01.png', images: ['img/set01.png','img/set01_01.png','img/set01_02.png','img/set01_03.png'] },
+          'set_002': { name: 'スプラッシュライタシャツ×ワイドパンツ', price: '¥9,900',  color: 'ブラック×グレー',  desc: '個性的なスプラッシュグラフィックのシャツと、落ち感のあるワイドパンツのセット。モードとストリートを融合させたスタイリングで、着るだけでコーデが完成します。',                       img: 'img/set02.png', images: ['img/set02.png','img/set02_01.png','img/set02_02.png','img/set02_03.png'] },
+          'set_003': { name: 'レザージャケットセット',                 price: '¥15,400', color: 'ブラック',          desc: 'エッジの効いたレザージャケットとインナー・ボトムスをまとめたフルセット。ハードなレザーの質感がクールな印象を演出し、ストリートスタイルに圧倒的な存在感を加えます。',                 img: 'img/set03.png', images: ['img/set03.png','img/set03_01.png','img/set03_02.png','img/set03_03.png'] },
+          'set_004': { name: 'オーバージャケット×ブラックセット',      price: '¥13,200', color: 'ブラック',          desc: 'ビッグシルエットのオーバージャケットとオールブラックのインナー・パンツを組み合わせたセット。統一感のあるダークトーンで、洗練されたストリートスタイルを完成させます。',               img: 'img/set04.png', images: ['img/set04.png','img/set04_01.png','img/set04_02.png','img/set04_03.png'] },
+          'set_005': { name: 'ダボっとギンガムチェックTシャツセット',  price: '¥10,500', color: 'ブラック×ホワイト', desc: 'ギンガムチェック柄のオーバーサイズTシャツと合わせやすいボトムスのセット。クラシックなチェック柄をストリートに落とし込んだ、こなれ感のある一着です。',                                  img: 'img/set05.png', images: ['img/set05.png','img/set05_01.png','img/set05_02.png','img/set05_03.png'] },
+          'set_006': { name: 'レイヤードストリートシャンブレーセット', price: '¥12,800', color: 'インディゴ',        desc: 'シャンブレー素材のシャツをレイヤードで楽しむストリートスタイルセット。素材の絶妙な色感とゆったりしたシルエットが、着こなしに深みをプラスします。',                                      img: 'img/set06.png', images: ['img/set06.png','img/set06_01.png','img/set06_02.png','img/set06_03.png'] },
+          'set_007': { name: 'ネックチェーンブラックオーバーセット',   price: '¥14,800', color: 'ブラック',          desc: 'ネックチェーンアクセントのオーバーサイズトップスとワイドボトムスのフルセット。アクセサリー感覚のデザインがコーデに個性をプラスし、他と差をつけるスタイリングを実現します。',             img: 'img/set07.png', images: ['img/set07.png','img/set07_01.png','img/set07_02.png','img/set07_03.png'] },
+          'set_008': { name: 'ダボシャツ×デニムサロペット',           price: '¥9,980',  color: 'インディゴ',        desc: 'ゆったりとしたダボシャツとデニムサロペットを組み合わせたカジュアルセット。デニムの程よい色落ち感とシャツのボリューム感がトレンド感のある着こなしを演出します。',                         img: 'img/set08.png', images: ['img/set08.png','img/set08_01.png','img/set08_02.png','img/set08_03.png'] },
+        };
+
+        const id = new URLSearchParams(location.search).get('id') || 'set_001';
+        const item = setData[id] || setData['set_001'];
+
+        document.getElementById('detail-name').textContent  = item.name;
+        document.getElementById('detail-price').textContent = item.price;
+        document.getElementById('detail-desc').textContent  = item.desc;
+        document.getElementById('detail-color').textContent = item.color;
+
+        // サムネイルを各画像に設定（画像数に合わせて余分なサムネイルは非表示）
+        const thumbEls = document.querySelectorAll('.thumbnails-container .thumb');
+        thumbEls.forEach((thumb, i) => {
+          if (i < item.images.length) {
+            thumb.src = item.images[i];
+            thumb.style.display = '';
+          } else {
+            thumb.style.display = 'none';
+          }
+        });
+        document.getElementById('display-img').src = item.images[0];
+
+        // 画像が1枚のみの場合はナビとサムネイルを非表示
+        if (item.images.length <= 1) {
+          document.getElementById('prevBtn').style.display = 'none';
+          document.getElementById('nextBtn').style.display = 'none';
+          document.querySelector('.thumbnails-container').style.display = 'none';
+        }
+
+        // PICKUP：現在の商品を除いてランダム4件
+        const heartSVG = `<svg class="item_heart heart1" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>`;
+        const otherKeys = Object.keys(setData).filter(k => k !== id);
+        const shuffled = otherKeys.sort(() => Math.random() - 0.5).slice(0, 4);
+        const pickupFrame = document.getElementById('pickup-frame');
+        shuffled.forEach(key => {
+          const p = setData[key];
+          pickupFrame.insertAdjacentHTML('beforeend', `
+            <dl class="pickup_img_frame_group">
+              <dt><a href="shouhinshouzai2.html?id=${key}"><img src="${p.img}" alt="${p.name}"></a></dt>
+              <dd>
+                <h2>${p.name}</h2>
+                <ul class="pickup_img_frame_group_dd_ul">
+                  <li><h3>${p.price}</h3></li>
+                  <li>${heartSVG}</li>
+                </ul>
+              </dd>
+            </dl>
+          `);
+        });
+
+        // カートに追加
+        document.querySelector('.tsuika').addEventListener('click', (e) => {
+          e.preventDefault();
+          const selectedSize = document.querySelector('.select_size li.active')?.textContent?.trim() || 'フリー';
+          addToCart({
+            name: item.name,
+            price: item.price,
+            color: item.color,
+            size: selectedSize,
+            img: item.img,
+            qty: 1
+          });
+        });
+
+        const shouhinmiru = document.querySelector(".shouzaiwomiru");
+        const shouhinnakami = document.querySelector(".shouzaiwomiru_nakami");
+
+        shouhinmiru.addEventListener('click', () => {
+            shouhinnakami.classList.toggle('active');
+        });
+
+     
+        const henpinBtn = document.querySelector(".henpin");
+        const henpinnakami = document.querySelector(".henpin_nakami");
+
+        henpinBtn.addEventListener('click', () => {
+            henpinnakami.classList.toggle('active');
+        });
+        const mainImg = document.getElementById('display-img');
+const thumbs = document.querySelectorAll('.thumbnails-container .thumb');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let currentIndex = 0;
+
+// 画像を更新する共通関数
+function updateGallery(index) {
+    const len = item.images.length;
+    if (index < 0) index = len - 1;
+    if (index >= len) index = 0;
+
+    currentIndex = index;
+
+    // メイン画像とサムネイルのクラスを更新
+    mainImg.src = thumbs[currentIndex].src;
+    document.querySelector('.thumbnails-container .thumb.active')?.classList.remove('active');
+    thumbs[currentIndex].classList.add('active');
+}
+
+// サムネイルクリック時のイベント
+thumbs.forEach((thumb, index) => {
+    thumb.addEventListener('click', () => {
+        updateGallery(index);
+    });
+});
+
+// 戻るボタン
+prevBtn.addEventListener('click', () => {
+    updateGallery(currentIndex - 1);
+});
+
+// 進むボタン
+nextBtn.addEventListener('click', () => {
+    updateGallery(currentIndex + 1);
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.querySelector('.review-track');
+  const nextButton = document.querySelector('.carousel-arrow');
+
+  if (nextButton && track) {
+    nextButton.addEventListener('click', () => {
+      // カード1枚分の幅 + 隙間(gap)の分だけ右にスクロール
+      const cardWidth = track.querySelector('.review-card').clientWidth;
+      const gap = 24;
+      
+      // 最後までスクロールしていたら最初に戻る、そうでなければ次に進む
+      if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        track.scrollBy({ left: cardWidth + gap, behavior: 'smooth' });
+      }
+    });
+  }
+});
+
+
+     </script>
+<script src="js/cart.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/heart.js"></script>
+<script src="js/indexheader.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/header.js"></script>
+
+
+</body>
+</html>

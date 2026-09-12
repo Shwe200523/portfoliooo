@@ -1,0 +1,164 @@
+
+body{
+  overflow-x: hidden !important;
+ 
+}
+
+.dami{
+  width: 120px;
+  position: fixed;
+  bottom: 59px;
+  right: 0px;
+  z-index: 1000000000000000000;
+  display: block;
+}
+
+.main{
+  
+  width: 100%;
+  margin: auto;  
+  text-align: center;
+  height: 90vh;
+  
+
+.sentaku{
+    color:#9E6341;
+    margin:  0.5em auto;
+    margin-top: 15px;
+    border: 1px solid  hsl(22, 42%, 44%);
+    padding: 6px;
+    width:10%;
+   max-width: 120px;
+   min-width: 99px;
+    border-radius: 20px;
+   font-size: clamp(0.7em,1vw,1em);
+
+}
+
+.box{
+ text-align: left;
+    color: #9E6341;
+                width: 50%;
+                height: 4vw;
+                max-height: 35px;
+                min-width: 300px;
+                max-width: 400px;
+                min-height: 30px;
+                border:1px solid #9E6341;
+                border-radius: 5px;
+                margin: 0.7em 0;
+                padding-left: 0.5em;
+                font-size: clamp(0.7em,1vw,1em);
+}
+.bottom{
+      padding: 10px 32px;
+      width: 50%;
+      max-width: 150px;
+      padding: 15px;
+  border-radius: 999px;
+  margin: auto;
+  margin-top: 10px;
+  border: none;
+  background: #8b5a3c;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  transition: 1s linear;
+ 
+}
+}
+
+/* こせ */
+.co-hi-{
+  position: absolute;
+
+  top: -35px;
+  width: 40%;
+  max-width: 400px;
+  /* top: -600px;
+  left: -200px;
+  min-width: 600px; */
+}
+
+.beans2{
+  position: absolute;
+  width: 10%;
+  bottom: -50px;
+  left:70px;
+  transform: rotate(-60deg);
+}
+
+.cat{
+  position: absolute;
+  right: 50px;
+  width: 30%;
+  bottom: 0;
+  min-width: 300px;
+}
+
+.beans3{
+  display: none;
+}
+
+.bottom:hover{
+  background-color:#5D792A ;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+@media (max-width:601px){
+  .dami{
+    display: none !important;
+  }
+}
+@media (max-width:600px) {
+
+
+
+
+
+
+
+  .main{
+    width: 100%;
+    height: 88vh;
+    
+    .box{
+      height: 30px;
+    }
+
+  }
+
+
+
+  /* こせ */
+  .cat{
+    display: none;
+  }
+
+  .beans2{
+    display: none;
+  }
+
+  .beans{
+    right: 0;
+    top: 70px;
+  }
+
+  .beans3{
+    display: block;
+    position: absolute;
+    width: 100px;
+    bottom: -100px;
+    left: -120px;
+    z-index: -1;
+   
+  }
+
+
+
+  
+}

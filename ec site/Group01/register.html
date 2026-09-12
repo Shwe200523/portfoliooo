@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="img/favicon.ico" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <title>.SELECT - 新規登録</title>
+  </head>
+  <body>
+    <div id="header_placeholder"></div>
+
+    <section class="register">
+      <div class="register-head">
+        <h2>REGISTER</h2>
+       
+      </div>
+
+      <form class="register-form" action="register-complete.html" method="get" novalidate>
+
+        <!-- アカウント情報 -->
+        <p class="register-section-label">アカウント情報</p>
+
+        <div class="register-group">
+          <label for="nickname">ニックネーム <span class="required">必須</span></label>
+          <input type="text" id="nickname" name="nickname" autocomplete="nickname" placeholder="例：タロー" />
+        </div>
+
+        <div class="register-group register-group--row">
+          <div class="register-group-half">
+            <label for="last-name">姓 <span class="required">必須</span></label>
+            <input type="text" id="last-name" name="last_name" autocomplete="family-name" placeholder="山田" />
+          </div>
+          <div class="register-group-half">
+            <label for="first-name">名 <span class="required">必須</span></label>
+            <input type="text" id="first-name" name="first_name" autocomplete="given-name" placeholder="太郎" />
+          </div>
+        </div>
+
+        <div class="register-group">
+          <label for="email">メールアドレス <span class="required">必須</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="example@gmail.com" />
+        </div>
+
+        <div class="register-group">
+          <label for="password">パスワード <span class="required">必須</span></label>
+          <input type="password" id="password" name="password" autocomplete="new-password" placeholder="8文字以上で入力" />
+          <span class="register-hint">半角英数字・記号、8文字以上</span>
+        </div>
+
+        <div class="register-group">
+          <label for="password-confirm">パスワード（確認） <span class="required">必須</span></label>
+          <input type="password" id="password-confirm" name="password_confirm" autocomplete="new-password" placeholder="もう一度入力してください" />
+        </div>
+
+        <div class="register-divider-inner"></div>
+
+        <!-- プロフィール情報 -->
+        <p class="register-section-label">プロフィール情報</p>
+
+        <div class="register-group">
+          <label for="birthdate">生年月日 <span class="required">必須</span></label>
+          <input type="date" id="birthdate" name="birthdate" autocomplete="bday" />
+        </div>
+
+        <div class="register-group register-group--row">
+          <div class="register-group-half">
+            <label for="height">身長</label>
+            <div class="register-input-unit">
+              <input type="number" id="height" name="height" placeholder="例：165" min="100" max="250" />
+              <span class="unit">cm</span>
+            </div>
+          </div>
+          <div class="register-group-half">
+            <label for="weight">体重</label>
+            <div class="register-input-unit">
+              <input type="number" id="weight" name="weight" placeholder="例：55" min="30" max="200" />
+              <span class="unit">kg</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="register-group">
+          <label>性別</label>
+          <div class="register-radio-group">
+            <label class="register-radio-label">
+              <input type="radio" name="gender" value="male" />
+              <span>男性</span>
+            </label>
+            <label class="register-radio-label">
+              <input type="radio" name="gender" value="female" />
+              <span>女性</span>
+            </label>
+            <label class="register-radio-label">
+              <input type="radio" name="gender" value="other" />
+              <span>回答しない</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="register-divider-inner"></div>
+
+        <!-- 利用規約 -->
+        <div class="register-agree">
+          <label class="register-check-label">
+            <input type="checkbox" id="agree" name="agree" />
+            <span>
+              <a href="terms of use.html" target="_blank">利用規約</a>・
+              <a href="privacy policy.html" target="_blank">プライバシーポリシー</a>
+              に同意する
+            </span>
+          </label>
+        </div>
+
+       
+        <div class="register-btn-wrap">
+          <button type="submit" class="register-btn">登録する</button>
+        </div>
+      
+      </form>
+
+      <div class="register-footer-link">
+        すでにアカウントをお持ちの方は
+        <a href="login.html">ログイン</a>
+      </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

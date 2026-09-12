@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="img/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+<link rel="stylesheet" href="./css/header.css">
+<link rel="stylesheet" href="./css/set.css">
+<link rel="stylesheet" href="./css/footer.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<title>.SELECT - SET</title>
+</head>
+<body>
+
+<div id="header_placeholder"></div>
+
+<!-- hero -->
+<section class="set-hero">
+  <img class="set-hero__bg" src="img/set-hero-bg.png" alt="SET LINE UP">
+  <div class="set-hero__text">
+    <h1 class="set-hero__title">SET</h1>
+    <p class="set-hero__sub">おすすめのコーディネートをご紹介</p>
+  </div>
+</section>
+<!-- hero done -->
+
+<!-- filter -->
+<div class="set-filter">
+  <div class="set-filter__inner">
+    <button class="set-filter__tab active" data-target="all">ALL</button>
+  </div>
+</div>
+<!-- filter done -->
+
+<!-- grid -->
+<section class="set-section" id="section-all" data-category="all">
+  <h2 class="set-section__title">ALL</h2>
+  <div class="set-grid">
+
+    <a href="shouhinshouzai2.html?id=set_001" class="set-card" data-category="mens">
+      <div class="set-card__img-wrap"><img src="img/set01.png" alt="ブルースウェット×パンツセ..."></div>
+      <p class="set-card__name">ブルースウェット×パンツセット</p>
+      <div class="set-card__foot">
+        <span class="set-card__price">¥11,800</span>
+        <svg class="item_heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+    </a>
+
+    <a href="shouhinshouzai2.html?id=set_002" class="set-card" data-category="womens">
+      <div class="set-card__img-wrap"><img src="img/set02.png" alt="スプラッシュライタシャツ×..."></div>
+      <p class="set-card__name">スプラッシュライタシャツ×ワイドパンツ</p>
+      <div class="set-card__foot">
+        <span class="set-card__price">¥9,900</span>
+        <svg class="item_heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+    </a>
+
+    <a href="shouhinshouzai2.html?id=set_003" class="set-card" data-category="mens">
+      <div class="set-card__img-wrap"><img src="img/set03.png" alt="レザージャケットセット"></div>
+      <p class="set-card__name">レザージャケットセット</p>
+      <div class="set-card__foot">
+        <span class="set-card__price">¥15,400</span>
+        <svg class="item_heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+    </a>
+
+    <a href="shouhinshouzai2.html?id=set_004" class="set-card" data-category="womens">
+      <div class="set-card__img-wrap"><img src="img/set04.png" alt="オーバージャケット×ブラッ..."></div>
+      <p class="set-card__name">オーバージャケット×ブラックセット</p>
+      <div class="set-card__foot">
+        <span class="set-card__price">¥13,200</span>
+        <svg class="item_heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+    </a>
+
+    <a href="shouhinshouzai2.html?id=set_005" class="set-card" data-category="mens">
+      <div class="set-card__img-wrap"><img src="img/set05.png" alt="ダボっとギンガムチェックT..."></div>
+      <p class="set-card__name">ダボっとギンガムチェックTシャツセット</p>
+      <div class="set-card__foot">
+        <span class="set-card__price">¥10,500</span>
+        <svg class="item_heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+    </a>
+
+    <a href="shouhinshouzai2.html?id=set_006" class="set-card" data-category="womens">
+      <div class="set-card__img-wrap"><img src="img/set06.png" alt="レイヤードストリートシャン..."></div>
+      <p class="set-card__name">レイヤードストリートシャンブレーセット</p>
+      <div class="set-card__foot">
+        <span class="set-card__price">¥12,800</span>
+        <svg class="item_heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+    </a>
+
+    <a href="shouhinshouzai2.html?id=set_007" class="set-card" data-category="mens">
+      <div class="set-card__img-wrap"><img src="img/set07.png" alt="ネックチェーンブラックオー..."></div>
+      <p class="set-card__name">ネックチェーンブラックオーバーセット</p>
+      <div class="set-card__foot">
+        <span class="set-card__price">¥14,800</span>
+        <svg class="item_heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+    </a>
+
+    <a href="shouhinshouzai2.html?id=set_008" class="set-card" data-category="womens">
+      <div class="set-card__img-wrap"><img src="img/set08.png" alt="ダボシャツ×デニムサロペット"></div>
+      <p class="set-card__name">ダボシャツ×デニムサロペット</p>
+      <div class="set-card__foot">
+        <span class="set-card__price">¥9,980</span>
+        <svg class="item_heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/heart.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous"></script>
+
+<script>
+  // ── 入場アニメ ──
+  gsap.from('.set-hero__title', { y: 50, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 0.2 });
+  gsap.from('.set-hero__sub',   { y: 30, opacity: 0, duration: 0.7, ease: 'power3.out', delay: 0.45 });
+  gsap.from('.set-filter',      { y: -20, opacity: 0, duration: 0.4, ease: 'power2.out', delay: 0.3 });
+  gsap.from('.set-card', {
+    y: 30, opacity: 0, duration: 0.4, ease: 'power2.out', stagger: 0.06, delay: 0.4,
+  });
+</script>
+</body>
+</html>

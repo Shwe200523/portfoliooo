@@ -1,0 +1,14 @@
+# デザインの制作データ（サイトの表示には不要）
+*.ai
+*.psd
+*.afdesign
+
+# 企画書などのPDF
+結婚/wedding/info.pdf
+結婚/wedding/ETA-RING 企画書.pdf
+
+# OS・エディタが勝手につくるファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/

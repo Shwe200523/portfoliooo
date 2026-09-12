@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="img/favicon.ico" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>.SELECT - ログイン</title>
+  </head>
+  <body>
+    <div id="header_placeholder"></div>
+
+    <section class="login">
+      <div class="login-head">
+        <h2>LOGIN</h2>
+      </div>
+
+      <form class="login-form" action="#" method="post" novalidate>
+        <div class="login-group">
+          <label for="email">メールアドレス</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="exmple@gmail.com" />
+        </div>
+
+        <div class="login-group">
+          <label for="password">パスワード</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" placeholder="パスワード" />
+          <a href="#" class="forgot-link">パスワードを忘れた場合</a>
+        </div>
+
+        <div class="login-btn-wrap">
+          <button type="submit" class="login-btn">ログイン</button>
+        </div>
+      </form>
+
+      <div class="login-divider"></div>
+
+      <div class="signup-wrap">
+        <a href="register.html" class="signup-btn">新規登録はこちら</a>
+      </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+      // すでにログイン済みなら mypage へ飛ばす
+      if (sessionStorage.getItem('selectLoggedIn')) {
+        location.replace('mypage.html');
+      }
+
+      // フォーム送信：ログイン状態を保存して mypage へ
+      document.querySelector('.login-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        sessionStorage.setItem('selectLoggedIn', '1');
+        location.href = 'mypage.html';
+      });
+    </script>
+  </body>
+</html>

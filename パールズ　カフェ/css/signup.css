@@ -1,0 +1,145 @@
+.main{
+    width: 40%;
+   max-width: 1200px;
+    margin: auto;
+    margin-left: 10%;
+    text-align: center;
+    text-wrap: nowrap;
+height: 90vh;
+    p{
+        font-size: clamp(0.7em,1vw,1em);
+ color: #8b5a3c;
+
+
+    }
+        .box{
+    text-align: left;
+    color: #9E6341;
+     width: 60%;
+     height: 3vh;
+      min-height: 15px;
+      min-width: 300px;
+      border:1px solid #9E6341;
+       border-radius: 5px;
+      margin: 0.7em 0;
+      padding-left: 0.5em;
+      font-size: clamp(0.7em,1vw,1em);
+    }
+    .rem{
+        color: #8b5a3c;
+        accent-color:#8b5a3c ;
+        font-size: clamp(0.7em,1vw,1em);
+    }
+    .edit {
+  padding: 10px 32px;
+  border-radius: 999px;
+  border: none;
+  background: #8b5a3c;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 2em;
+}
+}
+.box:focus {
+outline: none;
+
+}
+
+/* こせ */
+.co-hi-{
+  position: absolute;
+  width: 20%;
+  top: -100px;
+  pointer-events: none;
+}
+
+.co-hi-2{
+  display: none;
+}
+
+.cat{
+  position: absolute;
+  width: 40%;
+  bottom: -20px;
+  right: 40px;
+  min-width: 500px;
+  pointer-events: none;
+  /* min-width: ; */
+}
+
+.asiato{
+  position: absolute;
+  width: 13%;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.asiato2{
+  display: none;
+}
+
+.dami{
+  width: 120px;
+  position: fixed;
+  bottom: 59px;
+  right: 0px;
+  z-index: 1000000000000000000;
+  display: block;
+  pointer-events: all;
+}
+
+
+
+
+
+@media (max-width:600px) {
+.dami{
+  display: none !important;
+}
+
+    .main{
+        width: 100%;
+        margin-left: initial;
+    }
+    footer{
+        position: static;
+    }
+      .main{
+    width: 100%;
+    margin: auto;
+    .box{
+      height: 30px;
+    }
+
+    
+  }
+  footer{
+    position: static !important;
+  }
+    
+
+
+  /* こせ */
+  .co-hi-2{
+    display: block;
+    position: absolute;
+    width: 55%;
+    top: -100px;
+    left: -50px;
+    pointer-events: none;
+  }
+
+  .cat{
+    display: none;
+  }
+
+  .asiato{
+    position: absolute;
+    width: 20%;
+    bottom: -40px;
+    z-index: -1;
+  }
+
+
+}

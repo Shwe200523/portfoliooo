@@ -1,0 +1,219 @@
+html{
+    overflow-x: hidden !important;
+   
+}
+
+.dami{
+    width: 120px;
+    position: fixed;
+    bottom: 59px;
+    right: 0px;
+    z-index: 1000000000000000000;
+    pointer-events: all;
+
+}
+
+
+.main{
+    width: 40%;
+   
+    text-align: center;
+    margin-left:10%;
+    .header{
+        padding: 4em 0;
+    }
+        .email,.password{
+         text-align: left;
+    color: #9E6341;
+                width: 60%;
+                height: 3vh;
+                min-height: 30px;
+                min-width: 300px;
+                border:1px solid #9E6341;
+                border-radius: 5px;
+                margin: 0.7em 0;
+                padding-left: 0.5em;
+                font-size: clamp(0.7em,1vw,1em);
+                max-width: 400px;
+                background:#fffdfa;
+               
+    }
+    .rem{
+        color: #8b5a3c;
+        accent-color:#8b5a3c ;
+        font-size: clamp(0.7em,1vw,1em);
+        padding: 10px 0 ;
+       
+    }
+
+    .rem{
+            color: #9E6341;
+                accent-color: #9E6341;
+                align-items: center;
+                margin-bottom: 1em;
+                margin: auto;
+                
+    }
+    .login{
+                margin-top: 40px;
+           
+                padding: 10px;
+                width: 20%;
+                border-radius: 10px ;
+                max-width: 200px;
+                min-width: 199px;
+                background-color: #9E6341;
+                color: white;
+                text-align: center;
+              
+             
+              
+    }
+
+}
+
+
+
+.haikei{
+    position: fixed;
+    z-index: -1;
+    top: -25%;
+    width: 50%;
+    min-height: 1020px;
+    min-width: 650px;
+    max-width: 1080px;
+    pointer-events: none;
+}
+
+.haikei2{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    min-width: 650px;
+    /* max-width: 1000px; */
+    z-index: 100;
+
+    bottom: 0;
+    z-index: 0;
+
+    overflow: hidden;
+    
+
+
+
+
+}
+
+.haikei5{
+    position: absolute;
+    width: 300px;
+    right: 600px;
+    bottom: 310px;
+    transform: rotate(-10deg);
+    z-index: -2;
+}
+
+
+
+
+
+
+
+.main h1{
+    color: white;
+    margin-top: 100px;
+
+}
+
+.main h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+#sm{
+    display: none
+}
+
+.maru{
+    background-color: #571B00 ;
+    color: #571B00;
+    width: 100px;
+    text-align: center;
+    height: 80px;
+    border-radius: 100%;
+    position: absolute;
+    right: 37%;
+    transform: rotate(-20deg);
+    bottom: 270px;
+}
+
+.maru2{
+    background-color: #571B00 ;
+    color: #571B00;
+    width: 100px;
+    text-align: center;
+    height: 80px;
+    border-radius: 100%;
+    position: absolute;
+    right: 540px;
+    transform: rotate(-20deg);
+    bottom: 380px;
+
+}
+
+
+
+@media (max-width:600px){
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+    .main{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .email,.password{
+        transform: translateX(0) !important;
+    }
+.login{
+    transform: translateX(0) !important;
+}
+
+
+#pc{
+    display: none;
+}
+
+#sm{
+    display: block;
+}
+
+.main h1{
+    margin-top: 0;
+}
+
+.main h2{
+    margin-bottom: 0;
+}
+
+.haikei3{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 25px
+}
+
+.haikei4{
+    position: absolute;
+    width: 100%;
+    transform: rotate(180deg);
+    bottom: -80px;
+    right: 0;
+}
+
+.dami{
+    display: none;
+}
+
+} 

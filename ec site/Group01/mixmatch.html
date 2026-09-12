@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/mixmatch.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>.SELECT - MIX &amp; MATCH</title>
+</head>
+
+<body>
+  <!---------------ここからヘッダー共通-------------------->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header_logo">
+        <a href="./index.html">
+          <img src="img/logo-white.svg" alt="">
+        </a>
+      </div>
+      <nav class="header__nav">
+        <a href="./index.html">TOP</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./set.html">SET</a>
+        <a href="./item.html">ITEM</a>
+        <a href="./news.html">NEWS</a>
+        <a href="./contact.html">CONTACT</a>
+      </nav>
+      <div class="header__icons">
+        <a href="./login.html" aria-label="マイページ">
+          <img src="img/account.svg" alt="マイページアイコン" width="22" height="22">
+        </a>
+        <a href="./cart.html" aria-label="カート">
+          <img src="img/cart.svg" alt="カートアイコン" width="22" height="22">
+        </a>
+        <button class="hamburger-morph" aria-label="メニュー" aria-controls="morph-menu" aria-expanded="false">
+          <svg class="hamburger-morph__icon" width="48" height="48" viewBox="0 0 100 100">
+            <path class="hamburger-morph__line" d="M 20,29 H 80 C 80,29 94.5,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="hamburger-morph__line" d="M 20,50 H 80" />
+            <path class="hamburger-morph__line" d="M 20,71 H 80 C 80,71 94.5,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- モバイルメニュー -->
+  <nav id="morph-menu" class="nav-morph" aria-hidden="true">
+    <!-- クローズボタン -->
+
+
+    <div class="nav-morph__wrapper">
+      <ul class="nav-morph__list">
+        <li class="nav-morph__item">
+          <a href="./index.html" class="nav-morph__link">
+            <span class="nav-morph__text">TOP</span>
+            <span class="nav-morph__hover">トップ</span>
+          </a>
+        </li>
+        <li class="nav-morph__item">
+          <a href="./about.html" class="nav-morph__link">
+            <span class="nav-morph__text">ABOUT</span>
+            <span class="nav-morph__hover">私たちについて</span>
+          </a>
+        </li>
+        <li class="nav-morph__item">
+          <a href="./set.html" class="nav-morph__link">
+            <span class="nav-morph__text">SET</span>
+            <span class="nav-morph__hover">セットアップ</span>
+          </a>
+        </li>
+        <li class="nav-morph__item">
+          <a href="./item.html" class="nav-morph__link">
+            <span class="nav-morph__text">ITEM</span>
+            <span class="nav-morph__hover">アイテム</span>
+          </a>
+        </li>
+        <li class="nav-morph__item">
+          <a href="./news.html" class="nav-morph__link">
+            <span class="nav-morph__text">NEWS</span>
+            <span class="nav-morph__hover">ニュース</span>
+          </a>
+        </li>
+        <li class="nav-morph__item">
+          <a href="./contact.html" class="nav-morph__link">
+            <span class="nav-morph__text">CONTACT</span>
+            <span class="nav-morph__hover">お問い合わせ</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- メニュー内のアイコン -->
+      <div class="nav-morph__icons">
+        <a href="./login.html" aria-label="マイページ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="24" height="24">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+          </svg>
+        </a>
+        <a href="./cart.html" aria-label="カート">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="24" height="24">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 01-8 0" />
+          </svg>
+        </a>
+      </div>
+      <div class="image">
+        <img src="img/logo-white.svg" alt="menu-bg">
+      </div>
+    </div>
+  </nav>
+  <!---------------ここまでヘッダーとか-------------------->
+  <!---------------ここからMIX-MATCH-------------------->
+  <!---
+  <div class="mikkusu-matti">
+    <div class="mix-match-main-content">
+      <div class="mix-match-left">
+        <div class="mix-match-left-textarea">
+          <h2>MIX ADN MATCH</h2>
+          <p>アイテムを自由に組み替えて、<br>自分だけのストリートコーデを作ろう</p>
+          <div class="previw-area">
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="mix-match-right">
+
+      </div>
+    </div>-->
+
+
+  <div class="mix-match-wrapper">
+
+    <div class="mix-match-layout">
+
+      <div class="preview-section">
+        <h2 class="title"><span class="rightni">BUIL</span><span class="text-space text-space-d">D</span><br>YOU<span class="text-space">R</span>FIT</h2>
+        <p class="subtitle">アイテムを自由に組み替えて、<br>自分だけのストリートコーデをつくろう。</p>
+
+        <div class="model-canvas">
+          <img src="img/manekin.png" class="layer-base" alt="モデル">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="preview-bottom"
+            class="layer-item" alt="">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="preview-top"
+            class="layer-item" alt="">
+        </div>
+      </div>
+
+      <div class="selection-section">
+
+        <ul class="category-tabs">
+          <li class="tab active">TOPS</li>
+          <li class="tab">BOTTOMS</li>
+          <!--
+          <li class="tab">ACCESSORY</li>
+          -->
+        </ul>
+
+        <div class="filter-bar">
+          <h3 class="category-title">TOPS</h3>
+          <div class="filter-right"><a href="item.html">ALL <span class="arrow-down"></span></a></div>
+        </div>
+
+        <div class="item-grid" id="grid-tops">
+        </div>
+
+        <div class="section-header">
+          <h3 class="category-title">BOTTOMS</h3>
+          <div class="filter-right"><a href="item.html">ALL <span class="arrow-down"></span></a></div>
+        </div>
+        <div class="item-grid" id="grid-bottoms">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-----------------------------------------------------------------下に固定するバー-->
+  <div class="bottom-bar">
+
+    <div class="bar-center bar-total">
+      <span class="total-label">TOTAL</span>
+      <span class="total-price" id="total-price-display">¥0</span>
+      <span class="tax-in">(TAX IN)</span>
+    </div>
+
+    <a href="cart.html" id="add-to-cart-btn" class="bar-right bar-cart">
+      <div class="bar-content">
+        <img src="img/mix-cartin.svg" alt="" class="bar-icon">
+        <div class="bar-text">
+          <span class="en-text">ADD TO CART</span>
+          <span class="ja-text">カートに入れる</span>
+        </div>
+        <span class="arrow-right white"></span>
+      </div>
+    </a>
+
+  </div>
+
+
+
+
+
+  <section class="pickup-section">
+    
+    <div class="pickup-inner">
+      <h2 class="pickup-title">PIC<span class="text-space">K</span>UP</h2>
+      <div class="pickup-grid">
+        <div class="pickup-item">
+          <a href="shouhinshouzai2.html?id=set_001">
+          <div class="pickup-img-wrap">
+            <img src="img/mix-pickup-1.png" alt="商品画像">
+          </div>
+          </a>
+          <div class="pickup-info">
+            <div class="pickup-text">
+              <p class="pickup-name">ブルースウェット×パンツセット</p>
+              <p class="pickup-price">¥11,800</p>
+            </div>
+            <button class="pickup-heart" aria-label="お気に入りに追加">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="pickup-item">
+          <a href="shouhinshouzai2.html?id=set_002">
+          <div class="pickup-img-wrap">
+            <img src="img/mix-pickup-2.png" alt="商品画像">
+          </div>
+          </a>
+          <div class="pickup-info">
+            <div class="pickup-text">
+              <p class="pickup-name">スプラッシュライタシャツ×ワイドパンツ</p>
+              <p class="pickup-price">¥9,900</p>
+            </div>
+            <button class="pickup-heart" aria-label="お気に入りに追加">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="pickup-item">
+          <a href="shouhinshouzai2.html?id=set_003">
+          <div class="pickup-img-wrap">
+            <img src="img/mix-pickup-3.png" alt="商品画像">
+          </div>
+          </a>
+          <div class="pickup-info">
+            <div class="pickup-text">
+              <p class="pickup-name">レザージャケットセット</p>
+              <p class="pickup-price">¥15,400</p>
+            </div>
+            <button class="pickup-heart" aria-label="お気に入りに追加">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="pickup-item">
+          <a href="shouhinshouzai2.html?id=set_003">
+          <div class="pickup-img-wrap">
+            <img src="img/mix-pickup-4.png" alt="商品画像">
+          </div>
+          </a>
+          <div class="pickup-info">
+            <div class="pickup-text">
+              <p class="pickup-name">オーバージャケット×ブラックセット</p>
+              <p class="pickup-price">¥13,200</p>
+            </div>
+            <button class="pickup-heart" aria-label="お気に入りに追加">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pickup-btn-wrap">
+        <a href="set.html" class="pickup-btn">View more <span>→</span></a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="set-sale-section">
+    <div class="set-sale-overlay">
+
+      <div class="set-sale-inner">
+        <div class="set-sale-left">
+          <h2 class="set-sale-logo">SE<span class="text-space">T</span>SEAL</h2>
+        </div>
+
+        <div class="set-sale-right">
+          <p class="set-sale-catch">セットで、気軽に</p>
+          <a href="./set.html" class="set-sale-btn">
+            <span class="btn-text-pc">セット商品を見る →</span>
+            <span class="btn-text-sp">セット商品を見る →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="follow">
+    <div class="follow_left">
+      <h2 class="follow_left_header">Follo<span class="text-space">w</span>us</h2>
+      <ul class="follow_left_icon">
+        <li><img src="img/insuta.svg" alt=""></li>
+        <li><img src="img/Tiktok_Black.svg" alt=""></li>
+        <li><img src="img/x_Black.svg" alt=""></li>
+      </ul>
+      <p class="follow_left_paragraph">最新のコーデや新作情報をチェック！</p>
+      <div class="viewmore">
+        <a><span>View</span> <span>more</span> <span>→</span></a>
+      </div>
+    </div>
+    <div class="follow_right">
+      <h1 class="follow_right_picture "><img src="img/001.jpg" alt=""></h1>
+      <h1 class="follow_right_picture"><img src="img/model2.avif" alt=""></h1>
+      <h1 class="follow_right_picture disppear"><img src="img/model3.png" alt=""></h1>
+      <h1 class="follow_right_picture disppear"><img src="img/model4.avif" alt=""></h1>
+    </div>
+  </section>
+
+
+  <div id="footer-placeholder"></div>
+  <script>
+    const hamburger = document.querySelector('.hamburger-morph');
+    const nav = document.querySelector('.nav-morph');
+
+    // ハンバーガーボタンのクリック
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('active');
+
+      const isOpen = hamburger.classList.contains('active');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      nav.setAttribute('aria-hidden', !isOpen);
+
+      // bodyにクラスを追加してスクロール制御
+      if (isOpen) {
+        document.body.classList.add('menu-open');
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.classList.remove('menu-open');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // メニューリンクをクリックしたら自動的にメニューを閉じる
+    const menuLinks = document.querySelectorAll('.nav-morph__link');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        nav.classList.remove('active');
+        document.body.classList.remove('menu-open');
+        document.body.style.overflow = '';
+        hamburger.setAttribute('aria-expanded', false);
+        nav.setAttribute('aria-hidden', true);
+      });
+
+      // ホバーエフェクト
+      link.addEventListener('mouseenter', () => {
+        link.querySelector('.nav-morph__text').style.transform = 'translateY(-100%)';
+        link.querySelector('.nav-morph__hover').style.transform = 'translateY(-100%)';
+      });
+      link.addEventListener('mouseleave', () => {
+        link.querySelector('.nav-morph__text').style.transform = 'translateY(0)';
+        link.querySelector('.nav-morph__hover').style.transform = 'translateY(0)';
+      });
+    });
+  </script>
+
+  <script src="js/scroll.js"></script>
+  <script src="js/heart.js"></script>
+  <script src="js/indexheader.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/customcode.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous"></script>
+
+  <script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // ── ページ入場 ──
+  gsap.from('.title',            { y: 60, opacity: 0, duration: 1.0, ease: 'power3.out', delay: 0.2 });
+  gsap.from('.subtitle',         { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 0.45 });
+  gsap.from('.model-canvas',     { scale: 0.96, opacity: 0, duration: 1.0, ease: 'power3.out', delay: 0.3 });
+  gsap.from('.selection-section',{ x: 30,  opacity: 0, duration: 0.8, ease: 'power3.out', delay: 0.5 });
+
+  // ── スクロールアニメ ──
+  // PICKUP
+  gsap.from('.pickup-title', {
+    y: 30, opacity: 0, duration: 0.7, ease: 'power3.out',
+    scrollTrigger: { trigger: '.pickup-section', start: 'top 82%' }
+  });
+  gsap.from('.pickup-item', {
+    y: 30, opacity: 0, duration: 0.6, ease: 'power3.out', stagger: 0.1,
+    scrollTrigger: { trigger: '.pickup-grid', start: 'top 85%' }
+  });
+  gsap.from('.pickup-btn-wrap', {
+    y: 20, opacity: 0, duration: 0.5, ease: 'power2.out',
+    scrollTrigger: { trigger: '.pickup-btn-wrap', start: 'top 90%' }
+  });
+
+  // SET SALE 左右スライド
+  gsap.from('.set-sale-left', {
+    x: -50, opacity: 0, duration: 0.9, ease: 'power3.out',
+    scrollTrigger: { trigger: '.set-sale-section', start: 'top 82%' }
+  });
+  gsap.from('.set-sale-right', {
+    x: 50, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.15,
+    scrollTrigger: { trigger: '.set-sale-section', start: 'top 82%' }
+  });
+
+  // FOLLOW US
+  gsap.from('.follow_left', {
+    x: -40, opacity: 0, duration: 0.8, ease: 'power3.out',
+    scrollTrigger: { trigger: '.follow', start: 'top 82%' }
+  });
+  gsap.from('.follow_right_picture', {
+    y: 24, opacity: 0, duration: 0.5, ease: 'power2.out', stagger: 0.1,
+    scrollTrigger: { trigger: '.follow', start: 'top 82%' }
+  });
+  </script>
+
+</body>
+
+</html>

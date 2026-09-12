@@ -1,0 +1,495 @@
+/* header.html の .hero が 100vh になるのを潰す */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+body{
+
+      font-family: "Zen Kaku Gothic New", sans-serif;
+}
+#header_placeholder .hero {
+  height: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+body {
+  background: #fff;
+  color: #111;
+}
+
+/* フィルムグレイン無効化 */
+body::after {
+  display: none;
+}
+
+/* ===== MY PAGE ===== */
+.mypage {
+  max-width: 1100px;
+  margin: 6rem auto 5rem;
+  padding: 0 5%;
+}
+
+.mypage__title {
+  font-family: "zou";
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom:5rem;
+
+}
+
+/* ===== PROFILE ===== */
+.mypage__profile {
+  margin-bottom: 2rem;
+  width: 90%;
+  margin: auto;
+}
+
+.mypage__profile-inner {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.mypage__profile-img {
+  width: 130px;
+  height: 160px;
+  background: #d9d9d9;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.mypage__profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.mypage__profile-right {
+  padding-top: 0.2rem;
+  width: 80%;
+  margin: auto;
+  text-align: center !important;
+
+}
+.mypage__profile-heading {
+  font-family: "zou";
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-align: left;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+  
+
+    
+}
+
+.mypage__profile-right dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 0.45rem;
+  column-gap: 0.6rem;
+  width: fit-content;
+}
+
+.mypage__profile-row {
+  display: contents;
+  text-align: left;
+}
+
+.mypage__profile-row dt {
+  font-family: "lineseed-Reg", sans-serif;
+  font-size: 0.88rem;
+  color: #555;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.mypage__profile-row dd {
+  font-family: "lineseed-Reg", sans-serif;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  text-align: left;
+}
+
+/* ===== DIVIDER ===== */
+.mypage__divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2.5rem 0;
+}
+
+/* ===== SECTION HEADERS ===== */
+.mypage__section-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.mypage__section-head--split {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.mypage__big-title {
+  font-family: "zou";
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.85;
+  letter-spacing: 0.02em;
+  line-height: 1em;
+}
+
+.mypage__section-ja {
+  font-family: "lineseed-Reg", sans-serif;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: #333;
+  align-self: flex-end;
+  padding-bottom: 0.2rem;
+}
+
+/* ===== SUB SECTIONS ===== */
+.mypage__sub-section {
+  margin-bottom: 2rem;
+}
+
+.mypage__sub-title {
+  font-family: "lineseed-Reg", sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 4rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mypage__sub-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+/* ===== FAVORITES GRID (横スクロール) ===== */
+.mypage__grid {
+  min-height: 180px;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.mypage__grid::-webkit-scrollbar {
+  display: none;
+}
+
+.mypage__empty {
+  font-family: "lineseed-Reg", sans-serif;
+  font-size: 0.85rem;
+  color: #aaa;
+  padding: 1.5rem 0;
+  white-space: nowrap;
+}
+
+.mypage__fav-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 160px;
+}
+
+.mypage__fav-img {
+  width: 160px;
+  aspect-ratio: 3 / 4;
+  background: #d9d9d9;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+#fav-items-grid .mypage__fav-img {
+  aspect-ratio: 1 / 1;
+}
+
+.mypage__fav-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mypage__fav-name {
+  font-family: "lineseed-Reg", sans-serif;
+  font-size: 0.72rem;
+  color: #111;
+  margin-bottom: 4px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  line-height: 1.4;
+}
+
+.mypage__fav-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mypage__fav-price {
+  font-family: "lineseed-Reg", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.mypage__fav-foot .item_heart {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* ===== HISTORY ===== */
+.mypage__history-head-left {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.mypage__history-nav {
+  display: flex;
+  gap: 4px;
+  padding-bottom: 0.2rem;
+}
+
+.mypage__nav-btn {
+  width: 28px;
+  height: 28px;
+  background: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mypage__nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: skewX(-15deg);
+  transition: left 0.4s ease;
+}
+
+.mypage__nav-btn:hover::before {
+  left: 130%;
+}
+
+.mypage__nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.mypage__nav-btn:active {
+  transform: scale(0.93);
+  box-shadow: none;
+}
+
+.mypage__history-list {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  min-height: 300px;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.mypage__history-list::-webkit-scrollbar {
+  display: none;
+}
+
+.mypage__history-list .mypage__empty {
+  grid-column: unset;
+}
+
+.mypage__history-card {
+  display: flex;
+  gap: 12px;
+  border: 1px solid #e0e0e0;
+  padding: 12px 14px;
+  min-width: calc(50% - 7px);
+  flex-shrink: 0;
+}
+
+.mypage__history-img {
+  width: 72px;
+  height: 90px;
+  background: #d9d9d9;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.mypage__history-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mypage__history-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.mypage__history-name {
+  font-family: "lineseed-Reg", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.mypage__history-detail {
+  font-family: "lineseed-Reg", sans-serif;
+  font-size: 0.72rem;
+  color: #555;
+}
+
+.mypage__history-price {
+  font-family: "lineseed-Reg", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* タブレット */
+@media (max-width: 768px) {
+  .mypage {
+    margin-top: 4.5rem;
+    padding: 0 4%;
+  }
+
+  .mypage__profile-inner {
+    grid-template-columns: 100px 1fr;
+    gap: 1.5rem;
+  }
+
+  .mypage__profile-img {
+    width: 100px;
+    height: 125px;
+  }
+
+  .mypage__sub-title {
+    font-size: 1.6rem;
+    margin: 2.5rem 0;
+  }
+
+  .mypage__fav-card {
+    flex: 0 0 130px;
+  }
+
+  .mypage__fav-img {
+    width: 130px;
+  }
+
+  #fav-items-grid .mypage__fav-img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .mypage__history-list {
+    min-height: 240px;
+  }
+
+  .mypage__history-card {
+    min-width: 82%;
+  }
+}
+
+/* スマートフォン */
+@media (max-width: 480px) {
+  .mypage {
+    margin-top: 4rem;
+    padding: 0 5%;
+  }
+
+  .mypage__title {
+    margin-bottom: 3rem;
+  }
+
+  /* プロフィールを縦積み */
+  .mypage__profile-inner {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    justify-items: center;
+  }
+
+  .mypage__profile-img {
+    width: 90px;
+    height: 112px;
+  }
+
+  .mypage__profile-right {
+    width: 100%;
+  }
+
+  .mypage__profile-heading {
+    font-size: 1.1rem;
+  }
+
+  .mypage__sub-title {
+    font-size: 1.3rem;
+    margin: 1.8rem 0;
+  }
+
+  .mypage__fav-card {
+    flex: 0 0 120px;
+  }
+
+  .mypage__fav-img {
+    width: 120px;
+  }
+
+  #fav-items-grid .mypage__fav-img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .mypage__history-list {
+    min-height: 180px;
+    padding: 0.6rem 0;
+  }
+
+  .mypage__history-card {
+    min-width: 90%;
+    padding: 10px 12px;
+  }
+
+  .mypage__history-img {
+    width: 60px;
+    height: 75px;
+  }
+
+  .mypage__nav-btn {
+    width: 24px;
+    height: 24px;
+  }
+}
