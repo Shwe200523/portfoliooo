@@ -1,16 +1,11 @@
 @font-face {
+  font-family: "Zen Kaku Gothic New";
+  src: url(../font/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Regular.ttf);
+}
+
+@font-face {
   font-family: "zou";
   src: url(../font/002zouver.2-Regular.ttf);
-}
-
-@font-face {
-  font-family: "lineseed-Reg";
-  src: url(../font/LINE_Seed_JP/LINESeedJP-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Jomhuria";
-  src: url(../font/Jomhuria/Jomhuria-Regular.ttf);
 }
 
 @font-face {
@@ -668,7 +663,7 @@ atodesiteikamo {
   font-size: 0.6rem;
   padding: 2px 6px;
   background-color: #fff;
-  font-family: 'lineseed-Reg', sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 .color-swatch {
@@ -749,7 +744,7 @@ atodesiteikamo {
 }
 
 .en-text {
-  font-family: 'lineseed-Reg', sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -773,7 +768,7 @@ atodesiteikamo {
   border-color: #fff;
 }
 .total-label {
-  font-family: 'lineseed-Reg', sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-weight: bold;
   font-size: 0.9rem;
   margin-right: 15px;
@@ -782,13 +777,13 @@ atodesiteikamo {
 }
 
 .total-price {
-  font-family: 'lineseed-Reg', sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 2.1rem;
   font-weight: bold;
 }
 
 .tax-in {
-  font-family: 'lineseed-Reg', sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 0.7rem;
   font-weight: bold;
   margin-left: 5px;
@@ -994,7 +989,7 @@ atodesiteikamo {
 }
 
 .pickup-text {
-  font-family: 'lineseed-Reg', sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   color: #333;
 }
 
@@ -1044,7 +1039,7 @@ atodesiteikamo {
   padding: 12px 40px;
   font-size: 1.1rem;
   font-weight: bold;
-  font-family: 'lineseed-Reg', sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   transition: all 0.3s ease;
 }
 
@@ -1286,7 +1281,7 @@ atodesiteikamo {
   color: #333; /* ★黒文字に！ */
   background-color: #fff; /* ★白背景に！ */
   text-decoration: none;
-  font-family: 'lineseed-Reg', sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.05em;

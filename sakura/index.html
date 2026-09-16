@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<title>sakura</title>
+<style>
+  #sakura-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+  }
+
+  .petal {
+    position: absolute;
+    background-color: #ffb7c5; 
+    border-radius: 150% 0 150% 150%;
+    opacity: 0.8;
+    transform-origin: left top;
+    animation: sakura-fall linear forwards;
+  }
+
+  @keyframes sakura-fall {
+    0% {
+      transform: translate(0, -10px) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(100px, 100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">桜ガイド</div>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#">トップ</a></li>
+        <li><a href="#grid">スポット</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="mainvr">
+  <div class="kyachikopi">
+    <h1>桜観光＆お花見スポット<br>完全ガイド</h1>
+    <p>日本の春を彩る絶景。心に残るお花見体験をあなたに。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="intro-meta">
+    <span class="date">2026/03/27</span>
+  </div>
+
+  <div class="intro-tags">
+    <span class="location">大阪</span>
+    <div class="hash">
+      <span>#花見</span>
+      <span>#観光名所</span>
+      <span>#イベント</span>
+      <span>#ファミリー</span>
+      <span>#グルメ</span>
+    </div>
+  </div>
+
+  <div class="shoukai">
+    <p>春の訪れを教えてくれる風物詩、桜。大阪には歴史ある名所からのんびり過ごせる公園まで、実は桜の名所がたくさんあります。</p>
+    <p>今回は、誰もが1度は訪れたい<b>「王道スポット」5選</b>を合わせてご紹介します。春のお花見の参考に、ぜひチェックしてみてくださいね。</p>
+  </div>
+</section>
+
+<section class="mokuji">
+  <div class="left">
+    <img src="images/sakura.jpg" alt="大阪城の桜" width="100%" height="100%">
+  </div>
+
+  <div class="right">
+    <h2 class="title">目次</h2>
+    
+    <div class="item">
+      <div class="basho">
+        <h3>大阪城公園：天守閣と桜の競演！歴史感じる圧巻の景色</h3>
+        <p>3月下旬〜4月中旬</p>
+      </div>
+    
+    </div>
+
+    <div class="item">
+      <div class="basho">
+        <h3>造幣局「桜の通り抜け」：期間限定！珍しい桜が咲き誇る幻想的な小道</h3>
+        <p>4月上旬〜中旬頃（期間限定）</p>
+      </div>
+      
+    </div>
+
+    <div class="item">
+      <div class="basho">
+        <h3>毛馬桜之宮公園：水辺に映える桜並木！都会のオアシスでゆったり散策</h3>
+        <p>4月上旬</p>
+      </div>
+     
+    </div>
+
+    <div class="item">
+      <div class="basho">
+        <h3>万博記念公園：太陽の塔と5,500本の桜！一日中楽しめる大規模公園</h3>
+        <p>3月下旬〜4月上旬</p>
+      </div>
+   
+    </div>
+
+    <div class="item">
+      <div class="basho">
+        <h3>狭山池公園：日本最古のため池を彩る桜とロマンチックな夜桜</h3>
+        <p>3月下旬</p>
+      </div>
+     
+    </div>
+
+  </div>
+</section>
+<!-- mokuji done  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<section class="introduce">
+  <h2>大阪、桜巡り。</h2>
+  <p id="grid"></p>>
+    今年も、大阪に美しい季節がやってきました。<br>
+    天守閣を彩る満開の桜から、静かな水辺の並木道まで。<br>
+    あなただけのお気に入りの場所が、きっと見つかります。
+  </p>
+</section>
+<!-- introduction done !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- 紹介 -->
+
+<section class="grid" >
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide">
+        <a href="#scroll1">
+          <div class="card">
+            <div class="cardimg">
+              <img src="images/ichi.jpg" alt="大阪城公園">
+              <span class="sakura"></span><span class="sakura"></span><span class="sakura"></span><span class="sakura"></span><span class="sakura"></span>
+            </div>
+            <div class="cardContent">
+              <span class="tokoro">大阪城公園</span>
+              <h1 class="tokoro2">天守閣と桜の競演！歴史感じる圧巻の景色</h1>
+              <p class="text">大阪の春といえばここ。約3,000本の桜が天守閣を包み込み、夜桜のライトアップも幻想的です。</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="#scroll2">
+          <div class="card">
+            <div class="cardimg">
+              <img src="images/second.jpg" alt="造幣局">
+              <span class="sakura"></span><span class="sakura"></span><span class="sakura"></span><span class="sakura"></span><span class="sakura"></span>
+            </div>
+            <div class="cardContent">
+              <span class="tokoro">造幣局「桜の通り抜け」</span>
+              <h1 class="tokoro2">期間限定！珍しい桜が咲き誇る幻想的な小道</h1>
+              <p class="text">多種多様な八重桜が楽しめる一週間限定の特別公開。都会の真ん中で珍しい桜を堪能できます。</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="#scroll3">
+          <div class="card">
+            <div class="cardimg">
+              <img src="images/third.jpg" alt="毛馬桜之宮公園">
+              <span class="sakura"></span><span class="sakura"></span><span class="sakura"></span><span class="sakura"></span><span class="sakura"></span>
+            </div>
+            <div class="cardContent">
+              <span class="tokoro">毛馬桜之宮公園</span>
+              <h1 class="tokoro2">水辺に映える桜並木！都会のオアシスでゆったり散策</h1>
+              <p class="text">大川沿いに続く約4,000本の桜並木。水面を彩るピンクの花びらとリバーサイドの風が心地よい名所です。</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="#scroll4">
+          <div class="card">
+            <div class="cardimg">
+              <img src="images/fourth.jpg" alt="万博記念公園">
+              <span class="sakura"></span><span class="sakura"></span><span class="sakura"></span><span class="sakura"></span><span class="sakura"></span>
+            </div>
+            <div class="cardContent">
+              <span class="tokoro">万博記念公園</span>
+              <h1 class="tokoro2">太陽の塔と5,500本の桜！一日中楽しめる大規模公園</h1>
+              <p class="text">広大な敷地に咲き誇る圧倒的な桜の数。家族でのピクニックや、太陽の塔とのコラボレーションは必見です。</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="#scroll5">
+          <div class="card">
+            <div class="cardimg">
+              <img src="images/fifth.jpg" alt="狭山池公園">
+              <span class="sakura"></span><span class="sakura"></span><span class="sakura"></span><span class="sakura"></span><span class="sakura"></span>
+            </div>
+            <div class="cardContent">
+              <span class="tokoro">狭山池公園</span>
+              <h1 class="tokoro2">日本最古のため池を彩る桜とロマンチックな夜桜</h1>
+              <p class="text">水面に映る夜桜が非常に美しく、落ち着いた雰囲気で桜を楽しめる地元の人にも愛されるスポットです。</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+
+
+
+
+<!--詳細  done !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+<section class="detail1">
+  <div class="header">
+    <p class="subtitle" id="scroll1">大阪の桜名所：誰もが一度は訪れたい「王道スポット」5選</p>
+    <h1 class="main-title">大阪の桜名所 王道① 大阪城公園：天守閣と桜の競演！歴史感じる圧巻の景色</h1>
+  </div>
+
+  <div class="vis">
+    <img src="images/ichi.jpg" alt="大阪城と桜">
+  </div>
+
+  <div class="body2">
+    <p>大阪の春といえばやっぱりここ、大阪を代表する桜の名所「大阪城公園」。園内には約3,000本の桜が咲き誇り、大阪城と共に見る桜は圧巻のひとこと。広い園内にはお花見エリアも多く、特にソメイヨシノを中心に約300本の桜が植えられている西の丸庭園からは天守閣と桜の共演が楽しめます。</p>
+    <p>夜のライトアップも人気で、昼夜どちらも訪れたくなる王道スポットです。</p>
+
+    <ul class="infoList" >
+      <li><strong>見頃：</strong>3月下旬〜4月中旬</li>
+      <li><strong>アクセス：</strong>JR大阪環状線「大阪城公園」駅または「森ノ宮」駅、Osaka Metro「谷町4丁目」駅から徒歩すぐ</li>
+    </ul>
+  </div>
+
+  <div class="card2">
+    <h2>大阪城公園</h2>
+    <div class="info-item">
+      <i class="fa-solid fa-link"></i>
+      <a href="https://www.osakacastlepark.jp/?lang=ja" target="_blank">https://www.osakacastlepark.jp/?lang=ja</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>大阪府大阪市中央区大阪城1-1</span>
+      <a href="#" class="map-link">Google Mapsで見る</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-regular fa-clock"></i>
+      <p>【大阪城公園】常時開園 【西の丸庭園】9:00〜17:00（3月〜10月） 9:00〜16:30（11月〜2月） ※入園は閉園30分前まで 【天守閣】9:00〜18:00（入館は17:30まで）</p>
+    </div>
+    <div class="info-item">
+      <i class="fa-regular fa-calendar"></i>
+      <p>【大阪城公園】定休日なし 【西の丸庭園】月曜日（月曜が祝日の場合は翌日）、年末年始（12/28〜1/4） 【天守閣】12月28日〜1月1日</p>
+    </div>
+  </div>
+</section>
+<section class="detail1">
+  <div class="header">
+    <h1 class="main-title"id="scroll2">大阪の桜名所 王道② 造幣局「桜の通り抜け」：期間限定！珍しい桜が咲き誇る幻想的な小道</h1>
+  </div>
+  <div class="vis">
+    <img src="images/second.jpg" alt="造幣局 桜の通り抜け">
+  </div>
+
+  <div class="body2">
+    <p>造幣局の「桜の通り抜け」は毎年多くの人が楽しみにしている、大阪の春の風物詩。<b>普段は入れない造幣局の通路を一般開放し、桜の開花にあわせて1週間だけ特別にご観桜できる期間限定イベント。</b>約140品種・300本以上の桜が咲き誇り、濃淡のある花びらが通りを華やかに彩ります。夜のライトアップはより幻想的で、フォトスポットとしても人気。期間限定ということもあり人は多いものの、1度は訪れたい特別な桜の名所です。</p>
+
+    <ul class="infoList" >
+      <li><strong>見頃：</strong>4月上旬〜中旬頃（期間限定）</li>
+      <li><strong>アクセス：</strong>JR東西線「大阪城北詰」駅、京阪本線「天満橋」駅、Osaka Metro「天満橋」駅より徒歩約15分</li>
+    </ul>
+  </div>
+
+  <div class="card2">
+    <h2>桜の通り抜け</h2>
+    <div class="info-item">
+      <i class="fa-solid fa-link"></i>
+      <a href="https://www.mint.go.jp/enjoy/toorinuke/sakura_osaka_news_r7.html" target="_blank">https://www.mint.go.jp/enjoy/toorinuke/sakura_osaka_news_r7.html</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>大阪府大阪市北区天満1-1-79</span>
+      <a href="#" class="map-link">Google Mapsで見る</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-regular fa-clock"></i>
+      <p>4月5日(土)〜11日(金)（令和7年度分）</p>
+    </div>
+  </div>
+</section>
+<section class="detail1">
+  <div class="header">
+    <h1 class="main-title"id="scroll3">大阪の桜名所 王道③毛馬桜之宮公園：水辺に映える桜並木！都会のオアシスでゆったり散策</h1>
+  </div>
+
+  <div class="vis">
+    <img src="images/third.jpg" alt="毛馬桜之宮公園">
+  </div>
+
+  <div class="body2">
+    <p>大川沿いに続く<b>約4.2kmの桜並木が美しい、水辺の花見スポット。</b>川面にふわりと映る桜と、そよ風に舞う花びらが春らしい情景を演出します。散歩するだけで気持ちのいい場所で、軽いお花見や写真散策にも最適。春には屋台が並ぶ時期もあり、のんびり歩きながらお花見散歩を楽しむのにぴったりです。ほどよく都会で、ほどよく自然。大阪らしい桜の名所のひとつです。</p>
+
+    <ul class="infoList" >
+      <li><strong>見頃：</strong>4月上旬</li>
+      <li><strong>アクセス：</strong>JR環状線「桜ノ宮」駅または「大阪城北詰」駅から徒歩すぐ、地下鉄谷町線・京阪本線「天満橋」駅から徒歩約5分</li>
+    </ul>
+  </div>
+
+  <div class="card2">
+    <h2>毛馬桜之宮公園</h2>
+    <div class="info-item">
+      <i class="fa-solid fa-link"></i>
+      <a href="https://osaka-info.jp/spot/kema-sakuranomiya-park/" target="_blank">https://osaka-info.jp/spot/kema-sakuranomiya-park/</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>大阪府大阪市都島区中野町1丁目ほか</span>
+      <a href="#" class="map-link">Google Mapsで見る</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-regular fa-clock"></i>
+      <p>24時間</p>
+    </div>
+    <div class="info-item">
+      <i class="fa-regular fa-calendar"></i>
+      <p>無</p>
+    </div>
+  </div>
+</section>
+<section class="detail1">
+  <div class="header">
+    <h1 class="main-title"id="scroll4">大阪の桜名所 王道④万博記念公園：太陽の塔と5,500本の桜！一日中楽しめる大規模公園</h1>
+  </div>
+
+  <div class="vis">
+    <img src="images/fourth.jpg" alt="万博記念公園">
+  </div>
+
+  <div class="body2">
+    <p>太陽の塔の圧倒的な存在感と、<b>園内に広がる桜の並木が相性抜群。</b>約5,500本の桜が咲き誇る、関西屈指のスケールの桜の名所です。</p>
+    <p>芝生広場でピクニックをしたり、屋台グルメを楽しんだりと、1日中過ごせるお花見スポットです。例年、20〜40店の屋台が出店する桜まつりや夜桜ライトアップなど、季節限定イベントも多数開催されます。</p>
+
+    <ul class="infoList" >
+      <li><strong>見頃：</strong>3月下旬〜4月上旬</li>
+      <li><strong>アクセス：</strong>大阪モノレール「万博記念公園駅」すぐ</li>
+    </ul>
+  </div>
+
+  <div class="card2">
+    <h2>万博記念公園</h2>
+    <div class="info-item">
+      <i class="fa-solid fa-link"></i>
+      <a href="https://www.expo70-park.jp/" target="_blank">https://www.expo70-park.jp/</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>大阪府吹田市千里万博公園</span>
+      <a href="#" class="map-link">Google Mapsで見る</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-regular fa-clock"></i>
+      <p>9:30〜17:00（入園時間は16:30） ※開園時間はイベントなどにより、変更になる場合があります。</p>
+    </div>
+    <div class="info-item">
+      <i class="fa-regular fa-calendar"></i>
+      <p>毎週水曜日（水曜日が祝日の場合は直後の平日）／年末年始 ※4月1日〜5月2日まで・10月・11月は無休</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="detail1">
+  <div class="header">
+    <h1 class="main-title"id="scroll5">大阪の桜名所 王道⑤ 狭山池公園：日本最古のため池を彩る桜とロマンチックな夜桜</h1>
+  </div>
+
+  <div class="vis">
+    <img src="images/fifth.jpg" alt="狭山池公園">
+  </div>
+
+  <div class="body2">
+    <p>日本最古のため池「狭山池」をぐるりと囲む約1,000本の桜。水面に映る桜や、夕暮れ時の景色も美しく、時間帯によって異なる景色が楽しめます。夜は狭山池北堤の桜並木がライトアップされ、ロマンチックな雰囲気に。デートにもおすすめの桜の名所です。</p>
+
+    <ul class="infoList" >
+      <li><strong>見頃：</strong>3月下旬</li>
+      <li><strong>アクセス：</strong>南海高野線「大阪狭山市」駅から徒歩約10分</li>
+    </ul>
+  </div>
+
+  <div class="card2">
+    <h2>狭山池公園</h2>
+    <div class="info-item">
+      <i class="fa-solid fa-link"></i>
+      <a href="https://www.city.osakasayama.osaka.jp/sosiki/siminseikatsubu/sangyounigiwaizukuri/citypromotion/6003.html" target="_blank">https://www.city.osakasayama.osaka.jp/sosiki/siminseikatsubu/sangyounigiwaizukuri/citypromotion/6003.html</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>大阪府大阪狭山市岩室</span>
+      <a href="#" class="map-link">Google Mapsで見る</a>
+    </div>
+    <div class="info-item">
+      <i class="fa-regular fa-clock"></i>
+      <p>24時間</p>
+    </div>
+    <div class="info-item">
+      <i class="fa-regular fa-calendar"></i>
+      <p>無</p>
+    </div>
+  </div>
+</section>
+<!-- 5か所 -->
+ 
+
+<div class="matome" id="matome">
+  <h2 id="index-2">まとめ</h2>
+  <p>大阪には、歴史や自然とともに桜を楽しめるスポットが盛りだくさん。王道の名所はもちろん、ちょっと足を延ばして訪れたい穴場まで、その場所ならではの“春の景色”が待っています。休日にお弁当を持ってのんびり過ごすのも、夜桜デートを楽しむのもおすすめです。今年の春は、大阪の桜を巡ってお気に入りの場所を見つけてみてくださいね。</p>
+</div>
+
+<footer><small>
+ <p><a href="#">© 2026 sakuraguide. All rights reserved.</a></p>
+  
+</small></footer>
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    
+    breakpoints: {
+      769: {
+        enabled: false,
+      }
+    }
+  });
+</script>
+
+
+
+<div id="sakura-container"></div>
+
+<script>
+  (function() {
+    const container = document.getElementById('sakura-container');
+    const petalCount = 30; // 同時に表示する花びらの数
+
+    function createPetal() {
+      const petal = document.createElement('div');
+      petal.className = 'petal';
+      
+      // ランダムなサイズ
+      const size = Math.random() * 10 + 10 + 'px';
+      petal.style.width = size;
+      petal.style.height = size;
+
+      // ランダムな開始位置
+      petal.style.left = Math.random() * 100 + 'vw';
+      
+      // ランダムなアニメーション秒数
+      const duration = Math.random() * 5 + 5 + 's';
+      petal.style.animationDuration = duration;
+
+      // ランダムな遅延
+      petal.style.animationDelay = Math.random() * 5 + 's';
+
+      container.appendChild(petal);
+
+      // アニメーション終了後に要素を削除してメモリを節約
+      setTimeout(() => {
+        petal.remove();
+        createPetal(); // 新しい花びらを作成してループさせる
+      }, (parseFloat(duration) + 5) * 1000);
+    }
+
+    // 初期化：指定した数の花びらを作成
+    for (let i = 0; i < petalCount; i++) {
+      setTimeout(createPetal, Math.random() * 5000);
+    }
+  })();
+  
+
+
+// sakura animation
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+  const targetElements = document.querySelectorAll('.section, .mokuji, .introduce, .grid, .detail1');
+
+  // 各要素に初期クラスを付与
+  targetElements.forEach(el => {
+    el.classList.add('fade-in-up');
+  });
+
+  // スクロール監視の関数
+  const scrollAnimation = function() {
+    const triggerMargin = 300; // 画面下からどれくらいの位置で発動させるか
+    
+    targetElements.forEach(el => {
+      if (window.innerHeight > el.getBoundingClientRect().top + triggerMargin) {
+        el.classList.add('is-active');
+      }
+    });
+  };
+
+  // 初期表示とスクロール時に実行
+  window.addEventListener('load', scrollAnimation);
+  window.addEventListener('scroll', scrollAnimation);
+});
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('.site-header');
+  if (window.scrollY > 500) { // 500px以上スクロールしたら表示
+    header.classList.add('is-show');
+  } else {
+    header.classList.remove('is-show');
+  }
+});
+</script>
+</body>
+
+</html>

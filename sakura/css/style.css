@@ -1,0 +1,614 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; 
+  overflow-x: hidden;
+}
+
+.site-header {
+  position: fixed;
+  top: -70px; 
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px); 
+  box-shadow: 0 2px 10px rgba(255, 183, 197, 0.3);
+  z-index: 10000;
+  transition: top 0.4s ease;
+  display: flex;
+  align-items: center;
+}
+
+.site-header.is-show {
+  top: 0;
+}
+
+.header-inner {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap');
+
+  .logo {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    color: #ffb7c5;
+    text-shadow: 
+      0 0 10px rgba(255, 255, 255, 0.8),
+      3px 3px 0px rgba(255, 183, 197, 0.3);
+    cursor: default;
+    user-select: none;
+  }
+
+  .logo::before,
+  .logo::after {
+    content: "🌸";
+    position: absolute;
+    font-size: 0.4em;
+    opacity: 0;
+    filter: blur(1px);
+  }
+
+ 
+  .logo::before {
+    bottom: -5px;
+    left: -10px;
+    animation: petal-flutter-1 6s infinite;
+  }
+
+ 
+  .logo::after {
+    top: -5px;
+    right: -10px;
+    animation: petal-flutter-2 6s infinite 3s; /* 3秒遅らせる */
+  }
+
+ 
+  .logo:hover {
+    animation: text-wobble 0.5s ease-in-out;
+  }
+ 
+
+.header-nav ul {
+  display: flex;
+  gap: 2rem;
+ 
+  li:hover{
+     animation: text-wobble 0.5s ease-in-out;
+  }
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #666;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #FFB7C5;
+}
+
+@media (max-width: 768px) {
+  .header-nav { display: none; } 
+}
+body {
+  font-family: "toppan-bunkyu-midashi-mincho-std", serif;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  margin: 0;
+  width: 100%;
+  font-size: 1.6rem; 
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+}
+
+
+
+.mainvr {
+  background-image: url("../images/What to See at OSAKA CASTLE (5 Amazing Things You___.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #222222;
+  background-blend-mode: overlay;
+  margin-bottom: 0.5rem;
+}
+
+.kyachikopi  {
+  h1
+  {
+  color: #FFFFFF;
+  font-size: clamp(3rem, 10vw, 6.4rem);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-shadow: 0.2rem 0.2rem 1rem #000000;
+}
+  p {
+  color: #FFFFFF;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  margin-top: 2vh;
+  text-shadow: 0.2rem 0.2rem 1rem #000000;
+}
+}
+
+
+
+
+.section {
+  max-width: 80rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10vh 3%;
+  color: #333333;
+  line-height: 1.8;
+  background-color: #ffffff;
+}
+
+.intro-meta {
+  border-bottom: 0.1rem solid #EEEEEE;
+  margin-bottom: 3vh;
+  padding-bottom: 1vh;
+}
+
+.date {
+  font-size: 1.5rem;
+  color: #999999;
+  font-weight: 500;
+}
+
+.intro-tags {
+  margin-bottom: 5vh;
+}
+
+.location {
+  display: inline-block;
+  background: #F8F9FA;
+  color: #666666;
+  padding: 0.4rem 1.2rem;
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.hash {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: #00796B;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.shoukai {
+  p {
+  margin-bottom: 3vh;
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+}
+
+   b {
+  color: #D32F2F;
+  font-weight: bold;
+}
+}
+
+
+
+
+.mokuji {
+  display: flex;
+  width: 90%;
+  min-height: 80vh;
+  background-color: #F9F7F4;
+  margin: 5vh auto;
+}
+
+@media (max-width: 768px) {
+  .mokuji {
+    flex-direction: column;
+    height: auto;
+    .left {
+  flex: 1;
+}
+  }
+}
+
+
+
+.mokuji .left img {
+  border-right: 0.5rem solid #FFFFFF;
+    border-right: none;
+    border-bottom: 0.5rem solid #FFFFFF;
+}
+
+
+.mokuji  {
+  .right{
+  flex: 1;
+  padding: 5%;
+  color: #333333;
+  overflow-y: auto;
+}
+.title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 4vh;
+  border-bottom: 0.3rem solid #FFB7C5;
+  padding-bottom: 1vh;
+  display: inline-block;
+  color: #222222;
+}
+ .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+  padding-bottom: 1.5vh;
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+.basho  {
+  h3{
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  color: #222222;
+  }
+  p {
+  font-size: 1.3rem;
+  color: #777777;
+}
+}
+}
+
+
+.introduce {
+  width: 90%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 10vh 3%;
+  text-align: center;
+h2 {
+  font-size: clamp(2.5rem, 7vw, 5.6rem);
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 3vh;
+}
+ p {
+  font-size: 1.9rem;
+  line-height: 1.8;
+  color: #333333;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+}
+
+
+
+.grid {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto 10vh;
+}
+
+
+
+.card {
+  background: #FFFFFF;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  text-align: left;
+  padding: 1rem;
+  transform: translate(-1rem, -1rem);
+  box-shadow: 1rem 1rem 2rem #FFB7C5;
+  transition: 0.2s linear;
+  cursor: pointer;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: translate(0, 0);
+  box-shadow: inset 0.8rem 0.8rem 1.5rem #FFB7C5;
+}
+
+.cardimg {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  transition: 0.2s linear;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.cardimg::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 50%;
+  background: linear-gradient(to bottom, #FFB7C5, transparent);
+  opacity: 0; transition: 0.3s; pointer-events: none; z-index: 1;
+}
+
+.card:hover .cardimg::after { opacity: 0.6; }
+
+.cardimg img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .cardimg img { transform: scale(1.05); }
+
+.sakura {
+  display: none;
+  position: absolute;
+  width: 1rem;
+  height: 1.2rem;
+  background: #FFB7C5;
+  border-radius: 50% 0 50% 50%;
+  top: -2rem;
+  z-index: 2;
+  animation: petal-fall 5s linear infinite;
+  animation-play-state: paused;
+}
+
+.card:hover .sakura {
+  display: block;
+  animation-play-state: running;
+}
+
+.sakura:nth-child(1) { left: 10%; animation-delay: 0s; }
+.sakura:nth-child(2) { left: 30%; animation-delay: 0.2s; animation-duration: 2s; }
+.sakura:nth-child(3) { left: 50%; animation-delay: 0.6s; }
+.sakura:nth-child(4) { left: 70%; animation-delay: 0.3s; animation-duration: 1.8s; }
+.sakura:nth-child(5) { left: 90%; animation-delay: 0.4s; }
+
+@keyframes petal-fall {
+  0% { transform: translateY(-2rem) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(20rem) rotate(360deg); opacity: 0; }
+}
+
+.cardContent {
+  padding: 2vh 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tokoro {
+   font-size: 1.3rem;
+  color: #666666;
+  display: block;
+  margin-bottom: 1vh;
+     }
+.tokoro2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222222;
+   margin-bottom: 1.5vh;
+    line-height: 1.4;
+   }
+.text {
+  font-size: 1.5rem;
+  color: #666666;
+  line-height: 1.6;
+}
+.detail1 {
+  width: 90%;
+  max-width: 90rem;
+  margin: 4vh auto;
+  color: #333;
+
+   .header {
+  border-bottom: 0.1rem solid #eee;
+  padding-bottom: 1vh;
+  margin-bottom: 3vh;
+  .subtitle {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+.main-title {
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+}
+.vis {
+  width: 100%;
+  margin-bottom: 3vh;
+   img {
+  border-radius: 0.8rem;
+}
+}
+ .body2 {
+  line-height: 1.8;
+  margin-bottom: 4vh;
+   p {
+  margin-bottom: 2vh;
+}
+.infoList {
+  margin-top: 3vh;
+  list-style: disc;
+  padding-left: 2rem;
+  li {
+  margin-bottom: 1vh;
+}
+}
+
+}
+}
+
+
+.detail1 .card2 {
+  border: 0.1rem solid #ddd;
+  border-radius: 0.8rem;
+  padding: 2.5rem;
+  background-color: #fafafa;
+  h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+.info-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5vh;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  i {
+  color: #666;
+  width: 1.6rem;
+  margin-top: 0.3rem;
+}
+}
+ a {
+  color: #FFB7C5;
+  transition: 0.2s ease;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+.map-link {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  border: 0.1rem solid #ccc;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1.2rem;
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  transition: 0.2s linear;
+}
+ .map-link:hover {
+  background-color: #00796B;
+  color: white;
+}
+}
+
+.matome{
+  width: 90%;
+  max-width: 90rem;
+  margin: auto;
+  margin-bottom: 2em;
+  h2{
+   
+    font-weight: bolder;
+    font-size: 2em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1.5rem;
+  }
+  p{
+    line-height: 1.6em;
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+}
+
+
+footer{
+ 
+  p{
+    padding: 2em;
+    text-align: center;
+
+     background: linear-gradient(to top, #fff0f5, white);
+  };
+}
+@media (min-width: 769px) {
+  .swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+    transform: none !important;
+  }
+  
+  .swiper-slide {
+    width: auto !important;
+    height: auto !important;
+    grid-column: span 2;
+  }
+
+  .swiper-slide:nth-child(4) {
+    grid-column: 2 / 4;
+  }
+
+  .swiper-slide:nth-child(5) {
+    grid-column: 4 / 6;
+  }
+  
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    width: 100%;
+  }
+  .swiper {
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 100% !important;
+  }
+}
+
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.fade-in-up.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  
+  @keyframes petal-flutter-1 {
+    0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translate(50px, -50px) rotate(720deg); opacity: 0; }
+  }
+
+  @keyframes petal-flutter-2 {
+    0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translate(-50px, 50px) rotate(-720deg); opacity: 0; }
+  }
+
+  @keyframes text-wobble {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-2px) rotate(-1deg); }
+    75% { transform: translateX(2px) rotate(1deg); }
+  }

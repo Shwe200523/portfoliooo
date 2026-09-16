@@ -1,16 +1,11 @@
 @font-face {
+  font-family: "Zen Kaku Gothic New";
+  src: url(../font/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Regular.ttf);
+}
+
+@font-face {
   font-family: "zou";
   src: url(../font/002zouver.2-Regular.ttf);
-}
-
-@font-face {
-  font-family: "lineseed-Reg";
-  src: url(../font/LINE_Seed_JP/LINESeedJP-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Jomhuria";
-  src: url(../font/Jomhuria/Jomhuria-Regular.ttf);
 }
 
 @font-face {
@@ -1470,7 +1465,7 @@ atodesiteikamo {
   color: #333;
   background-color: #fff;
   text-decoration: none;
-  font-family: 'lineseed-Reg', sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.05em;

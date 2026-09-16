@@ -3,17 +3,13 @@
     font-family: "zou";
     src: url(../font/002zouver.2-Regular.ttf);
 }
-@font-face{
-    font-family: "zengaku";
-    src: url(../font/Zengaku/Zengaku-Regular.ttf);
-}
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   background: #fff;
-  font-family: "zengaku";
+  font-family: "Zen Kaku Gothic New", sans-serif;
       font-family: "Zen Kaku Gothic New", sans-serif;
   color: #111;
 }

@@ -2,18 +2,10 @@
     font-family: "zou";
     src: url(../font/002zouver.2-Regular.ttf);
 }
-@font-face {
-    font-family: "lineseed-Reg";
-    src: url(../font/LINE_Seed_JP/LINESeedJP-Regular.ttf);
-}
-@font-face {
-    font-family: "Jomhuria";
-    src: url(../font/Jomhuria/Jomhuria-Regular.ttf);
-}
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 
 body{
-    font-family: "zengaku";
+    font-family: "Zen Kaku Gothic New", sans-serif;
       font-family: "Zen Kaku Gothic New", sans-serif;
 }
 *{

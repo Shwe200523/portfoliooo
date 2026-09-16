@@ -103,7 +103,7 @@ body::after {
 }
 
 .mypage__profile-row dt {
-  font-family: "lineseed-Reg", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 0.88rem;
   color: #555;
   white-space: nowrap;
@@ -111,7 +111,7 @@ body::after {
 }
 
 .mypage__profile-row dd {
-  font-family: "lineseed-Reg", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 0.88rem;
   white-space: nowrap;
   text-align: left;
@@ -149,7 +149,7 @@ body::after {
 }
 
 .mypage__section-ja {
-  font-family: "lineseed-Reg", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: clamp(0.875rem, 1.5vw, 1rem);
   color: #333;
   align-self: flex-end;
@@ -162,7 +162,7 @@ body::after {
 }
 
 .mypage__sub-title {
-  font-family: "lineseed-Reg", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -194,7 +194,7 @@ body::after {
 }
 
 .mypage__empty {
-  font-family: "lineseed-Reg", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 0.85rem;
   color: #aaa;
   padding: 1.5rem 0;
@@ -226,7 +226,7 @@ body::after {
 }
 
 .mypage__fav-name {
-  font-family: "lineseed-Reg", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 0.72rem;
   color: #111;
   margin-bottom: 4px;
@@ -245,7 +245,7 @@ body::after {
 }
 
 .mypage__fav-price {
-  font-family: "lineseed-Reg", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
 }
@@ -360,20 +360,20 @@ body::after {
 }
 
 .mypage__history-name {
-  font-family: "lineseed-Reg", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1.4;
 }
 
 .mypage__history-detail {
-  font-family: "lineseed-Reg", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 0.72rem;
   color: #555;
 }
 
 .mypage__history-price {
-  font-family: "lineseed-Reg", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   margin-top: auto;

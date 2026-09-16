@@ -410,17 +410,9 @@ a{
 }
 
 @media (max-width:767px){
-  .footer{
-    padding-block:9px;
-  }
-
-  .footer .footer__logo{
-    font-size:13px;
-  }
-
   .footer .footer__inner{
     flex-direction:column;
-    gap:3px;
+    gap:12px;
     text-align:center;
   }
 }
