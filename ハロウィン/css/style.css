@@ -303,6 +303,17 @@ body.menu-open {
     background-position: center center;
     filter: brightness(0.42) contrast(1.2) saturate(0.45);
   }
+
+  @media (max-width: 768px) {
+    clip-path: inset(0);
+
+    &::before {
+      position: fixed;
+      inset: 0;
+      clip-path: inset(0);
+      background-attachment: scroll;
+    }
+  }
 }
 
 .main_var_ttl {
@@ -407,10 +418,15 @@ body.menu-open {
     grid-template-columns: 1fr;
     gap: 3em;
     padding: 5em 1.5em;
+    clip-path: inset(0);
 
    
     &::before {
+      position: fixed;
+      inset: 0;
+      clip-path: inset(0);
       background-attachment: scroll;
+      background-position: center center;
     }
 
     
