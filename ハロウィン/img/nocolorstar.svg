@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 508.71 512">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: none;
+      }
+
+      .st1 {
+        stroke: #c79947;
+        stroke-miterlimit: 10;
+        stroke-width: 4.85px;
+      }
+
+      .st2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path class="st2" d="M-4,512V0H508v512H-4ZM252.07,403.48l154.7,96.82-36.36-180.22,137.42-120.48-184.05-19.73L252.01,11.26l-71.7,168.55L-3.8,199.6l137.4,120.48-36.33,180.21,154.8-96.8h0Z"/>
+  <path class="st1" d="M256.15,398.85l-149.41,94.27,35.07-175.51L9.19,200.27l177.7-19.27L256.1,16.84l69.26,164.22,177.64,19.21-132.63,117.34,35.09,175.53-149.31-94.3h0Z"/>
+  <line class="st0" x1="-424" y1="311" x2="-426" y2="310"/>
+</svg>
