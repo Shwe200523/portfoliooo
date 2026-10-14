@@ -232,6 +232,12 @@
   display:block;
 }
 
+button.card__link{
+  width:100%;
+  text-align:left;
+  cursor:pointer;
+}
+
 .card__thumb{
   
   border-radius:3px;
@@ -309,6 +315,59 @@
   color:#56646f;
   letter-spacing:.04em;
   line-height:1.8;
+}
+
+/* 作品資料ビューア */
+.gallery{
+  position:fixed;
+  inset:0;
+  z-index:1100;
+  background:rgba(30,36,43,.92);
+  overflow-y:auto;
+  overscroll-behavior:contain;
+
+  &[hidden]{
+    display:none;
+  }
+
+  .gallery__inner{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    width:min(1100px,100%);
+    margin:0 auto;
+    padding:72px 16px 48px;
+
+    img{
+      width:100%;
+      border-radius:3px;
+    }
+  }
+
+  .gallery__close{
+    position:fixed;
+    top:16px;
+    right:16px;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#f8fafc;
+    cursor:pointer;
+
+    span{
+      position:absolute;
+      top:50%;
+      left:50%;
+      width:18px;
+      height:1.5px;
+      background:#1e242b;
+      transform:translate(-50%,-50%) rotate(45deg);
+
+      & + span{
+        transform:translate(-50%,-50%) rotate(-45deg);
+      }
+    }
+  }
 }
 
 /* Works一覧 done */

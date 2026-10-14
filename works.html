@@ -111,6 +111,17 @@
         </article>
 
         <article class="card js-fade" data-cat="web">
+          <button type="button" class="card__link js-gallery" data-images="img/01.png,img/02.png,img/03.png,img/04.png">
+            <div class="card__thumb"><img src="img/01.png"></div>
+            <div class="card__body">
+              <p class="card__cat">作品資料</p>
+              <h2 class="card__title">.SELECT 作品紹介資料</h2>
+              <p class="card__role">資料デザイン ／ 全4ページ</p>
+            </div>
+          </button>
+        </article>
+
+        <article class="card js-fade" data-cat="web">
           <a href="パールズ　カフェ/html/index.html" class="card__link" target="_blank" rel="noopener">
             <div class="card__thumb"><img src="img/works/pearls.png"></div>
             <div class="card__body">
@@ -264,6 +275,15 @@
     </div>
   </section>
   <!-- 一覧 done -->
+
+  <!-- ============================================
+       作品資料ビューア
+  ============================================ -->
+  <div class="gallery" id="gallery" hidden>
+    <button type="button" class="gallery__close" id="galleryClose" aria-label="閉じる"><span></span><span></span></button>
+    <div class="gallery__inner" id="galleryInner"></div>
+  </div>
+  <!-- 作品資料ビューア done -->
 
   <!-- ============================================
        次へ
