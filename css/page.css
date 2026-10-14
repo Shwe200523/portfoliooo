@@ -290,13 +290,6 @@ button.card__link{
   background:#cdd9e3;
 }
 
-.card__thumb.is-trio{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:6px;
-  background:none;
-}
-
 .card__body{
   padding-top:18px;
 }
