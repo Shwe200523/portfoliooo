@@ -290,8 +290,28 @@ button.card__link{
   background:#cdd9e3;
 }
 
+.card__thumb.is-trio{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:6px;
+  background:none;
+}
+
 .card__body{
   padding-top:18px;
+}
+
+.card__badge{
+  display:inline-block;
+  padding:3px 12px;
+  margin-bottom:10px;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:.06em;
+  line-height:1.8;
+  color:#f8fafc;
+  background:#3d8fbf;
+  border-radius:999px;
 }
 
 .card__cat{
