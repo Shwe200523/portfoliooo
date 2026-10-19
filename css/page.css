@@ -322,8 +322,9 @@ button.card__link{
   font-family:'Zen Maru Gothic', sans-serif;
   font-size:11px;
   letter-spacing:.06em;
-  color:#56646f;
-  border:1px solid #cfdce6;
+  font-weight:500;
+  color:#f8fafc;
+  background:#3d8fbf;
   border-radius:999px;
 }
 

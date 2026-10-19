@@ -350,6 +350,13 @@
   border-radius:2px;
 }
 
+.work__tags li.work__year{
+  font-weight:500;
+  color:#f8fafc;
+  background:#3d8fbf;
+  border-color:#3d8fbf;
+}
+
 .work__more{
   position:relative;
   display:inline-block;
