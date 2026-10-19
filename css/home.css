@@ -310,6 +310,13 @@
   border-radius:999px;
 }
 
+.work__year{
+  font-family:'Zen Maru Gothic', sans-serif;
+  font-size:11px;
+  letter-spacing:.06em;
+  color:#56646f;
+}
+
 .work__title{
   font-family:'Yomogi', 'Zen Maru Gothic', sans-serif;
   font-size:clamp(28px,4.4vw,46px);

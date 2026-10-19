@@ -315,6 +315,18 @@ button.card__link{
   margin-bottom:8px;
 }
 
+.card__year{
+  display:inline-block;
+  margin-left:10px;
+  padding:1px 10px;
+  font-family:'Zen Maru Gothic', sans-serif;
+  font-size:11px;
+  letter-spacing:.06em;
+  color:#56646f;
+  border:1px solid #cfdce6;
+  border-radius:999px;
+}
+
 .card__title{
   font-size:clamp(17px,2.2vw,21px);
   font-weight:500;
