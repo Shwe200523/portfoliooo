@@ -20,6 +20,7 @@
 
 | 制作物 | フォルダ |
 |---|---|
+| 景 KESHIKI 金継ぎ教室 | `kintsugi/` |
 | ETA-RING（結婚指輪ブランドサイト） | `結婚/wedding/` |
 | .SELECT（ECサイト・チーム制作） | `ec site/Group01/` |
 | パールズ カフェ | `パールズ　カフェ/` |

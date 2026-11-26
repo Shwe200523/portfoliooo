@@ -1,0 +1,545 @@
+.selection {
+  padding: 100px 24px;
+  background-color: #f8f6f2;
+
+  .selection_ul {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  a {
+    display: block;
+    padding: 0 28px;
+    border: 1px solid #d8cfc2;
+    border-radius: 24px;
+    background-color: #fff;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    line-height: 46px;
+  }
+
+  .selection_li1 a {
+    border-color: #2a2622;
+    background-color: #2a2622;
+    color: #fff;
+  }
+}
+
+@media (max-width: 1100px) {
+  .selection {
+    padding: 60px 24px;
+
+    .selection_ul {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    a {
+      height: 40px;
+      padding: 0 18px;
+      font-size: 0.8em;
+      line-height: 38px;
+    }
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 selection done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.samestyle_section1,
+.samestyle_section2 {
+  padding: 100px 120px;
+  background-color: #ece7e0;
+  line-height: 1.45;
+
+  .samestyleh1 {
+    color: #b28e44;
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+  }
+
+  .samestyle_label {
+    margin: 7px 0 12px;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+  }
+
+  .samestyle_detail {
+    margin-top: 12px;
+    padding-bottom: 12px;
+    background-color: #fff;
+  }
+
+  summary {
+    display: block;
+    position: relative;
+    padding: 36px 36px 25px 80px;
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    cursor: pointer;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "Q";
+      position: absolute;
+      top: 30px;
+      left: 36px;
+      color: #b28e44;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.4em;
+      letter-spacing: 0;
+    }
+
+    &::after {
+      content: "+";
+      position: absolute;
+      top: 28px;
+      right: 36px;
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 300;
+      font-size: 1.6em;
+      letter-spacing: 0;
+    }
+  }
+
+  .samestyle_detail[open] summary::after {
+    content: "−";
+  }
+
+  p {
+    position: relative;
+    margin: 0 36px;
+    padding: 25px 44px 14px;
+    border-top: 1px solid #d8cfc2;
+    color: #4f4943;
+    font-size: 0.9em;
+    line-height: 2.1;
+
+    &::before {
+      content: "A";
+      position: absolute;
+      top: 19px;
+      left: 0;
+      color: #8a8178;
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 500;
+      font-size: 1.7em;
+      line-height: 1.2;
+    }
+  }
+}
+
+.samestyle_section2 {
+  background-color: #f8f6f2;
+}
+
+@media (max-width: 1100px) {
+  .samestyle_section1,
+  .samestyle_section2 {
+    padding: 80px 24px;
+
+    .samestyle_label {
+      font-size: 1.4em;
+    }
+
+    summary {
+      padding: 22px 44px 16px 52px;
+      font-size: 1em;
+
+      &::before {
+        top: 18px;
+        left: 20px;
+      }
+
+      &::after {
+        top: 16px;
+        right: 20px;
+      }
+    }
+
+    p {
+      margin: 0 20px;
+      padding: 16px 0 8px 32px;
+      font-size: 0.8em;
+
+      &::before {
+        top: 12px;
+      }
+    }
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 faq done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.Reservation,
+.access,
+.route {
+  padding: 140px 120px;
+  line-height: 1.45;
+
+  .Reservation_label,
+  .access_label,
+  .route_label {
+    display: flex;
+    align-items: center;
+    color: #b28e44;
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-left: 8px;
+      color: #4f4943;
+      font-family: "Shippori Mincho", serif;
+      font-size: 0.8em;
+
+      &::before {
+        content: "";
+        width: 36px;
+        height: 1px;
+        background-color: #b28e44;
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 22px;
+    font-size: 2.4em;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+  }
+
+  ol {
+    display: flex;
+    gap: 36px;
+
+    li {
+      position: relative;
+      flex: 1;
+    }
+
+    p {
+      margin-top: 10px;
+      color: #4f4943;
+      font-size: 0.8em;
+      line-height: 2;
+    }
+
+    .Reservation_p1 {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 0;
+      color: #b28e44;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1em;
+      line-height: 1.2;
+
+      .Reservation_span1 {
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+      }
+
+      .Reservation_span2 {
+        font-weight: 300;
+        font-size: 2.5em;
+      }
+    }
+
+    h3 {
+      margin-top: 8px;
+      font-weight: 500;
+      font-size: 1.1em;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .Reservation,
+  .access,
+  .route {
+    padding: 80px 24px;
+
+    h2 {
+      margin-top: 16px;
+      font-size: 1.6em;
+    }
+
+    ol {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 Reservation access route done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.Reservation {
+  display: grid;
+  grid-template-columns: 1fr 560px;
+  column-gap: 80px;
+  background-color: #f8f6f2;
+
+  .Reservation_lead {
+    margin-top: 18px;
+    color: #5c554d;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    line-height: 2.1;
+  }
+
+  h3 {
+    margin-top: 40px;
+    color: #967430;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+
+  ul {
+    margin-top: 13px;
+  }
+
+  ul li {
+    position: relative;
+    margin-top: 12px;
+    padding-left: 18px;
+    font-size: 0.9em;
+    line-height: 1.8;
+
+    &.Reservation_li1 {
+      margin-top: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #b28e44;
+    }
+  }
+
+  .Reservation_tel {
+    grid-column: 2;
+    grid-row: 1 / 6;
+    align-self: start;
+    padding: 60px 50px 44px;
+    background-color: #2a2622;
+
+    .Reservation_tel_p1 {
+      color: #b28e44;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.1em;
+      letter-spacing: 0.2em;
+      line-height: 1.2;
+    }
+
+    a {
+      display: block;
+      margin-top: 14px;
+      color: #fff;
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 300;
+      font-size: 3.8em;
+      line-height: 1.2;
+    }
+
+    .Reservation_p3 {
+      margin-top: 21px;
+      padding-top: 21px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.8em;
+      line-height: 2;
+    }
+  }
+
+  ol {
+    grid-column: 1 / 3;
+    margin-top: 72px;
+
+    h3 {
+      color: #2a2622;
+    }
+
+    li::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: -30px;
+      width: 24px;
+      height: 1px;
+      background-color: #b28e44;
+    }
+
+    .Reservation_li3::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .Reservation {
+    display: block;
+  }
+
+  .Reservation {
+    .Reservation_lead {
+      font-size: 0.8em;
+    }
+
+    h3 {
+      margin-top: 32px;
+    }
+
+    .Reservation_tel {
+      margin-top: 40px;
+      padding: 40px 24px 32px;
+
+      a {
+        font-size: 2.6em;
+      }
+    }
+
+    ol {
+      margin-top: 56px;
+
+      li::after {
+        display: none;
+      }
+    }
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 Reservation done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.access {
+  background-color: #ece7e0;
+
+  .access_label {
+    justify-content: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 440px;
+    margin-top: 56px;
+    border: 1px solid #d8cfc2;
+  }
+
+  dl {
+    margin-top: 48px;
+    border-bottom: 1px solid #d8cfc2;
+    font-size: 0.9em;
+    line-height: 1.8;
+  }
+
+  div {
+    display: flex;
+    border-top: 1px solid #d8cfc2;
+  }
+
+  dt {
+    flex-shrink: 0;
+    width: 300px;
+    padding: 19px 24px;
+    font-weight: 500;
+  }
+
+  dd {
+    padding: 19px 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .access {
+    iframe {
+      height: 280px;
+      margin-top: 40px;
+    }
+
+    dl {
+      margin-top: 32px;
+      font-size: 0.8em;
+    }
+
+    dt {
+      width: 96px;
+      padding: 14px 12px;
+    }
+
+    dd {
+      padding: 14px 12px;
+    }
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 access done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.route {
+  background-color: #f8f6f2;
+
+  .route_label {
+    justify-content: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  ol {
+    margin-top: 64px;
+  }
+
+  img {
+    width: 100%;
+    aspect-ratio: 376 / 271;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+
+  ol .route_p1 {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .route {
+    ol {
+      margin-top: 40px;
+      gap: 40px;
+    }
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 route done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */

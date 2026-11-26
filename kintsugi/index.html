@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ja" class="is-loading">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="壊れたものを隠すのではなく、その傷跡を、新しい美しさへ。割れた器を金で継ぐ日本の修復の美学「金継ぎ」。">
+<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="./img/favicon.png" type="image/png">
+<link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/top.css">
+<link rel="stylesheet" href="./css/animation.css">
+<title>KINTSUGI — 傷は、美しさになる。</title>
+</head>
+
+<body>
+<div class="photo"></div>
+<canvas class="webgl"></canvas>
+
+<div class="loader">
+  <p class="loader_text">Loading</p>
+  <div class="loader_bar"><span class="loader_fill"></span></div>
+  <p class="loader_note" hidden></p>
+</div>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 loader done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<header class="header"></header>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 header done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<section class="hero">
+  <div class="hero_copy">
+    <div class="hero_label">
+      <p class="label">KINTSUGI CLASS</p>
+      <p class="hero_p2">少人数制の金継ぎ教室</p>
+    </div>
+    <h1 class="hero_ttl">傷は、<br>美しさになる。</h1>
+    <p class="text">壊れたものを隠すのではなく、<br>その傷跡を、新しい美しさへ。</p>
+    <div class="hero_cta">
+      <a class="hero_a1" href="./trial.html#trial">一日体験　6,600円〜　<span>→</span></a>
+      <a href="./trial.html">コース一覧を見る</a>
+    </div>
+  </div>
+
+  <div class="hero_visual"></div>
+
+  <a href="#kintsugi" class="scroll">
+    <span class="scroll_text">scroll</span>
+    <span class="scroll_line"></span>
+  </a>
+</section>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  hero done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<section class="kintsugi" id="kintsugi">
+
+  <div class="kintsugi_visual"></div>
+
+  <div class="kintsugi_text">
+    <p class="label">KINTSUGI</p>
+    <h2 class="ttl">金継ぎとは</h2>
+    <p class="text">壊れたものを隠すのではなく、<br>その傷跡を新しい美しさとして残す。</p>
+
+    <div class="kintsugi_steps">
+      <span class="kintsugi_line"><span class="kintsugi_line_fill"></span></span>
+      <ul>
+        <li class="kintsugi_item">
+          <span class="kintsugi_num">01</span>
+          <div>
+            <h3 class="kintsugi_ttl">修復</h3>
+            <p class="kintsugi_desc">割れた器を、もう一度つなぐ。</p>
+          </div>
+        </li>
+        <li class="kintsugi_item">
+          <span class="kintsugi_num">02</span>
+          <div>
+            <h3 class="kintsugi_ttl">継承</h3>
+            <p class="kintsugi_desc">傷跡を消さず、そのまま残す。</p>
+          </div>
+        </li>
+        <li class="kintsugi_item">
+          <span class="kintsugi_num">03</span>
+          <div>
+            <h3 class="kintsugi_ttl">美</h3>
+            <p class="kintsugi_desc">金で彩られた傷が、<br>新しい表情を生み出す。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <a href="./about.html" class="kintsugi_more">金継ぎについて詳しく<span>→</span></a>
+  </div>
+</section>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                kintsugi done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<div class="marquee">
+  <p>Kintsugi  —  KESHIKI  —  The beauty of scars  —  </p>
+  <p>Kintsugi  —  KESHIKI  —  The beauty of scars  —  </p>
+</div>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 marquee done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+     <!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                                    ここから
+         ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<section class="reason">
+  <p class="reason_ghost">Reason</p>
+  <p class="reason_label">Reason<span>選ばれる理由</span></p>
+  <h2>景が選ばれる、3つの理由。</h2>
+  <p class="reason_lead">はじめての方にも、大切な器を直したい方にも。<br>景が大切にしている3つのことをご紹介します。</p>
+
+  <ul>
+    <li>
+      <img src="./img/kintsugi_plate.jpg" alt="">
+      <div class="reason_num">
+        <span class="reason_span1">01</span>
+        <span class="reason_span2">Real Urushi</span>
+      </div>
+      <h3>本格コースは本漆だけ</h3>
+      <p>本漆 金継ぎ教室では合成の接着剤を使わず、天然の漆だけで直します。仕上がった器は、食器として毎日安心して使えます。</p>
+    </li>
+    <li>
+      <img src="./img/studio_01.jpg" alt="">
+      <div class="reason_num">
+        <span class="reason_span1">02</span>
+        <span class="reason_span2">Small Class</span>
+      </div>
+      <h3>最大6名の少人数制</h3>
+      <p>先生がひとりひとりの手元まで見守ります。はじめてでも、道具の持ち方からていねいにお教えします。</p>
+    </li>
+    <li>
+      <img src="./img/kintsugi_floral_bowl.jpg" alt="">
+      <div class="reason_num">
+        <span class="reason_span1">03</span>
+        <span class="reason_span2">Your Keshiki</span>
+      </div>
+      <h3>器ごとの景色をデザイン</h3>
+      <p>割れ方は器ごとに違います。どこに金をのせるか先生と相談しながら、世界にひとつの景色をつくります。</p>
+    </li>
+  </ul>
+
+  <a href="./about.html">景について詳しく<span>→</span></a>
+</section>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 reason done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<section class="lineup">
+  <p class="lineup_ghost">Course</p>
+  <p class="lineup_label">Course<span>コース</span></p>
+  <h2>あなたに合う、3つのコース。</h2>
+  <p class="lineup_lead">まずは2時間の一日体験から。本格的に直したい方は本漆コース、<br>器がなくても楽しめるアクセサリーコースもご用意しています。</p>
+  <a href="./trial.html#compare" class="lineup_more">コース・料金を比べる<span>→</span></a>
+
+  <ul>
+    <li>
+      <img src="./img/class_01.jpg" alt="">
+      <div class="lineup_body">
+        <div class="lineup_head">
+          <span class="lineup_span1">01</span>
+          <span class="lineup_span2">はじめての方に</span>
+        </div>
+        <h3>一日体験</h3>
+        <p class="lineup_p1">Trial</p>
+        <p class="lineup_p2">乾きの早い材料（簡易金継ぎ）で、金継ぎの基本を体験。仕上がった器は、その日にお持ち帰りいただけます。</p>
+        <dl>
+          <div>
+            <dt>所要時間</dt>
+            <dd>2時間</dd>
+          </div>
+          <div>
+            <dt>料金</dt>
+            <dd>6,600円（税込）</dd>
+          </div>
+          <div>
+            <dt>持ち物</dt>
+            <dd>なし（手ぶらでOK）</dd>
+          </div>
+        </dl>
+        <a href="./trial.html#trial">詳しく見る  →</a>
+      </div>
+    </li>
+    <li>
+      <img src="./img/kintsugi_goldline.jpg" alt="">
+      <div class="lineup_body">
+        <div class="lineup_head">
+          <span class="lineup_span1">02</span>
+          <span class="lineup_span2">自分の器を直したい方に</span>
+        </div>
+        <h3>本漆 金継ぎ教室</h3>
+        <p class="lineup_p1">Urushi Course</p>
+        <p class="lineup_p2">天然の漆だけを使う本格コース。大切な器を、全10回・約3か月かけてじっくり直します。</p>
+        <dl>
+          <div>
+            <dt>時間</dt>
+            <dd>1回2時間・月2回〜</dd>
+          </div>
+          <div>
+            <dt>料金</dt>
+            <dd>1回 4,400円（税込）</dd>
+          </div>
+          <div>
+            <dt>入会金</dt>
+            <dd>5,500円（税込）</dd>
+          </div>
+        </dl>
+        <a href="./urushi.html">詳しく見る  →</a>
+      </div>
+    </li>
+    <li>
+      <img src="./img/shards.jpg" alt="">
+      <div class="lineup_body">
+        <div class="lineup_head">
+          <span class="lineup_span1">03</span>
+          <span class="lineup_span2">気軽に楽しみたい方に</span>
+        </div>
+        <h3>金継ぎアクセサリー</h3>
+        <p class="lineup_p1">Accessory</p>
+        <p class="lineup_p2">割れた陶片を金で彩って、ピアスやブローチに。直したい器がなくても参加できます。</p>
+        <dl>
+          <div>
+            <dt>所要時間</dt>
+            <dd>1.5時間</dd>
+          </div>
+          <div>
+            <dt>料金</dt>
+            <dd>4,950円（税込）</dd>
+          </div>
+          <div>
+            <dt>お持ち帰り</dt>
+            <dd>当日</dd>
+          </div>
+        </dl>
+        <a href="./accessory.html">詳しく見る  →</a>
+      </div>
+    </li>
+  </ul>
+</section>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 lineup done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<section class="trial">
+  <img class="trial_img1" src="./img/trial_01.jpg" alt="">
+  <img class="trial_img2" src="./img/kintsugi_glue.jpg" alt="">
+  <p class="trial_vertical">はじめての方へ</p>
+
+  <p class="trial_label">Trial<span>一日体験</span></p>
+  <h2>手ぶらで、2時間。<br>はじめての金継ぎ。</h2>
+  <p class="trial_lead">器も道具もエプロンも、すべて教室でご用意します。<br>先生がとなりで見守るので、筆を持ったことがない方も大丈夫。</p>
+  <ul>
+    <li>器・道具・エプロンはすべて貸し出し</li>
+    <li>先生がとなりで手元をサポート</li>
+    <li>仕上がった器はその日にお持ち帰り</li>
+  </ul>
+  <div class="trial_price">
+    <span class="trial_span1">6,600</span>
+    <span class="trial_span2">円（税込・器代込み）／ 約2時間</span>
+  </div>
+  <a href="./trial.html#trial">一日体験について<span>→</span></a>
+</section>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 trial done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<section class="review">
+  <p class="review_ghost">Voice</p>
+  <p class="review_label">Gallery &amp; Voice<span>作品と生徒の声</span></p>
+  <h2>割れた器が、景色になるまで。</h2>
+  <p class="review_lead">教室で生まれた作品と、通ってくださる生徒さんの声をご紹介します。</p>
+
+  <div class="review_photos">
+    <ul>
+      <li>
+        <img src="./img/kintsugi_collection.jpg" alt="">
+        <p>#割れ</p>
+      </li>
+      <li>
+        <img src="./img/kintsugi_white_bowl.jpg" alt="">
+        <p>#本漆</p>
+      </li>
+      <li>
+        <img src="./img/kintsugi_teal_bowl.jpg" alt="">
+        <p>#欠け</p>
+      </li>
+      <li>
+        <img src="./img/kintsugi_plate.jpg" alt="">
+        <p>#一日体験</p>
+      </li>
+      <li>
+        <img src="./img/kintsugi_blue_bowl.jpg" alt="">
+        <p>#ヒビ</p>
+      </li>
+      <li>
+        <img src="./img/shards.jpg" alt="">
+        <p>#陶片</p>
+      </li>
+      <li>
+        <img src="./img/kintsugi_white_plate.jpg" alt="">
+        <p>#本漆</p>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <img src="./img/kintsugi_collection.jpg" alt="">
+        <p>#割れ</p>
+      </li>
+      <li>
+        <img src="./img/kintsugi_white_bowl.jpg" alt="">
+        <p>#本漆</p>
+      </li>
+      <li>
+        <img src="./img/kintsugi_teal_bowl.jpg" alt="">
+        <p>#欠け</p>
+      </li>
+      <li>
+        <img src="./img/kintsugi_plate.jpg" alt="">
+        <p>#一日体験</p>
+      </li>
+      <li>
+        <img src="./img/kintsugi_blue_bowl.jpg" alt="">
+        <p>#ヒビ</p>
+      </li>
+      <li>
+        <img src="./img/shards.jpg" alt="">
+        <p>#陶片</p>
+      </li>
+      <li>
+        <img src="./img/kintsugi_white_plate.jpg" alt="">
+        <p>#本漆</p>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="review_list">
+    <li>
+      <h3>「祖母の湯のみが、<br>また使えるように。」</h3>
+      <p>割れたまま箱にしまっていた湯のみ。継ぎ目が入って、前よりもっと好きになりました。</p>
+      <div class="review_who">
+        <img src="./img/voice_01.jpg" alt="">
+        <p class="review_p1">30代・会社員</p>
+        <p class="review_p2">本漆 金継ぎ教室（4か月）</p>
+      </div>
+    </li>
+    <li>
+      <h3>「初めてでも、<br>ここまでできるなんて。」</h3>
+      <p>先生がずっと手元を見てくれるので安心でした。持ち帰った器は、玄関に飾っています。</p>
+      <div class="review_who">
+        <img src="./img/voice_02.jpg" alt="">
+        <p class="review_p1">20代・学生</p>
+        <p class="review_p2">一日体験</p>
+      </div>
+    </li>
+    <li>
+      <h3>「傷が、いちばん<br>好きな景色になった。」</h3>
+      <p>欠けてしまったお気に入りのお皿。どこに金をのせるか考える時間も楽しかったです。</p>
+      <div class="review_who">
+        <img src="./img/voice_03.jpg" alt="">
+        <p class="review_p1">40代・主婦</p>
+        <p class="review_p2">本漆 金継ぎ教室（6か月）</p>
+      </div>
+    </li>
+  </ul>
+
+  <div class="review_more">
+    <a href="./work.html">作品ギャラリーを見る<span class="link_arrow">→</span></a>
+    <a href="./work.html#voice">生徒の声をもっと見る<span class="link_arrow">→</span></a>
+  </div>
+</section>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 review done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<section class="profile">
+  <p class="profile_ghost">Teacher</p>
+  <img src="./img/teacher_01.jpg" alt="講師の藤森 葵">
+  <p class="profile_vertical">漆芸家　藤森 葵</p>
+
+  <div class="profile_body">
+    <p class="profile_label">Teacher<span>講師紹介</span></p>
+    <h2>「割れたことも、<br>　その器の物語です。」</h2>
+    <div class="profile_name">
+      <h3>藤森 葵</h3>
+      <p>Aoi Fujimori</p>
+    </div>
+    <p class="profile_role">漆芸家／金継ぎ歴12年</p>
+    <p class="profile_text">京都の漆工房で修業したのち独立。「器と、もう一度暮らす」を大切に、ひとりひとりの器と向き合う時間をそっとお手伝いしています。口ぐせは「急がなくて大丈夫」。休みの日は骨董市で器を探しています。</p>
+    <ul>
+      <li>
+        <div>
+          <span class="profile_span1">12</span>
+          <span class="profile_span2">年</span>
+        </div>
+        <p>金継ぎ歴</p>
+      </li>
+      <li>
+        <div>
+          <span class="profile_span1">1,200</span>
+          <span class="profile_span2">点以上</span>
+        </div>
+        <p>これまでに直した器</p>
+      </li>
+      <li>
+        <div>
+          <span class="profile_span1">6</span>
+          <span class="profile_span2">名</span>
+        </div>
+        <p>1クラスの定員</p>
+      </li>
+    </ul>
+    <a href="./about.html#profile">講師紹介を見る<span class="link_arrow">→</span></a>
+  </div>
+</section>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 profile done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<section class="news">
+  <p class="news_label">News &amp; Column<span>お知らせ・コラム</span></p>
+  <h2>景からのお知らせ。</h2>
+  <a href="./news.html" class="news_more">一覧を見る<span>→</span></a>
+
+  <ul class="news_list">
+    <li>
+      <p class="news_p1">2026.10.20</p>
+      <p class="news_p2">お知らせ</p>
+      <p class="news_p3">11月の一日体験のご予約受付を開始しました</p>
+    </li>
+    <li>
+      <p class="news_p1">2026.10.05</p>
+      <p class="news_p2">イベント</p>
+      <p class="news_p3">中崎町クラフトマルシェに出店します（11/3）</p>
+    </li>
+    <li>
+      <p class="news_p1">2026.09.18</p>
+      <p class="news_p2">お知らせ</p>
+      <p class="news_p3">金継ぎアクセサリーに新しい陶片が入りました</p>
+    </li>
+    <li>
+      <p class="news_p1">2026.09.01</p>
+      <p class="news_p2">休講</p>
+      <p class="news_p3">9月23日（水）は臨時休講となります</p>
+    </li>
+  </ul>
+
+  <ul class="news_column">
+    <li>
+      <img src="./img/kintsugi_blue_bowl.jpg" alt="">
+      <p class="news_column_p1">Column｜暮らし</p>
+      <h3>金継ぎした器の、毎日のお手入れ方法</h3>
+      <p class="news_column_p2">2026.10.12</p>
+    </li>
+    <li>
+      <img src="./img/kintsugi_goldline.jpg" alt="">
+      <p class="news_column_p1">Column｜基礎知識</p>
+      <h3>本漆と簡易金継ぎ、なにが違う？</h3>
+      <p class="news_column_p2">2026.09.25</p>
+    </li>
+  </ul>
+</section>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 news done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<section class="insta">
+  <p class="insta_label">Instagram<span>インスタグラム</span></p>
+  <h2>#あなたの景色</h2>
+  <p class="insta_lead">教室で直した器を、ハッシュタグをつけて投稿してください。<br>素敵な景色は、景の公式アカウントでご紹介します。</p>
+
+  <ul>
+    <li><img src="./img/kintsugi_floral_bowl.jpg" alt=""></li>
+    <li><img src="./img/kintsugi_glue.jpg" alt=""></li>
+    <li><img src="./img/studio_02.jpg" alt=""></li>
+    <li><img src="./img/kintsugi_teal_bowl.jpg" alt=""></li>
+    <li><img src="./img/brush_powder.jpg" alt=""></li>
+    <li><img src="./img/shards.jpg" alt=""></li>
+  </ul>
+
+  <p class="insta_account">@keshiki_kintsugi</p>
+  <a href="https://www.instagram.com/" target="_blank">Instagramを見る<span>→</span></a>
+</section>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 insta done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<section class="reserve" id="reserve">
+  <p class="reserve_label">Reservation<span>ご予約</span></p>
+  <h2>あなたの器にも、景色を。</h2>
+  <p class="reserve_lead">まずは2時間の一日体験から。器も道具も教室でご用意するので、手ぶらでお越しください。</p>
+  <ul>
+    <li>一日体験 6,600円（税込・器代込み）</li>
+    <li>手ぶらでOK・道具はすべて貸し出し</li>
+    <li>1クラス最大6名の少人数制</li>
+  </ul>
+  <p class="reserve_note">ご予約・お問い合わせはお電話のみで承っております</p>
+  <a href="tel:09023234771">090-2323-4771</a>
+  <p class="reserve_note">受付時間　10:00 – 18:00（水・木・土・日）／ 開講日以外は留守番電話で折り返します</p>
+
+  <div class="reserve_access">
+    <div>
+      <p class="reserve_label">Access<span>アクセス</span></p>
+      <h3>金継ぎ教室 景（KESHIKI）</h3>
+      <p>〒530-0016　大阪府大阪市北区中崎 0-0-0 2F<br>地下鉄谷町線「中崎町駅」2番出口より徒歩3分<br>阪急「大阪梅田駅」茶屋町口より徒歩10分<br>開講日　水・木・土・日　10:30 – 20:30<br>TEL　090-2323-4771（ご予約はお電話のみ）</p>
+    </div>
+    <iframe src="https://maps.google.com/maps?q=中崎町駅&z=16&output=embed" loading="lazy"></iframe>
+  </div>
+</section>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 reserve done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<a href="#reserve" class="float">
+  <span class="float_span1">Reserve</span>
+  <span class="float_span2">一日体験の<br>ご予約</span>
+  <span class="float_span3">TEL</span>
+</a>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 float done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<div class="footer"></div>
+<!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 footer done
+     ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/",
+    "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.13.0/index.js",
+    "gsap/": "https://cdn.jsdelivr.net/npm/gsap@3.13.0/"
+  }
+}
+</script>
+<script type="module" src="./js/main.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/animation.js"></script>
+</body>
+</html>

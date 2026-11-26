@@ -1,0 +1,283 @@
+@view-transition {
+  navigation: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.loader .loader_fill {
+  transition: transform 0.4s ease-out;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  base done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.header::before {
+  transition: opacity 0.4s ease;
+}
+
+.header_logo {
+  transition: opacity 0.3s ease;
+}
+
+.header_link {
+  transition: opacity 0.3s ease;
+}
+
+.header_parent::after {
+  transition: transform 0.3s ease;
+}
+
+.header_tel {
+  transition: background-color 0.3s ease;
+}
+
+.header_toggle_line::before,
+.header_toggle_line::after {
+  transition: transform 0.4s ease-out;
+}
+
+@media (min-width: 1101px) {
+  .header_mega,
+  .header_panel {
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header_nav {
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+  }
+
+  .header_list {
+    transition: opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s;
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  header done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.hero .hero_cta a {
+  transition: opacity 0.3s ease;
+}
+
+.scroll .scroll_line::after {
+  animation: flow 2.6s ease-out infinite;
+}
+
+@keyframes flow {
+  0% {
+    transform: translateY(-100%);
+  }
+  55% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  hero done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.marquee p {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  marquee done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.review .review_photos ul {
+  animation: review 60s linear infinite;
+}
+
+@keyframes review {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  review done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.voice .voice_list {
+  transition: transform 0.8s ease;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  voice done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.pagehead img {
+  animation: fadeIn 1.6s ease both;
+}
+
+.pagehead .pagehead_label,
+.pagehead h1,
+.pagehead .pagehead_lead,
+.pagehead .pagehead_nav {
+  animation: fadeUp 1.2s ease-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  pagehead done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.fade {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade.is-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade img {
+  transform: scale(1.06);
+  transition: transform 1.8s ease-out;
+}
+
+.fade.is-show img {
+  transform: scale(1);
+}
+
+.fade a .link_arrow {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.fade a:hover .link_arrow {
+  transform: translateX(4px);
+}
+
+.studio .studio_more a:hover .link_arrow {
+  transform: translateY(4px);
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  fade done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.fade_blur {
+  transform: none;
+  filter: blur(8px);
+  transition: opacity 1.6s ease-out, filter 1.6s ease-out;
+}
+
+.fade_blur.is-show {
+  filter: blur(0);
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  fade_blur done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.fade_line {
+  transform: translateX(-16px);
+}
+
+.fade_line span::before {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 1.2s ease-out 0.4s;
+}
+
+.fade_line.is-show span::before {
+  transform: scaleX(1);
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  fade_line done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.fade_zoom {
+  transform: scale(1.06);
+  transition: opacity 1.8s ease, transform 1.8s ease-out;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  fade_zoom done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.fade_list {
+  opacity: 1;
+  transform: none;
+}
+
+.fade_list li {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade_list.is-show li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade_list .fade_delay2 {
+  transition-delay: 0.15s;
+}
+
+.fade_list .fade_delay3 {
+  transition-delay: 0.3s;
+}
+
+.fade_list .fade_delay4 {
+  transition-delay: 0.45s;
+}
+
+.fade_list .fade_delay5 {
+  transition-delay: 0.6s;
+}
+
+.fade_list .fade_delay6 {
+  transition-delay: 0.75s;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  fade_list done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.samestyle_detail[open] p {
+  animation: fadeUp 0.6s ease-out;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                  faq done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
