@@ -9,6 +9,7 @@
 
   img {
     width: 100%;
+    height: 62.2vh;
     aspect-ratio: 520 / 560;
     object-fit: cover;
     border-radius: 0 260px 0 0;
@@ -92,6 +93,7 @@
 
     img {
       width: 80%;
+      height: auto;
       margin-bottom: 40px;
     }
 
@@ -171,6 +173,7 @@
 
   img {
     width: 100%;
+    height: 30.9vh;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
@@ -236,6 +239,10 @@
 
     .items_note {
       margin-top: 32px;
+    }
+
+    img {
+      height: auto;
     }
   }
 }
@@ -350,6 +357,7 @@
 
   img {
     width: 100%;
+    height: 68.9vh;
     aspect-ratio: 480 / 620;
     object-fit: cover;
     border-radius: 240px 0 0 0;
@@ -392,6 +400,7 @@
     img {
       justify-self: end;
       width: 70%;
+      height: auto;
       margin-top: 16px;
     }
   }
@@ -458,8 +467,7 @@
     }
 
     dt {
-      padding: 20px 24px;
-      background-color: #ffffff;
+      padding: 20px 24px 20px 72px;
       font-weight: 500;
     }
 
@@ -488,6 +496,10 @@
       dt,
       dd {
         padding: 14px 12px;
+      }
+
+      dt {
+        background-color: #ffffff;
       }
     }
   }

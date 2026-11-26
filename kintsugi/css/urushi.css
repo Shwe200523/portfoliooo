@@ -90,6 +90,7 @@
 
   img {
     width: 100%;
+    height: 66.7vh;
     aspect-ratio: 520 / 600;
     object-fit: cover;
     border-radius: 260px 0 0 0;
@@ -151,6 +152,7 @@
     img {
       justify-self: end;
       width: 80%;
+      height: auto;
       margin-top: 40px;
     }
 
@@ -352,6 +354,7 @@
 
   img {
     width: 100%;
+    height: 48.9vh;
     aspect-ratio: 560 / 440;
     object-fit: cover;
     border-radius: 0 220px 0 0;
@@ -453,6 +456,10 @@
       dd {
         padding: 14px 12px;
       }
+    }
+
+    img {
+      height: auto;
     }
   }
 }

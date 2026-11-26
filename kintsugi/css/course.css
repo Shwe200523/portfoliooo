@@ -183,6 +183,7 @@
 
     img {
       width: 100%;
+      height: 46.7vh;
       aspect-ratio: 360 / 420;
       object-fit: cover;
     }
@@ -312,6 +313,7 @@
 
       img {
         aspect-ratio: 360 / 300;
+        height: auto;
       }
     }
 
@@ -353,7 +355,7 @@
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr 480px;
+  grid-template-columns: 1fr 33.3vw;
   align-items: start;
   column-gap: 120px;
   padding: 140px 120px;
@@ -457,6 +459,7 @@
 
   img {
     width: 100%;
+    height: 84.4vh;
     aspect-ratio: 480 / 760;
     object-fit: cover;
     border-radius: 240px 0 0 0;
@@ -499,6 +502,7 @@
     img {
       justify-self: end;
       width: 70%;
+      height: auto;
       margin-top: 16px;
     }
   }
@@ -834,6 +838,7 @@
 
   img {
     width: 100%;
+    height: 33.3vh;
     aspect-ratio: 580 / 300;
     object-fit: cover;
   }
@@ -902,6 +907,10 @@
 
     h3 + p {
       font-size: 0.8em;
+    }
+
+    img {
+      height: auto;
     }
   }
 }
@@ -981,6 +990,7 @@
     background-color: #2a2622;
     color: #ffffff;
     font-weight: 500;
+    text-align: center;
   }
 
   thead .timetable_th1 {

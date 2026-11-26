@@ -1,4 +1,20 @@
+.pagehead {
+  height: 480px;
 
+  .pagehead_crumb {
+    bottom: 21px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .pagehead {
+    height: auto;
+  }
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                 pagehead done
+   ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 .main_body {
   padding: 120px 24px 140px;

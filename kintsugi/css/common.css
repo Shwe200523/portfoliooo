@@ -780,8 +780,8 @@ html.is-menuOpen {
     position: absolute;
     top: 100px;
     right: 0;
-    width: 600px;
-    height: 480px;
+    width: 41.7vw;
+    height: 53.3vh;
     object-fit: cover;
     border-bottom-left-radius: 240px;
   }

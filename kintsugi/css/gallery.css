@@ -42,6 +42,7 @@
 
   img {
     width: 100%;
+    height: 33.3vh;
     aspect-ratio: 380 / 300;
     object-fit: cover;
     border-radius: 2px;
@@ -124,6 +125,10 @@
     .works_pager {
       margin-top: 40px;
     }
+
+    img {
+      height: auto;
+    }
   }
 }
 
@@ -183,6 +188,7 @@
 
     img {
       width: 100%;
+      height: 44.4vh;
       aspect-ratio: 520 / 400;
       object-fit: cover;
     }
@@ -271,6 +277,12 @@
     .story_text {
       font-size: 0.8em;
     }
+
+    .story_photos {
+      img {
+        height: auto;
+      }
+    }
   }
 }
 
@@ -279,7 +291,7 @@
    ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 .numbers {
-  padding: 140px 120px;
+  padding: 140px 120px 196px;
   background-color: #f8f6f2;
   line-height: 1.45;
   text-align: center;
@@ -323,7 +335,7 @@
 
   ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 47fr 51fr 51fr 51fr;
     margin-top: 48px;
     text-align: left;
   }
@@ -356,7 +368,7 @@
   }
 
   li h3 {
-    margin-top: 6px;
+    margin-top: 25px;
     font-weight: 500;
     font-size: 0.9em;
     letter-spacing: 0.1em;
@@ -459,6 +471,7 @@
     }
 
     li h3 {
+      margin-top: 6px;
       font-size: 0.8em;
     }
 
@@ -475,7 +488,7 @@
 .voice {
   position: relative;
   overflow: hidden;
-  padding: 140px 120px;
+  padding: 140px 120px 191px;
   background-color: #ece7e0;
   line-height: 1.45;
 
@@ -696,6 +709,7 @@
 
   img {
     width: 100%;
+    height: 75.6vh;
     aspect-ratio: 540 / 680;
     object-fit: cover;
     border-radius: 0 270px 0 0;
@@ -784,6 +798,7 @@
 
     img {
       width: 80%;
+      height: auto;
       margin-bottom: 40px;
       border-radius: 0 160px 0 0;
     }

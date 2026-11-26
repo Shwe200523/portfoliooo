@@ -521,6 +521,7 @@
 
   img {
     width: 100%;
+    height: 30.1vh;
     aspect-ratio: 376 / 271;
     object-fit: cover;
     border-radius: 2px;
@@ -536,6 +537,10 @@
     ol {
       margin-top: 40px;
       gap: 40px;
+    }
+
+    img {
+      height: auto;
     }
   }
 }

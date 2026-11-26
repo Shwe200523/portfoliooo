@@ -150,7 +150,7 @@
    ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 .column {
-  padding: 140px 120px;
+  padding: 140px 120px 220px;
   background-color: #ece7e0;
   line-height: 1.45;
 
@@ -202,7 +202,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    margin-top: 120px;
+    margin-top: 128px;
   }
 
   li {
@@ -213,6 +213,7 @@
 
   img {
     width: 100%;
+    height: 26.7vh;
     aspect-ratio: 380 / 240;
     object-fit: cover;
   }
@@ -272,6 +273,10 @@
 
     h3 {
       font-size: 1em;
+    }
+
+    img {
+      height: auto;
     }
   }
 }

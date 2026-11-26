@@ -556,6 +556,7 @@ html.is-error {
 
   li img {
     width: 100%;
+    height: 48.9vh;
     aspect-ratio: 360 / 440;
     object-fit: cover;
     border-radius: 999px 999px 0 0;
@@ -636,6 +637,10 @@ html.is-error {
 
     a {
       margin-top: 48px;
+    }
+
+    li img {
+      height: auto;
     }
   }
 }
@@ -742,6 +747,7 @@ html.is-error {
 
     img {
       width: 100%;
+      height: 27.8vh;
       aspect-ratio: 380 / 250;
       object-fit: cover;
     }
@@ -861,6 +867,12 @@ html.is-error {
       row-gap: 24px;
       margin-top: 48px;
     }
+
+    li {
+      img {
+        height: auto;
+      }
+    }
   }
 }
 
@@ -881,7 +893,7 @@ html.is-error {
     top: 120px;
     left: 0;
     width: 45.8%;
-    height: 600px;
+    height: 66.7vh;
     object-fit: cover;
     border-top-left-radius: 300px;
   }
@@ -891,8 +903,8 @@ html.is-error {
     top: 600px;
     left: 50%;
     margin-left: -220px;
-    width: 260px;
-    height: 200px;
+    width: 18.1vw;
+    height: 22.2vh;
     object-fit: cover;
     border-radius: 2px;
   }
@@ -1338,6 +1350,7 @@ html.is-error {
 
   img {
     width: 100%;
+    height: 64.4vh;
     aspect-ratio: 440 / 580;
     object-fit: cover;
     border-radius: 999px 999px 0 0;
@@ -1498,6 +1511,7 @@ html.is-error {
 
     img {
       width: 80%;
+      height: auto;
       margin: 0 auto;
     }
 
@@ -1647,6 +1661,7 @@ html.is-error {
 
     img {
       width: 100%;
+      height: 20.0vh;
       aspect-ratio: 270 / 180;
       object-fit: cover;
     }
@@ -1706,6 +1721,12 @@ html.is-error {
 
     .news_column {
       margin-top: 40px;
+    }
+
+    .news_column {
+      img {
+        height: auto;
+      }
     }
   }
 }
@@ -1775,6 +1796,7 @@ html.is-error {
 
   img {
     width: 100%;
+    height: 22.2vh;
     aspect-ratio: 1;
     object-fit: cover;
   }
@@ -1818,6 +1840,10 @@ html.is-error {
     ul {
       grid-template-columns: 1fr 1fr 1fr;
       margin-top: 40px;
+    }
+
+    img {
+      height: auto;
     }
   }
 }

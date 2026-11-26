@@ -69,6 +69,7 @@
 
   img {
     width: 100%;
+    height: 37.8vh;
     aspect-ratio: 540 / 340;
     object-fit: cover;
     border-radius: 2px;
@@ -125,6 +126,10 @@
     h3 {
       font-size: 1.3em;
     }
+
+    img {
+      height: auto;
+    }
   }
 }
 
@@ -135,7 +140,7 @@
 .studio {
   position: relative;
   z-index: 2;
-  padding: 130px 120px 140px;
+  padding: 95px 120px 140px;
   background-color: #f8f6f2;
   line-height: 1.45;
 
@@ -192,14 +197,14 @@
 
     img {
       width: 100%;
-      height: 228px;
+      height: 25.3vh;
       object-fit: cover;
       border-radius: 114px 2px 2px 2px;
     }
 
     .studio_img1 {
       grid-row: 1 / 3;
-      height: 480px;
+      height: 53.3vh;
       border-radius: 2px 240px 2px 2px;
     }
   }
@@ -327,6 +332,7 @@
 
   img {
     width: 100%;
+    height: 68.9vh;
     aspect-ratio: 500 / 620;
     object-fit: cover;
     border-radius: 0 250px 0 0;
@@ -421,6 +427,7 @@
 
     img {
       width: 80%;
+      height: auto;
     }
 
     .method_body {
@@ -676,6 +683,7 @@
 
   img {
     width: 100%;
+    height: 62.2vh;
     aspect-ratio: 600 / 560;
     object-fit: cover;
     border-radius: 280px 0 0 0;
@@ -710,6 +718,7 @@
     img {
       margin-top: 48px;
       border-radius: 160px 0 0 0;
+      height: auto;
     }
   }
 }
@@ -1082,6 +1091,7 @@
 
   img {
     width: 100%;
+    height: 68.9vh;
     aspect-ratio: 480 / 620;
     object-fit: cover;
     border-radius: 0 240px 0 0;
@@ -1226,6 +1236,7 @@
 
     img {
       width: 80%;
+      height: auto;
       margin: 0 auto;
     }
 
@@ -1384,6 +1395,7 @@
 
   img {
     width: 100%;
+    height: 71.1vh;
     aspect-ratio: 520 / 640;
     object-fit: cover;
     border-radius: 260px 0 0 0;
@@ -1426,6 +1438,7 @@
     img {
       justify-self: end;
       width: 80%;
+      height: auto;
       margin-top: 16px;
     }
   }
